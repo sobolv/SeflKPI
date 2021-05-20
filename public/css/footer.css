@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    background: #1E2334;
+    height: 480px;
+    width: 100%;
+}
+.footer_cont {
+    width: 100%;
+    display: block;
+    padding: 0 0px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.foot_row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: all 0.5s;
+}
+.foot_cont1{
+    flex: 1.3;
+
+}
+.foot_inform1{
+    flex: 0.9;
+}
+.foot_inform2{
+    flex: 1;
+}
+.foot_cont2{
+    flex: 1;
+    text-align: right;
+
+}
+.foot_logo{
+    width: 300px;
+    height: 115px;
+    margin-top: 138px;
+}
+.foot_text_1{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: #E1E5EE;
+    margin-top: 103px;
+    margin-bottom: 24px;
+}
+.foot_text_2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #C7CCDB;
+    margin-bottom: 12px;
+}
+.foot_map{
+    width: 245px;
+    height: 230px;
+    padding: 0px;
+    padding-left: 10px;
+    margin-top: 95px;
+}
+.foot_line{
+    border: none; /* Убираем границу */
+    background-color: #E1E5EE; /* Цвет линии */
+    color: #E1E5EE; /* Цвет линии для IE6-7 */
+    height: 0.7px;
+    margin-top: 40px;
+}
+.foot_row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: all 0.5s;
+}
+.foot_icons_cont{
+    flex: 1;
+    text-align: right;
+    margin-top: 15px;
+}
+.foot_icons{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+.f_t{
+    margin-top: 27px;
+    flex: 1;
+}
+.text-right{
+    margin-top: 7px;
+}
+@media (max-width: 1200px) {
+    .foot_logo{
+        margin-left: 20px;
+    }
+    .foot_map{
+        margin-right: 20px;
+    }
+    .foot_row2{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 1100px) {
+    .foot_logo{
+        width: 240px;
+        height: 92px;
+        margin-top: 118px;
+    }
+    .foot_map {
+        width: 207px;
+        height: 194px;
+        margin-top: 75px;
+    }
+    .footer{
+        height: 400px;
+    }
+    .foot_text_1{
+        margin-top: 83px;
+    }
+    .foot_icons_cont{
+        margin-top: 6px;
+    }
+    .f_t{
+        margin-top: 17px;
+    }
+}
+@media (max-width: 900px) {
+    .footer{
+        height: 370px;
+    }
+    .foot_text_1{
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .foot_text_2{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .foot_logo{
+        width: 218px;
+        height: 89px;
+    }
+    .foot_map{
+        width: 187px;
+        height: 176px;
+    }
+    .foot_line{
+        margin-top: 25px;
+    }
+    .foot_icons_cont{
+        margin-top: 4px;
+    }
+    .f_t{
+        margin-top: 15px;
+    }
+}
+@media (max-width: 830px) {
+    .footer{
+        height: 265px;
+    }
+    .foot_logo{
+        width: 186px;
+        height: 76px;
+        margin-top: 59px;
+    }
+    .foot_text_1{
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 49px;
+        margin-bottom: 7px;
+    }
+    .foot_text_2{
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 4px;
+    }
+    .foot_map{
+        width: 147px;
+        height: 132px;
+        margin-top: 36px;
+    }
+    .foot_icons{
+        width: 25px;
+        height: 25px;
+        margin-top: 5px;
+    }
+    .foot_icons_cont{
+        margin-top: 7px;
+    }
+    .foot_line{
+        margin-bottom: 0px;
+    }
+    .f_t{
+        margin-top: 15px;
+    }
+}
+@media (max-width: 730px) {
+    .foot_logo{
+        width: 176px;
+        height: 72px;
+        margin-top: 63px;
+    }
+
+}
+@media (max-width: 670px) {
+    .foot_row1{
+        display: none !important;
+    }
+    .foot_text_2{
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 0px;
+        margin-top: 8px;
+    }
+    .footer{
+        height: 220px;
+    }
+    .foot_icons{
+        width: 30px;
+        height: 30px;
+    }
+    .f_t{
+        padding-top: 10px;
+    }
+
+}
+@media (min-width: 671px) {
+    .foot_row_min{
+        display: none !important;
+    }
+}
+.foot_row_min{
+    text-align: center;
+}
+.foot_title{
+    padding-top: 30px;
+    margin-top: 0px;
+}
+
+@media (max-width: 440px) {
+    .foot_text_2{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .footer{
+        height: 191px;
+    }
+    .foot_title{
+        padding-top: 26px;
+    }
+    .foot_icons{
+        margin-top: 3px;
+    }
+}

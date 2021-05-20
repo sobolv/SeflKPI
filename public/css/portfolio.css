@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    width: 100%;
+    display: block;
+    padding: 0 0px;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 350px;
+}
+.qqq{
+
+}
+.www{
+    border: none; /* Убираем границу */
+    background-color: black; /* Цвет линии */
+    color: black; /* Цвет линии для IE6-7 */
+    height: 0.7px;
+    width: 60px;
+}
