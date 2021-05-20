@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <div class="block2">
-                        <div class="first_col_1_text_2 fct2">Графік роботи:</div>
+                        <div class="first_col_1_text_2 fct2 fct2_2">Графік роботи:</div>
                         <div class="first_col_1_text_3 fct3">Пн-Пт:</div>
                         <div class="first_col_1_text_3 fct3">Сб:</div>
                         <div class="first_col_1_text_3 fct3">Нд:</div>
@@ -69,24 +69,28 @@
 
                     </div>
                     <div class="second_col_2">
-                        <div class="sc2_title">Шукайте нас в соц. <br>мережах! </div>
-                        <div class="sc2_icons">
-                            {{--                   <div class="sc2_icons_cont">--}}
-                            <a class="line" href="https://www.instagram.com/seflkpi/?hl=ru">
-                                <img  src={{URL::asset('icons/instagram_blue.svg')}} id="inst_icon" >
-                            </a>
-                            {{--                   </div>--}}
-                            <a class="line" href="https://www.facebook.com/seflkpi/">
-                                <img src={{URL::asset('icons/facebook_blue.svg')}} id="fb_icon" >
-                            </a>
-                            <a class="line" href="https://t.me/apepsSuggestions_bot">
-                                <img src={{URL::asset('icons/008-telegram.svg')}} id="telegram_icon" >
-                            </a>
-                        </div>
-                        <div class="bord">
-                            <div class="bord_"> </div>
-                        </div>
+                        <div class="ssss">
+                            <div class="uuuu">
+                                <div class="sc2_title">Шукайте нас в соц. <br>мережах! </div>
+                                <div class="sc2_icons">
+                                    {{--                   <div class="sc2_icons_cont">--}}
+                                    <a class="line" href="https://www.instagram.com/seflkpi/?hl=ru">
+                                        <img  src={{URL::asset('icons/instagram_blue.svg')}} id="inst_icon" >
+                                    </a>
+                                    {{--                   </div>--}}
+                                    <a class="line" href="https://www.facebook.com/seflkpi/">
+                                        <img src={{URL::asset('icons/facebook_blue.svg')}} id="fb_icon" >
+                                    </a>
+                                    <a class="line" href="https://t.me/apepsSuggestions_bot">
+                                        <img src={{URL::asset('icons/008-telegram.svg')}} id="telegram_icon" >
+                                    </a>
+                                </div>
+                                <div class="bord">
+                                    <div class="bord_"> </div>
+                                </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
 
