@@ -133,6 +133,9 @@
 }
 .first_col_2_bot{
     margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .first_col_2_text_2{
     font-family: Montserrat;
@@ -142,6 +145,7 @@
     line-height: 24px;
     letter-spacing: 0.05em;
     color: #2A324B;
+    flex: 1;
 }
 .map{
     width: 385px;
@@ -208,7 +212,10 @@
     /*position: sticky;*/
     /*top: 15px;*/
 }
-@media (min-width: 900px) {
+@media (min-width: 901px) {
+    .fct2{
+        margin-right: 30px;
+    }
     .columns{
         flex: 7;
         display: flex;
@@ -248,14 +255,6 @@
     .block2{
         flex: 1;
     }
-    .first_col_2_bot{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .first_col_2_text_2{
-        flex: 1;
-    }
     .map{
         flex: 1;
     }
@@ -273,7 +272,10 @@
     .sticky{
         position: sticky;
         top: 15px;
-        margin-bottom: 50px;
+        margin-bottom: 332px;
+    }
+    .small{
+        display: none !important;
     }
 }
 .second_col_2{
@@ -333,13 +335,17 @@
     box-sizing: border-box;
 }
 .sc2_icons{
-    /*position: absolute;*/
-    /*margin-top: 7px;*/
-    padding-top: 14px;
-    margin-left: -32px;
+    position: absolute;
+    margin-top: -16px;
+    /*padding-top: 14px;*/
+    margin-left: 83px;
 }
 @media (max-width: 1210px) {
     .columns{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .first_col_2_cont{
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -404,5 +410,74 @@
         font-size: 18px;
         line-height: 22px;
     }
+
 }
+@media (max-width: 1150px) {
+    .first_col_1_text_2{
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+@media (max-width: 1000px){
+    .map{
+        width: 296px;
+        height: 280px;
+    }
+}
+@media (max-width: 900px) {
+    .big{
+        display: none !important;
+    }
+    .first_col_1_text_1{
+        margin-top: 33px;
+    }
+    .block{
+        margin-top: 31px;
+    }
+    .title_text{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .title_line{
+        width: 133px;
+    }
+    .first_col_1_text_1{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .first_col_1_text_2{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+}
+
+.first_row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.block1{
+    flex: 1;
+}
+.block2{
+    flex: 1;
+}
+.sticky{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.second_col_1{
+    flex: 1;
+}
+.second_col_2{
+    flex: 1;
+}
+
 

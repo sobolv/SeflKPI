@@ -56,6 +56,41 @@
                 </div>
 
             </div>
+            <div class="second_row small">
+                <div class="sticky">
+                    <div class="second_col_1">
+                        <div class="second_col_1_cont">
+                            <div class="second_block1">
+                                <div class="second_col_1_text_1">Виникли питання?</div>
+                                <div class="second_col_1_text_2">Задайте їх в нашому телеграм-боті!</div>
+                                <a href="https://t.me/apepsSuggestions_bot"><button class="ask_button">Запитати</button></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="second_col_2">
+                        <div class="sc2_title">Шукайте нас в соц. <br>мережах! </div>
+                        <div class="sc2_icons">
+                            {{--                   <div class="sc2_icons_cont">--}}
+                            <a class="line" href="https://www.instagram.com/seflkpi/?hl=ru">
+                                <img  src={{URL::asset('icons/instagram_blue.svg')}} id="inst_icon" >
+                            </a>
+                            {{--                   </div>--}}
+                            <a class="line" href="https://www.facebook.com/seflkpi/">
+                                <img src={{URL::asset('icons/facebook_blue.svg')}} id="fb_icon" >
+                            </a>
+                            <a class="line" href="https://t.me/apepsSuggestions_bot">
+                                <img src={{URL::asset('icons/008-telegram.svg')}} id="telegram_icon" >
+                            </a>
+                        </div>
+                        <div class="bord">
+                            <div class="bord_"> </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
             <div class="first_col_2">
                 <div class="first_col_2_cont">
                     <div class="fc2_title">
@@ -72,7 +107,7 @@
                 </div>
             </div>
         </div>
-        <div class="second_row">
+        <div class="second_row big">
             <div class="sticky">
                 <div class="second_col_1">
                     <div class="second_col_1_cont">
