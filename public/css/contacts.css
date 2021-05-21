@@ -329,7 +329,7 @@
     position: absolute;
     width: 295px;
     height: 119.01px;
-    left: 0px;
+     /*left: 0px;*/
     top: calc(50% - 119.01px/2 + 1px);
     border: 1px solid #2E4052;
     box-sizing: border-box;
@@ -344,6 +344,9 @@
     .columns{
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .first_col_2{
+        padding-right: 40px;
     }
     .first_col_2_cont{
         margin-left: 20px;
@@ -425,6 +428,9 @@
     }
 }
 @media (max-width: 900px) {
+    .first_col_2{
+        padding-right: 10px;
+    }
     .big{
         display: none !important;
     }
@@ -482,6 +488,7 @@
     }
     .bord_{
         top: calc(50% - 48px/2 - 64.5px);
+        margin-left: -8px;
     }
     .fc2_title{
         margin-top: 49px;
@@ -494,8 +501,8 @@
         width: 306px;
     }
     .first_col_2_text{
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 19px;
+        line-height: 23px;
     }
     .first_col_2_text_2{
         font-size: 20px;
@@ -535,6 +542,11 @@
     /*.second_row{*/
     /*    padding-right: 42px;*/
     /*}*/
+}
+@media (max-width: 815px) {
+    .first_col_2 {
+        padding-right: 30px;
+    }
 }
 @media (min-width: 700px) and (max-width: 900px) {
     .sticky{
@@ -656,6 +668,9 @@
         width: 38px;
         height: 38px;
     }
+    .sc2_icons{
+        margin-left: 81px;
+    }
     .first_col_2{
         margin-top: 50px;
         margin-bottom: 70px;
@@ -705,97 +720,271 @@
     }
 }
 @media (max-width: 440px) {
-    .title_text{
+    .title_text {
         font-size: 17px;
         line-height: 20px;
     }
-    .title_line{
+    .title_line {
         width: 102px;
     }
-    .first_col_1_text_1{
+    .first_col_1_text_1 {
         font-size: 16px;
         line-height: 20px;
     }
-    .first_col_1_text_2{
+    .first_col_1_text_2 {
         font-size: 14px;
         line-height: 17px;
     }
-    .first_col_1_text_3{
+    .first_col_1_text_3 {
         font-size: 12px;
         line-height: 15px;
     }
-    .phone_icon{
+    .phone_icon {
         width: 15px;
         height: 15px;
     }
-    .fc2_title_text{
+    .fc2_title_text {
         font-size: 16px;
         line-height: 20px;
     }
-    .fc2_title_line{
+    .fc2_title_line {
         width: 246px;
     }
-    .first_col_2_text{
+    .first_col_2_text {
         font-size: 14px;
         line-height: 17px;
     }
-    .first_col_2_text_2{
+    .first_col_2_text_2 {
         font-size: 14px;
         line-height: 17px;
     }
-    .first_col_2_map{
+    .first_col_2_map {
         text-align: center;
         align-items: center;
     }
-    .map{
+    .map {
+        margin-top: 20px;
         width: 320px;
         height: 220px;
     }
-    .second_col_1_cont{
+    .second_col_1_cont {
         width: 181px;
         height: 143px;
         margin-left: 22px;
     }
-    .second_col_1_text_1{
+    .second_col_1_text_1 {
         font-size: 14px;
         line-height: 17px;
     }
-    .second_col_1_text_2{
+    .second_col_1_text_2 {
         font-size: 12px;
         line-height: 15px;
         margin-top: 10px;
     }
-    .ask_button{
+    .ask_button {
         font-size: 11px;
         line-height: 13px;
         width: 126px;
         height: 30px;
         margin-top: 10px;
     }
+    .second_block1 {
+        margin-right: 0px;
+    }
+    .sc2_title {
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: -8px;
+    }
+    .sc2_icons{
+        margin-left: 90px;
+        margin-top: -22px;
+    }
+    #inst_icon {
+        width: 34px;
+        height: 34px;
+    }
+    #fb_icon {
+        width: 34px;
+        height: 34px;
+    }
+    #telegram_icon {
+        width: 34px;
+        height: 34px;
+    }
+    .first_col_2 {
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+    .bord{
+        width: 220px;
+        height: 106px;
+        margin-left: 35px;
+     }
+    .bord_ {
+        top: calc(50% - 30px / 2 - 50.5px);
+        width: 170px;
+        margin-left: 2px;
+    }
+    .second_col_1{
+        width: 181px;
+        margin-left: -60px;
+    }
+    .second_row{
+        margin-top: 25px;
+    }
+
+}
+@media (max-width: 435px) {
+    .map{
+        width: 280px;
+        height: 204.19px;
+    }
+}
+@media (max-width: 380px) {
+    .title{
+        margin-top: 33px;
+    }
+    .title_text{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .title_line{
+        width: 88px;
+    }
+    .first_col_1_text_1{
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .first_col_1_text_2{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .first_col_1_text_3{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .phone_icon{
+        width: 10px;
+        height: 10px;
+    }
+    .fc2_title_text{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .fc2_title_line{
+        width: 200px;
+    }
+    .first_col_2_text{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .first_col_2_text_2{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .map{
+        width: 224px;
+        height: 160px;
+    }
+    .second_col_1_cont{
+        width: 150px;
+        height: 120px;
+        margin-left: 22px;
+    }
+    .second_col_1_text_1{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .second_col_1_text_2{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .ask_button{
+        font-size: 10px;
+        line-height: 12px;
+        width: 90px;
+        height: 21px;
+    }
     .second_block1{
         margin-right: 0px;
     }
     .sc2_title{
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 15px;
+        margin-left: -22px;
+        margin-top: 6px;
     }
     #inst_icon{
-        width: 34px;
-        height: 34px;
+        width: 30px;
+        height: 30px;
     }
     #fb_icon{
-        width: 34px;
-        height: 34px;
+        width: 30px;
+        height: 30px;
     }
     #telegram_icon{
-        width: 34px;
-        height: 34px;
+        width: 30px;
+        height: 30px;
+    }
+    .sc2_icons{
+        margin-left: 81px;
     }
     .first_col_2{
         margin-top: 50px;
         margin-bottom: 70px;
     }
-
+    .bord{
+        width: 192px;
+        height: 91px;
+    }
+    .bord_ {
+        top: calc(50% - 30px/2 - 40.5px);
+        width: 140px;
+        margin-left: 2px;
+    }
+    .first_col_1_text_1 {
+        margin-top: 15px;
+    }
+    .block {
+        margin-top: 15px;
+    }
+    .ffct2 {
+        margin-bottom: 0px;
+    }
+    .fct2_1{
+        margin-bottom: 8px;
+    }
+    .fct2_2{
+        margin-bottom: 8px;
+    }
+    .fct3 {
+        margin-bottom: 4px;
+    }
+    .second_block1 {
+        padding-top: 18px;
+    }
+    .second_col_2 {
+        margin-bottom: 40px;
+    }
+    .fc2_title {
+        margin-top: 23px;
+    }
+    .first_col_2_text{
+        margin-top: 10px;
+    }
+    .first_col_2_bot {
+        margin-top: 20px;
+    }
+    .bord{
+        margin-left: 35px;
+    }
+    .second_col_1 {
+        margin-left: -37px;
+    }
+    .second_col_2 {
+        margin-left: 23px;
+    }
 }
 
 

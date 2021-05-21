@@ -38,7 +38,7 @@
                 <div class="block">
                     <div class="block1">
                         <div>
-                            <div class="first_col_1_text_2 fct2">Зателефонуйте нам на:</div>
+                            <div class="first_col_1_text_2 fct2 ffct2">Зателефонуйте нам на:</div>
                             <div class="line"><img class="phone_icon" src="{{ URL::asset('icons/004-phone-call.svg')}}" alt="logo"></div>
                             <div class="first_col_1_text_3 fct_phone line ">+380 99 935 87 53</div>
                         </div>
