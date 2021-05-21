@@ -104,7 +104,7 @@
     /*    align-items: center;*/
     /*}*/
 }
-@media (max-width: 850px){
+@media (max-width: 849px){
     .head_text{
         display: none !important;
     }
@@ -199,9 +199,6 @@ span{
     /*vertical-align: center;*/
     margin-right: 20px;
 }
-.shadow {
-    box-shadow: 0 0 0 9999px rgba(0,0,0, 0.3);
-}
-.stop{
-   position: fixed;
-}
+/*.stop{*/
+/*   position: fixed;*/
+/*}*/

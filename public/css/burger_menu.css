@@ -217,12 +217,23 @@ h1 {
         transform: rotate(-45deg) translateY(-8px) translateX(8px);
     }
 }
-@media (max-width: 390px) {
-    .oppenned span:nth-child(2) {
-        right: -250px;
-        top: -260px;
-    }
-    .open{
-        padding-right: 20px;
-    }
+/*@media (max-width: 390px) {*/
+/*    .oppenned span:nth-child(2) {*/
+/*        right: -250px;*/
+/*        top: -260px;*/
+/*    }*/
+/*    .oppenned li {*/
+/*        margin-right: 148px;*/
+/*    }*/
+/*    !*.open{*!*/
+/*    !*    padding-right: 20px;*!*/
+/*    !*}*!*/
+/*}*/
+.stop{
+    /*z-index: -1;*/
+    position: fixed;
+    /*overflow: hidden;*/
+}
+@media (max-width: 500px) {
+
 }

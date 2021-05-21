@@ -80,9 +80,9 @@
                     </div>
                     <div class="block2">
                         <div class="first_col_1_text_2 fct2 fct2_2">Графік роботи:</div>
-                        <div class="first_col_1_text_3 fct3">Пн-Пт:</div>
-                        <div class="first_col_1_text_3 fct3">Сб:</div>
-                        <div class="first_col_1_text_3 fct3">Нд:</div>
+                        <div class="first_col_1_text_3 fct3">Пн-Пт: 10:00-21:00</div>
+                        <div class="first_col_1_text_3 fct3">Сб-Нд: 10:00-18:00</div>
+{{--                        <div class="first_col_1_text_3 fct3">Нд:</div>--}}
                     </div>
                 </div>
 
@@ -220,17 +220,27 @@
 <script>
     $(document).ready(function() {
         $(document).delegate('.open', 'click', function(event){
-            $("body").addClass("stop");
+            $(".header").addClass("stop");
+            if (window.matchMedia("(min-width: 500px)").matches){
+                $(".header").removeClass("stop");
+                $("body").addClass("stop");
+            }
             $(this).addClass('oppenned');
             event.stopPropagation();
         })
         $(document).delegate('body', 'click', function(event) {
             $('.open').removeClass('oppenned');
-            $("body").removeClass("stop");
+            $(".header").removeClass("stop");
+            if (window.matchMedia("(min-width: 500px)").matches){
+                $("body").removeClass("stop");
+            }
         })
         $(document).delegate('.cls', 'click', function(event){
             $('.open').removeClass('oppenned');
-            $("body").removeClass("stop");
+            $(".header").removeClass("stop");
+            if (window.matchMedia("(min-width: 500px)").matches){
+                $("body").removeClass("stop");
+            }
             event.stopPropagation();
         });
     });
