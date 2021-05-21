@@ -10,6 +10,9 @@
           crossorigin="anonymous">
     <link rel="stylesheet" href="{{ URL::asset('css/header.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/footer.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/contacts.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/burger_menu.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,9 +25,44 @@
         <div class="head_text">Партнери</div>
         <div class="head_text">Контакти</div>
         <div class="head_text">Про нас</div>
-        <div><img class="head_menu line" src="{{ URL::asset('icons/menu.svg')}}" alt="logo"></div>
+        <div  class="open">
+            <span class="cls first"></span>
+            <span>
+		        <ul class="sub-menu ">
+			        <li>
+				        <a class="sub-menu_text_1" href="#about" title="about">Головна</a>
+			        </li>
+			        <li>
+				        <a class="sub-menu_text_2" href="#skills" title="skills">Новини</a>
+			        </li>
+			        <li>
+			        	<a class="sub-menu_text_2" href="#jobs" title="jobs">Послуги</a>
+			        </li>
+			        <li>
+			        	<a class="sub-menu_text_2" href="#contact" title="contact">Портфоліо</a>
+			        </li>
+                    <li>
+			        	<a class="sub-menu_text_2" href="#contact" title="contact">Партнери</a>
+			        </li>
+                    <li>
+			        	<a class="sub-menu_text_2" href="#contact" title="contact">Контакти</a>
+			        </li>
+                    <li>
+			        	<a class="sub-menu_text_2" href="#contact" title="contact">Про нас</a>
+			        </li>
+		        </ul>
+            </span>
+            <span class="cls"></span>
+        </div>
+        {{--        <div><img class="head_menu line" src="{{ URL::asset('icons/menu.svg')}}" alt="logo"></div>--}}
     </div>
 </div>
+
+<div class="content">
+
+
+</div>
+
 <div class="footer">
     <div class="footer_cont">
         <div class="foot_row1">
@@ -63,4 +101,32 @@
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function() {
+        $(document).delegate('.open', 'click', function(event){
+            $(".header").addClass("stop");
+            if (window.matchMedia("(min-width: 500px)").matches){
+                $(".header").removeClass("stop");
+                $("body").addClass("stop");
+            }
+            $(this).addClass('oppenned');
+            event.stopPropagation();
+        })
+        $(document).delegate('body', 'click', function(event) {
+            $('.open').removeClass('oppenned');
+            $(".header").removeClass("stop");
+            if (window.matchMedia("(min-width: 500px)").matches){
+                $("body").removeClass("stop");
+            }
+        })
+        $(document).delegate('.cls', 'click', function(event){
+            $('.open').removeClass('oppenned');
+            $(".header").removeClass("stop");
+            if (window.matchMedia("(min-width: 500px)").matches){
+                $("body").removeClass("stop");
+            }
+            event.stopPropagation();
+        });
+    });
+</script>
 </body>

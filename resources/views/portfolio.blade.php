@@ -10,7 +10,7 @@
           crossorigin="anonymous">
     <link rel="stylesheet" href="{{ URL::asset('css/header.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/footer.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('css/portfolio.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/contacts.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/burger_menu.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
@@ -54,15 +54,14 @@
             </span>
             <span class="cls"></span>
         </div>
-
         {{--        <div><img class="head_menu line" src="{{ URL::asset('icons/menu.svg')}}" alt="logo"></div>--}}
-
     </div>
-
 </div>
+
 <div class="content">
 
 </div>
+
 <div class="footer">
     <div class="footer_cont">
         <div class="foot_row1">
@@ -104,14 +103,27 @@
 <script>
     $(document).ready(function() {
         $(document).delegate('.open', 'click', function(event){
+            $(".header").addClass("stop");
+            if (window.matchMedia("(min-width: 500px)").matches){
+                $(".header").removeClass("stop");
+                $("body").addClass("stop");
+            }
             $(this).addClass('oppenned');
             event.stopPropagation();
         })
         $(document).delegate('body', 'click', function(event) {
             $('.open').removeClass('oppenned');
+            $(".header").removeClass("stop");
+            if (window.matchMedia("(min-width: 500px)").matches){
+                $("body").removeClass("stop");
+            }
         })
         $(document).delegate('.cls', 'click', function(event){
             $('.open').removeClass('oppenned');
+            $(".header").removeClass("stop");
+            if (window.matchMedia("(min-width: 500px)").matches){
+                $("body").removeClass("stop");
+            }
             event.stopPropagation();
         });
     });
