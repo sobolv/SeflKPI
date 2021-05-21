@@ -93,7 +93,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="first_col_2">
                 <div class="first_col_2_cont">
