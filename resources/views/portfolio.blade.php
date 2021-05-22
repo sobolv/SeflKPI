@@ -52,7 +52,7 @@
 			        </li>
 		        </ul>
             </span>
-            <span class="cls"></span>
+            <span class="cls span_cl"></span>
         </div>
         {{--        <div><img class="head_menu line" src="{{ URL::asset('icons/menu.svg')}}" alt="logo"></div>--}}
     </div>
