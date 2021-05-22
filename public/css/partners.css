@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    width: 100%;
+    display: block;
+    padding: 0 0px;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    margin: 0 auto;
+    flex: 1;
+    text-align: center;
+}
+.title_text{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    color: #2A324B;
+}
+.title_line{
+    border: none; /* Убираем границу */
+    background-color: #2A324B; /* Цвет линии */
+    color: #2A324B; /* Цвет линии для IE6-7 */
+    height: 1px;
+    width: 210.01px;
+    justify-content: center;
+    margin-top: 5px;
+}
+.line{
+    display: inline-block;
+}
+.first_block{
+    background: #E1E5EE;
+    margin-top: 84px;
+}
+.first_block_cont{
+    width: 100%;
+    display: block;
+    padding: 0 0px;
+    margin: 0 auto;
+    max-width: 995px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 65px;
+    padding-bottom: 88px;
+}
+.first_block_text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #343D5B;
+}
+.fbt1{
+    margin-top: 53px;
+}
+.fbt2{
+    margin-top: 15px;
+}
