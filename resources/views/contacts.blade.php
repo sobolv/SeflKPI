@@ -52,7 +52,7 @@
 			        </li>
 		        </ul>
             </span>
-            <span class="cls"></span>
+            <span class="cls span_cl"></span>
         </div>
 {{--        <div><img class="head_menu line" src="{{ URL::asset('icons/menu.svg')}}" alt="logo"></div>--}}
     </div>
@@ -236,6 +236,14 @@
             }
         })
         $(document).delegate('.cls', 'click', function(event){
+            $('.open').removeClass('oppenned');
+            $(".header").removeClass("stop");
+            if (window.matchMedia("(min-width: 500px)").matches){
+                $("body").removeClass("stop");
+            }
+            event.stopPropagation();
+        });
+        $(document).delegate('.span_cl', 'click', function(event){
             $('.open').removeClass('oppenned');
             $(".header").removeClass("stop");
             if (window.matchMedia("(min-width: 500px)").matches){

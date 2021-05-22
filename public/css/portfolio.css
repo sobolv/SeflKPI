@@ -8,15 +8,34 @@
     padding: 0 0px;
     margin: 0 auto;
     max-width: 1200px;
-    margin-bottom: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.qqq{
-
+.title{
+    margin: 0 auto;
+    flex: 1;
+    text-align: center;
+    margin-top: 75px;
 }
-.www{
+.title_text{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    color: #2A324B;
+}
+.title_line{
     border: none; /* Убираем границу */
-    background-color: black; /* Цвет линии */
-    color: black; /* Цвет линии для IE6-7 */
-    height: 0.7px;
-    width: 60px;
+    background-color: #2A324B; /* Цвет линии */
+    color: #2A324B; /* Цвет линии для IE6-7 */
+    height: 1px;
+    width: 217px;
+    justify-content: center;
+    margin-top: 5px;
+}
+.line{
+    display: inline-block;
 }

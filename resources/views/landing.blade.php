@@ -10,7 +10,7 @@
           crossorigin="anonymous">
     <link rel="stylesheet" href="{{ URL::asset('css/header.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/footer.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('css/contacts.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/landing.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/burger_menu.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
