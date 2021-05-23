@@ -74,9 +74,33 @@
         </div>
     </div>
     <div class="second_block">
-        <div class="partner1">
-
+        <div class="block">
+            <div class="partner partner1">
+                <img class="partner_photo" src="{{ URL::asset('icons/fablab.svg')}}" alt="logo">
+                <div class="partner_info" >
+                    <div class="name">FabLab Fabricator</div>
+                    <div class="description">
+                        Fabricator - це відкрита інноваційна лабораторія, метою якої є надання основних інструментів швидкого створення прототипів для всіх ентузіастів в Україні. В лабораторії працює ціла комнда 3D-дизайнерів та інженерів, що завжди готові надати практичну та консультативну допомогу.
+                    </div>
+                    <a href=""><button class="partner_button">Дивитись більше</button></a>
+                </div>
+            </div>
         </div>
+
+        <hr class="partner_line">
+        <div class="block">
+             <div class="partner partner2">
+                 <div class="partner_info" >
+                     <div class="name">Optimum Engineering</div>
+                     <div class="description">
+                          Компанія "Оптімум Інжиніринг” займається розробками у сфері боротьби з пандемією вірусу COVID-19 в Украхні, зокрема надаючи інженерні рішення, пов’язаних з забезпеченням захогдів, передбачених законами, спрямованими на запобігання поширення пандемії на території України.
+                     </div>
+                     <a href=""><button class="partner_button">Дивитись більше</button></a>
+                 </div>
+                <img class="partner_photo" src="{{ URL::asset('images/Optimum.jpg')}}" alt="logo">
+            </div>
+        </div>
+        <hr class="partner_line">
     </div>
 </div>
 
