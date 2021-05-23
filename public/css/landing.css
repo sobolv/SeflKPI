@@ -1,1 +1,183 @@
 /*стилі для лендінга*/
+
+.content_main{
+    margin-top: 62px;
+    display: flex;
+    min-width: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.last_news{
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title_land{
+    text-align: center;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    color: #2A324B;
+    margin-right: auto;
+    margin-left: auto;
+}
+.line_title{
+    width: 355px;
+    background: #2A324B;
+    height: 0.5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+}
+
+/*для слайдера новин*/
+
+.img_news {
+    max-width: 893px;
+    min-width: 396px;
+}
+
+/**/
+.slider{
+    top: 15px;
+    min-width: 0;
+    max-width: 1200px;
+}
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+    max-width: 1200px;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{
+
+}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+    position: absolute;
+    top: 62%;
+    z-index: 10;
+    font-size: 0;
+    width: 23px;
+    height: 26px;
+    border: solid white;
+    background-color: white;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+    left: 0;
+    background: url('../icons/arrow_left.svg') 0 0 / 100% no-repeat;
+    border: solid white;
+
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    right: 0;
+    background: url('../icons/arrow_right.svg') 0 0 / 100% no-repeat;
+    border: solid white;
+
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{
+    border: white;
+    background-color: white;
+    border-radius: 10px;
+}
+/* Точки (булиты) */
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slick-dots li{
+    list-style: none;
+    margin: 0px 10px;
+}
+/* Активная точка */
+.slick-dots li.slick-active button{
+    background-color: #2A324B;
+    border: none;
+}
+/* Элемент точки */
+.slick-dots li button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border: solid #B4BBCF;
+    background-color: #B4BBCF;
+    border-radius: 50%;
+}
+.slider_item{
+    opacity: 0.4;
+    z-index: -10;
+
+}
+.slider_item.slick-center {
+    opacity: 1;
+    z-index: 10;
+    max-width: 893px;
+}
+
+.land_portfolio{
+    background-color: #343D5B;
+    display: flex;
+    padding-top: 100px;
+    max-height: 886px;
+    min-height: 276px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    flex-direction: column;
+
+}
+.title_land_port{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+.text_title_p{
+    display: flex;
+    margin-top: 70px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
+}
+.line_2_bl{
+    display:flex;
+    margin-top: -17px;
+    margin-left: -12%;
+}
+.line_title_2{
+    background: #FFFFFF;
+    height: 0.5px;
+    width: 219px;
+}

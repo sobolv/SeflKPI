@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('lending');
+    return view('landing');
 });
 
-Route::get('/lending', function () {
-    return view('lending');
+Route::get('/landing', function () {
+    return view('landing');
 });
 
 Route::get('/portfolio', function () {
