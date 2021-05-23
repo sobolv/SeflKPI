@@ -82,7 +82,7 @@
             <script>
                 $(document).ready(function(){
                     $('.slider').slick({
-                        arrows:true,
+                        arrows:false,
                         dots:true,
                         autoplay: true,
                         autoplaySpeed: 3000,
@@ -127,7 +127,67 @@
         <div id="more_bttn">Дивитись більше</div>
     </div>
 </div>
-<div>
+<div class="top_review">
+    <div class="title_land_port">
+        <div class="text_title_r">
+            Відгуки
+        </div>
+        <div class="line_3_bl">
+            <hr class="line_title_3">
+        </div>
+
+    </div>
+    <div class="reviews">
+        <div class="rev">
+            <div class="rev_u">
+                <img src={{asset('icons/007-profile-user.svg')}} class="user_icon">
+
+            <div class="rev_user_inf">
+                <div class="user_name">Анастасія</div>
+                <div class="rev_date"> 04.02.2021 у 16:17</div>
+            </div>
+            </div>
+
+            <div class="rev_text">
+                Заказывала впервые и была в шоке от мгновенной
+                отправки и хорошего качества товара. Заказывала
+                впервые и была в шоке от мгновенной отправки и хорошего качества товара.
+            </div>
+        </div>
+        <div class="rev">
+            <div class="rev_u">
+                <img src={{asset('icons/007-profile-user.svg')}} class="user_icon">
+
+                <div class="rev_user_inf">
+                    <div class="user_name">Анастасія</div>
+                    <div class="rev_date"> 04.02.2021 у 16:17</div>
+                </div>
+            </div>
+
+            <div class="rev_text">
+                Заказывала впервые и была в шоке от мгновенной
+                отправки и хорошего качества товара. Заказывала
+                впервые и была в шоке от мгновенной отправки и хорошего качества товара.
+            </div>
+        </div>
+        <div class="rev">
+            <div class="rev_u">
+                <img src={{asset('icons/007-profile-user.svg')}} class="user_icon">
+
+                <div class="rev_user_inf">
+                    <div class="user_name">Анастасія</div>
+                    <div class="rev_date"> 04.02.2021 у 16:17</div>
+                </div>
+            </div>
+
+            <div class="rev_text">
+                Заказывала впервые и была в шоке от мгновенной
+                отправки и хорошего качества товара. Заказывала
+                впервые и была в шоке от мгновенной отправки и хорошего качества товара.
+            </div>
+        </div>
+
+    </div>
 
 </div>
 

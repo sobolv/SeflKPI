@@ -46,13 +46,7 @@
     min-width: 0;
     max-width: 1200px;
 }
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
+
 .slick-list {
     overflow: hidden;
     max-width: 1200px;
@@ -212,3 +206,101 @@
     color: #2A324B;
     margin: auto;
 }
+.top_review{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    max-width: 1200px;
+    margin: 100px auto 200px;
+}
+
+.text_title_r{
+    display: flex;
+    margin-top: 70px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    color: #2A324B;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.line_3_bl{
+    display:flex;
+    margin-top: -17px;
+}
+.line_title_3{
+    background: #2A324B;
+    height: 0.5px;
+    width: 219px;
+}
+.reviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-top: 50px;
+}
+.rev{
+    display: flex;
+    flex-direction: column;
+    width: 346px;
+    height: 277px;
+    border: 2px solid #C7CCDB;
+}
+.rev_user_inf{
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+
+}
+.user_icon{
+    width: 63px;
+    height: 63px;
+    margin-top: 22px;
+    margin-left: 22px;
+}
+.user_name{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    color: #2A324B;
+    margin-left: 18px;
+}
+.rev_date{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 11px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #2A324B;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.rev_u{
+    display: flex;
+    flex-direction: row;
+}
+.rev_text{
+    margin-left: 22px;
+    margin-top: 22px;
+    margin-right: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: #2A324B;
+
+}
+
