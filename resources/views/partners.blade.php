@@ -90,6 +90,7 @@
         <hr class="partner_line">
         <div class="block">
              <div class="partner partner2">
+                 <img class="partner_photo small" src="{{ URL::asset('images/Optimum.jpg')}}" alt="logo">
                  <div class="partner_info" >
                      <div class="name">Optimum Engineering</div>
                      <div class="description">
@@ -97,7 +98,7 @@
                      </div>
                      <a href=""><button class="partner_button">Дивитись більше</button></a>
                  </div>
-                <img class="partner_photo" src="{{ URL::asset('images/Optimum.jpg')}}" alt="logo">
+                <img class="partner_photo big" src="{{ URL::asset('images/Optimum.jpg')}}" alt="logo">
             </div>
         </div>
         <hr class="partner_line">

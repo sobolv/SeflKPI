@@ -91,24 +91,24 @@
     max-width: 996px;
 
 }
-.partner1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.partner2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+/*.partner1{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
+/*}*/
+/*.partner2{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
+/*}*/
 .partner_photo{
-    flex: 1;
+    /*flex: 1;*/
     min-width: 284px;
     max-width: 284px;
     height: 268px;
 }
 .partner_info{
-    flex: 1.2;
+    /*flex: 1.2;*/
     max-width: 590px;
 }
 .name{
@@ -220,6 +220,7 @@
         line-height: 22px;
         width: 203px;
         height: 50px;
+        margin-top: 35px;
     }
     .partner_photo{
         max-width: 225px;
@@ -242,6 +243,10 @@
     .fbt2{
         margin-top: 12px;
     }
+    .second_block{
+        margin-top: 50px;
+    }
+
 }
 @media (max-width: 780px) {
     .name {
@@ -261,17 +266,26 @@
         min-width: 159px;
         height: 150px;
     }
-    /*.partner1 .partner_photo{*/
-    /*    margin-left: 80px;*/
-    /*}*/
-    /*.partner2 .partner_photo{*/
-    /*    margin-right: 80px;*/
-    /*}*/
-    .partner1 .partner_info{
-        padding-left: 110px;
+}
+@media (max-width: 660px) {
+    .name {
+        font-size: 21px;
+        line-height: 25px;
     }
-    .partner2 .partner_info{
-        padding-right: 110px;
+    .description {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .partner_button{
+        font-size: 14px;
+        line-height: 17px;
+        width: 180px;
+        height: 43px;
+    }
+    .partner_photo{
+        max-width: 146px;
+        min-width: 146px;
+        height: 136px;
     }
 }
 @media (max-width: 600px) {
@@ -284,7 +298,28 @@
         width: 116px;
     }
 }
-@media (max-width: 550px) {
+@media (min-width: 550px) {
+    .partner1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .partner2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .partner_photo{
+        flex: 1;
+    }
+    .partner_info{
+        flex: 1.2;
+    }
+    .small{
+        display: none !important;
+    }
+}
+@media (max-width: 549px) {
     .first_block_text{
         font-size: 14px;
         line-height: 17px;
@@ -292,7 +327,9 @@
     .first_block_cont{
         padding: 30px 22px 35px;
     }
-
+    .big{
+        display: none !important;
+    }
 }
 @media (max-width: 440px) {
     .title_text {
