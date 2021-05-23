@@ -24,14 +24,13 @@
     color: #2A324B;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 20px;
 }
 .line_title{
     width: 355px;
     background: #2A324B;
     height: 0.5px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3px;
+    margin: 3px auto 55px;
 }
 
 /*для слайдера новин*/
@@ -159,6 +158,7 @@
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
+    max-width: 1200px;
 }
 .text_title_p{
     display: flex;
@@ -169,15 +169,46 @@
     font-size: 30px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .line_2_bl{
     display:flex;
     margin-top: -17px;
-    margin-left: -12%;
 }
 .line_title_2{
     background: #FFFFFF;
     height: 0.5px;
     width: 219px;
+}
+.photo_line{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+.port_photo{
+    width: 270px;
+    height: 270px;
+    border: 0.5px solid white;
+}
+.more_bttn{
+    display: flex;
+    margin: 60px auto 190px;
+    width: 337px;
+    height: 66px;
+    background-color: #FFFFFF;
+}
+#more_bttn{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 22px;
+    color: #2A324B;
+    margin: auto;
 }
