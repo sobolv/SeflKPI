@@ -73,7 +73,11 @@
             </div>
         </div>
     </div>
-    
+    <div class="second_block">
+        <div class="partner1">
+
+        </div>
+    </div>
 </div>
 
 <div class="footer">
