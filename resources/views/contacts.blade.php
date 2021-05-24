@@ -109,7 +109,7 @@
                                         <img  src={{URL::asset('icons/instagram_blue.svg')}} id="inst_icon" >
                                     </a>
                                     {{--                   </div>--}}
-                                    <a class="line" href="https://www.facebook.com/seflkpi/">
+                                    <a class="line" href="https://www.facebook.com/seflkpi/?ref=nf&hc_ref=ARR0ToiS0IfFCQxgnQF2aAy4RPFZY7J84ktpd-0Bylehg9EPJupeXRUmF1rVOcQvPOo">
                                         <img src={{URL::asset('icons/facebook_blue.svg')}} id="fb_icon" >
                                     </a>
                                     <a class="line" href="https://t.me/apepsSuggestions_bot">

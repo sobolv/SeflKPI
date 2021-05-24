@@ -76,7 +76,10 @@
     <div class="second_block">
         <div class="block">
             <div class="partner partner1">
-                <img class="partner_photo" src="{{ URL::asset('icons/fablab.svg')}}" alt="logo">
+                <div class="partner_log">
+                    <img class="partner_photo" src="{{ URL::asset('icons/fablab.svg')}}" alt="logo">
+                </div>
+
                 <div class="partner_info" >
                     <div class="name">FabLab Fabricator</div>
                     <div class="description">
@@ -90,6 +93,10 @@
         <hr class="partner_line">
         <div class="block">
              <div class="partner partner2">
+                 <div class="partner_log">
+                     <img class="partner_photo small" src="{{ URL::asset('images/Optimum.jpg')}}" alt="logo">
+                 </div>
+
                  <div class="partner_info" >
                      <div class="name">Optimum Engineering</div>
                      <div class="description">
@@ -97,10 +104,16 @@
                      </div>
                      <a href=""><button class="partner_button">Дивитись більше</button></a>
                  </div>
-                <img class="partner_photo" src="{{ URL::asset('images/Optimum.jpg')}}" alt="logo">
+                <img class="partner_photo big" src="{{ URL::asset('images/Optimum.jpg')}}" alt="logo">
             </div>
         </div>
         <hr class="partner_line">
+    </div>
+    <div class="third_block">
+        <div class="cont">
+            <div class="first_rec">СТАНЬТЕ НАШИМ ПАРТНЕРОМ</div>
+            <button class="second_rec">Зв’язатись з нами</button>
+        </div>
     </div>
 </div>
 
