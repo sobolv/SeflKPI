@@ -117,7 +117,7 @@
     </div>
     <div class="photo_line">
         <div>
-            <img src={{asset('images/IMG_6568.JPG')}} class="port_photo">
+            <img src={{asset('images/IMG_6568.JPG')}} class="port_photo" id="first">
         </div>
         <div>
             <img src={{asset('images/IMG_6754.PNG')}} class="port_photo">
@@ -126,10 +126,10 @@
             <img src={{asset('images/IMG_5130.JPG')}} class="port_photo">
         </div>
         <div>
-            <img src={{asset('images/IMG_6753.PNG')}} class="port_photo">
+            <img src={{asset('images/IMG_6753.PNG')}} class="port_photo" id="last">
         </div>
     </div>
-    <div class="more_bttn">
+    <div class="more_bttn expand-left-right">
         <div id="more_bttn">Дивитись більше</div>
     </div>
 </div>
