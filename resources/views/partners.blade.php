@@ -23,8 +23,8 @@
         <a href="{{ URL::asset('/services')}}"><div class="head_text">Послуги</div></a>
         <a href="{{ URL::asset('/portfolio')}}"> <div class="head_text">Портфоліо</div></a>
         <a href="{{ URL::asset('/partners')}}"><div class="head_text">Партнери</div></a>
-{{--        <a href="{{ URL::asset('/contacts')}}"><div class="head_text">Контакти</div></a>--}}
-{{--        <a href="{{ URL::asset('/about')}}"><div class="head_text ht">Про нас</div></a>--}}
+        <a href="{{ URL::asset('/contacts')}}"><div class="head_text">Контакти</div></a>
+        <a href="{{ URL::asset('/about')}}"><div class="head_text ht">Про нас</div></a>
         <div  class="open">
             <span class="cls first"></span>
             <span>
