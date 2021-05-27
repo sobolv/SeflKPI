@@ -87,7 +87,7 @@
                     dots:true,
                     autoplay:true,
                     easing: 'ease',
-                    autoplaySpeed: 6000,
+                    autoplaySpeed: 3500,
                     pauseOnHover:true,
                     pauseOnFocus:true,
                     pauseOnDotsHover:true,
