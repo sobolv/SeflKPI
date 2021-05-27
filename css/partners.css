@@ -450,14 +450,7 @@
         margin-top: 30px;
     }
 }
-/*.third_block{*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: center;*/
-/*}*/
-/*.cont{*/
-/*    flex: 1;*/
-/*}*/
+
 .first_rec{
     position: relative;
     width: 793px;
@@ -494,7 +487,7 @@
     z-index: 2;
     border: none;
     /*vertical-align: 50px;*/
-    top: calc(50% - 48px/2 - 157.5px);
+    top: calc(50% - 10px/2 - 10.5px);
 }
 .third_block{
     /*margin-bottom: 480px;*/
