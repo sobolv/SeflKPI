@@ -32,3 +32,19 @@ Route::get('/contacts', function () {
 Route::get('/partners', function () {
     return view('partners');
 });
+
+Route::get('/partners', function () {
+    return view('partners');
+});
+
+Route::get('/news', function () {
+    return view('news');
+});
+
+Route::get('/services', function () {
+    return view('services');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});

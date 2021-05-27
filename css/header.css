@@ -49,9 +49,12 @@
     color: #2A324B;
     text-align: center;
 }
-@media (max-width: 1200px) {
-    .head_logo{
+@media (max-width: 1250px) {
+    .head_logo {
         margin-left: 20px;
+    }
+    .header_cont {
+        margin-right: 20px;
     }
 }
 @media (max-width: 1100px){
@@ -199,6 +202,12 @@ span{
     /*vertical-align: center;*/
     margin-right: 20px;
 }
+button,
+button:active,
+button:focus {
+    outline: none;
+}
+
 /*.stop{*/
 /*   position: fixed;*/
 /*}*/

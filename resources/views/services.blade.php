@@ -10,7 +10,6 @@
           crossorigin="anonymous">
     <link rel="stylesheet" href="{{ URL::asset('css/header.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/footer.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('css/portfolio.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/burger_menu.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
@@ -57,23 +56,6 @@
         {{--        <div><img class="head_menu line" src="{{ URL::asset('icons/menu.svg')}}" alt="logo"></div>--}}
     </div>
 </div>
-
-<div class="content">
-    <div class="title">
-        <div class="title_text">Портфоліо</div>
-        <hr class="title_line">
-    </div>
-    <div class="block">
-        <div class="all_photos">
-            <img class="photo" src="{{ URL::asset('images/IMG_6568.JPG')}}">
-            <img class="photo" src="{{ URL::asset('images/IMG_6754.PNG')}}">
-            <img class="photo" src="{{ URL::asset('images/IMG_5130.JPG')}}">
-            <img class="photo" src="{{ URL::asset('images/IMG_6753.PNG')}}">
-
-        </div>
-    </div>
-</div>
-
 <div class="footer">
     <div class="footer_cont">
         <div class="foot_row1">
@@ -131,6 +113,14 @@
             }
         })
         $(document).delegate('.cls', 'click', function(event){
+            $('.open').removeClass('oppenned');
+            $(".header").removeClass("stop");
+            if (window.matchMedia("(min-width: 500px)").matches){
+                $("body").removeClass("stop");
+            }
+            event.stopPropagation();
+        });
+        $(document).delegate('.span_cl', 'click', function(event){
             $('.open').removeClass('oppenned');
             $(".header").removeClass("stop");
             if (window.matchMedia("(min-width: 500px)").matches){
