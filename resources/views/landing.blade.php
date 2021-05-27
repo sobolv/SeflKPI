@@ -86,7 +86,6 @@
                     arrows:false,
                     dots:true,
                     autoplay:true,
-                    easing: 'ease',
                     autoplaySpeed: 3500,
                     pauseOnHover:true,
                     pauseOnFocus:true,
@@ -105,6 +104,7 @@
     </div>
 
 </div>
+
 <div class="land_portfolio">
     <div class="title_land_port">
         <div class="text_title_p">
@@ -133,6 +133,7 @@
         <div id="more_bttn">Дивитись більше</div>
     </div>
 </div>
+
 <div class="top_review">
     <div class="title_land_port">
         <div class="text_title_r">
@@ -240,13 +241,26 @@
         <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
             $(document).ready(function(){
-                $('.review-slider').slick({
-                    arrows:true,
-                    waitForAnimate: true,
-                    slidesToShow: 3,
-                    infinite: false,
+                $width_screen = window.matchMedia('(max-width: 768px)');
+                if($width_screen.matches){
+                    $('.review-slider').slick({
+                        arrows:true,
+                        waitForAnimate: true,
+                        slidesToShow: 3,
+                        infinite: false,
+                        vertical:true,
+                    })
+                }
+                else {
+                    $('.review-slider').slick({
+                        arrows:true,
+                        waitForAnimate: true,
+                        slidesToShow: 3,
+                        infinite: false,
+                        vertical:false,
 
-                });
+                    })
+                }
             });
         </script>
         <script>
