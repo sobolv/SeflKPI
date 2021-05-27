@@ -55,21 +55,22 @@
     min-width: 0;
     opacity: 0.4;
 
+
 }
 .slider_item img{
     max-width: 600px;
-    transition: 3s;
     text-align: center;
 }
 .slider_item.slick-center img{
     max-width: 893px;
-    transition: 3s;
     text-align: center;
 }
 .slider_item.slick-center{
     opacity: 1;
     z-index: 30;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 .slick-track{
     display: flex;
@@ -150,13 +151,12 @@
     flex-direction: row;
     max-width: 1200px;
 }
-.port_photo{
-    width: 270px;
-    height: 270px;
+.photo_line img{
     border: 0.5px solid white;
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .more_bttn{
     display: flex;
     margin: 60px auto 190px;
@@ -311,101 +311,138 @@
     font-size: 0;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    border: 0.1px solid #2A324B;
+    outline: none;
+    border: none;
 }
+
 .review-slider .slick-arrow.slick-prev{
     left: 0;
+    border: none;
+    outline: none;
     background: url("../icons/arrow-l.svg") 0 0 / 100% no-repeat;
+}
+.review-slider .slick-arrow button{
+    outline: none;
+}
+.review-slider .slick-arrow button:focus{
+    outline: none;
 }
 .review-slider .slick-arrow.slick-next{
     right: 0;
+    border: none;
+    outline: none;
     background: url("../icons/arrow-r.svg") 0 0 / 100% no-repeat;
 }
 .review-slider .slick-arrow.slick-disabled{
     opacity: 0.2;
+    border: none;
+    outline: none;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 768px){
-    .title_land{
-        font-size: 26px;
-    }
-    .line_title{
-        width: 300px;
-    }
-    .content_main{
-        min-height: 540px;
-    }
-    .slider_item.slick-center img{
-        max-width: 700px;
-    }
-    .slider_item img{
-        max-width: 350px;
-        transition: 3s;
-        text-align: center;
-    }
-    .slider{
-        max-width: 800px;
-    }
 
-    .text_title_p{
-        margin-top: 30px;
-        font-size: 26px;
+@media screen and (max-width: 767px) and (min-width: 375px){
+    .content_main{
+        display: none;
     }
-    .photo_line{
-        margin-top: 50px;
-    }
-    .port_photo{
-        width: 180px;
-        height: 180px;
-    }
-    .more_bttn{
-        width: 310px
-    }
-    #more_bttn{
-        font-size: 26px;
+    .top_review{
+        display: none;
     }
     .land_portfolio{
-        max-height: 750px;
+        min-height: 276px;
+        padding-top: 0;
     }
-
-    .top_review{
-        margin-top: 75px
-    }
-    .text_title_r{
-        font-size: 26px;
-        margin-top: 55px;
-    }
-    .line_title_3{
-        width: 200px;
-    }
-    .rev{
-        max-width: 220px;
-        max-height: 225px;
-    }
-    .review-slider{
-        max-width: 800px;
-    }
-    .review-slider .slick-arrow{
-        width: 30px;
-        height: 30px;
-    }
-    .user_icon{
-        width: 40px;
-        height: 40px;
-        margin-top: 15px;
-        margin-left: 15px;
-    }
-    .user_name{
+    .text_title_p{
         font-size: 14px;
-        margin-top: -5px;
-        margin-left: -15px;
-        padding-left: -15px;
+        margin-top: 30px;
     }
-    .rev_text{
-        font-size: 11px;
-        margin-top: 5px;
-        padding: 5px;
+    .line_title_2{
+        width: 91px;
+        height: 0.2px;
+    }
 
+    .photo_line{
+        margin-top: 13px;
+        max-width: 100%;
+    }
+    .port_photo{
+        min-width: 150px;
+        min-height: 163px;
+        max-height: 163px;
+        max-width: 163px;
+    }
+    .more_bttn{
+        width: 121px;
+        height: 27px;
+        margin-top: 21px;
+        margin-bottom: 25px;
+
+    }
+    #more_bttn{
+        font-size: 10px;
+    }
+
+}
+@media screen and (min-width: 601px) and (max-width: 730px){
+    .fourth{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 375px){
+    #third{
+        display: none;
+    }
+    .fourth{
+        display: none;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1185px){
+    .content_main{
+        display: none;
+    }
+    .top_review{
+        display: none;
+    }
+    .land_portfolio{
+        min-height: 472px;
+        padding-top: 0;
+    }
+    .text_title_p{
+        font-size: 24px;
+        margin-top: 76px;
+    }
+    .line_title_2{
+        width: 153px;
+        height: 0.2px;
+    }
+    .photo_line{
+        margin-top: 45px;
+        max-width: 100%;
+    }
+    .port_photo{
+        width: 163px;
+        height: 163px;
+    }
+    .more_bttn{
+        width: 197px;
+        height: 39px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+
+    }
+    #more_bttn{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 940px) and (max-width: 1179px){
+    .port_photo{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (min-width: 1180px){
+    .port_photo{
+        width: 270px;
+        height: 270px;
     }
 }

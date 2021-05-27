@@ -68,13 +68,13 @@
     <div class="new_l">
         <div class="slider">
             <div class="slider_item">
-                <img src={{asset('images/last_news_1.jpg')}} class="img_news">
+                <img src={{asset('images/last_news_1.jpg')}}>
             </div>
             <div class="slider_item">
-                <img src={{asset('images/last_news_2.jpg')}} class="img_news">
+                <img src={{asset('images/last_news_2.jpg')}}>
             </div>
             <div class="slider_item">
-                <img src={{asset('images/last_news_3.jpg')}} class="img_news">
+                <img src={{asset('images/last_news_3.jpg')}}>
             </div>
 
         </div>
@@ -95,7 +95,7 @@
                     variableWidth:true,
                     infinite: true,
                     waitForAnimate: true,
-
+                    slidesToShow: 1
                 });
             });
         </script>
@@ -116,17 +116,17 @@
 
     </div>
     <div class="photo_line">
-        <div>
-            <img src={{asset('images/IMG_6568.JPG')}} class="port_photo" id="first">
+        <div >
+            <img src={{asset('images/IMG_6568.JPG')}} class="port_photo">
         </div>
         <div>
             <img src={{asset('images/IMG_6754.PNG')}} class="port_photo">
         </div>
-        <div>
-            <img src={{asset('images/IMG_5130.JPG')}} class="port_photo">
+        <div id="third">
+            <img src={{asset('images/IMG_5130.JPG')}} class="port_photo" >
         </div>
-        <div>
-            <img src={{asset('images/IMG_6753.PNG')}} class="port_photo" id="last">
+        <div class="fourth">
+            <img src={{asset('images/IMG_6753.PNG')}} class="port_photo" >
         </div>
     </div>
     <div class="more_bttn expand-left-right">
