@@ -18,37 +18,37 @@
 <body>
 <div class="header">
     <div class="header_cont">
-        <div class="line"><img class="head_logo" src="{{ URL::asset('icons/Logo.svg')}}" alt="logo"></div>
-        <div class="head_text">Новини</div>
-        <div class="head_text">Послуги</div>
-        <div class="head_text">Портфоліо</div>
-        <div class="head_text">Партнери</div>
-        <div class="head_text">Контакти</div>
-        <div class="head_text">Про нас</div>
+        <a href="{{ URL::asset('/')}}"><div class="line"><img class="head_logo" src="{{ URL::asset('icons/Logo.svg')}}" alt="logo"></div></a>
+        <a href="{{ URL::asset('/news')}}"><div class="head_text">Новини</div></a>
+        <a href="{{ URL::asset('/services')}}"><div class="head_text">Послуги</div></a>
+        <a href="{{ URL::asset('/portfolio')}}"> <div class="head_text">Портфоліо</div></a>
+        <a href="{{ URL::asset('/partners')}}"><div class="head_text">Партнери</div></a>
+        <a href="{{ URL::asset('/contacts')}}"><div class="head_text">Контакти</div></a>
+        <a href="{{ URL::asset('/about')}}"><div class="head_text">Про нас</div></a>
         <div  class="open">
             <span class="cls first"></span>
             <span>
 		        <ul class="sub-menu ">
 			        <li>
-				        <a class="sub-menu_text_1" href="#about" title="about">Головна</a>
+				        <a class="sub-menu_text_1" href="{{ URL::asset('/')}}" title="about">Головна</a>
 			        </li>
 			        <li>
-				        <a class="sub-menu_text_2" href="#skills" title="skills">Новини</a>
+				        <a class="sub-menu_text_2" href="{{ URL::asset('/news')}}" title="skills">Новини</a>
 			        </li>
 			        <li>
-			        	<a class="sub-menu_text_2" href="#jobs" title="jobs">Послуги</a>
+			        	<a class="sub-menu_text_2" href="{{ URL::asset('/services')}}" title="jobs">Послуги</a>
 			        </li>
 			        <li>
-			        	<a class="sub-menu_text_2" href="#contact" title="contact">Портфоліо</a>
+			        	<a class="sub-menu_text_2" href="{{ URL::asset('/portfolio')}}" title="contact">Портфоліо</a>
 			        </li>
                     <li>
-			        	<a class="sub-menu_text_2" href="#contact" title="contact">Партнери</a>
+			        	<a class="sub-menu_text_2" href="{{ URL::asset('/partners')}}" title="contact">Партнери</a>
 			        </li>
                     <li>
-			        	<a class="sub-menu_text_2" href="#contact" title="contact">Контакти</a>
+			        	<a class="sub-menu_text_2" href="{{ URL::asset('/contacts')}}" title="contact">Контакти</a>
 			        </li>
                     <li>
-			        	<a class="sub-menu_text_2" href="#contact" title="contact">Про нас</a>
+			        	<a class="sub-menu_text_2" href="{{ URL::asset('/about')}}" title="contact">Про нас</a>
 			        </li>
 		        </ul>
             </span>
@@ -94,14 +94,14 @@
             <div class="foot_cont1"><img class="foot_logo" src="{{ URL::asset('icons/Logo_white.svg')}}" alt="logo"></div>
             <div class="foot_inform1">
                 <div class="foot_text_1">Інформація</div>
-                <div class="foot_text_2">Про нас</div>
-                <div class="foot_text_2">Наші партнери</div>
-                <div class="foot_text_2">Контакти</div>
-                <div class="foot_text_2">Відгуки</div>
+                <a href="{{ URL::asset('/about')}}"><div class="foot_text_2">Про нас</div></a>
+                <a href="{{ URL::asset('/partners')}}"><div class="foot_text_2">Наші партнери</div></a>
+                <a href="{{ URL::asset('/contacts')}}"><div class="foot_text_2">Контакти</div></a>
+                <a href="{{ URL::asset('/about')}}"><div class="foot_text_2">Відгуки</div></a>
 
             </div>
             <div class="foot_inform2">
-                <div class="foot_text_1">Контакти</div>
+                <a href="{{ URL::asset('/contacts')}}"><div class="foot_text_1">Контакти</div></a>
                 <div class="foot_text_2">+380999358753</div>
                 <div class="foot_text_2">emai@gmail.com</div>
                 <div class="foot_text_2">м. Київ вул. Політехнічна 6</div>
@@ -111,10 +111,10 @@
             </div>
         </div>
         <div class="foot_row_min">
-            <div class="foot_text_2 foot_title">Про нас</div>
-            <div class="foot_text_2">Наші партнери</div>
-            <div class="foot_text_2">Контакти</div>
-            <div class="foot_text_2">Відгуки</div>
+            <a href="{{ URL::asset('/about')}}"><div class="foot_text_2 foot_title">Про нас</div></a>
+            <a href="{{ URL::asset('/partners')}}"><div class="foot_text_2">Наші партнери</div></a>
+            <a href="{{ URL::asset('/contacts')}}"><div class="foot_text_2">Контакти</div></a>
+            <a href="{{ URL::asset('/about')}}"><div class="foot_text_2">Відгуки</div></a>
         </div>
         <hr class="foot_line">
         <div class="foot_row2">
