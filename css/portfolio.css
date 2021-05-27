@@ -75,12 +75,14 @@
 /*.photo:hover, .photo:focus, .photo:active {*/
 /*    transform: scale(1.1);*/
 /*}*/
-.photo:hover{
-    /*background-color: crimson;*/
-    transform: scale(1.1);
-    transition: all 0.5s;
-    /*box-shadow: 0 0 20px 20px #B4BBCF;*/
-    box-shadow: 0 0 0 20px #B4BBCF;
+@media (min-width: 900px) {
+    .photo:hover{
+        /*background-color: crimson;*/
+        transform: scale(1.1);
+        transition: all 0.5s;
+        /*box-shadow: 0 0 20px 20px #B4BBCF;*/
+        box-shadow: 0 0 0 20px #B4BBCF;
+    }
 }
 .block{
     margin-top: 75px;
