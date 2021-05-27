@@ -7,6 +7,7 @@
     min-width: 0;
     margin-right: auto;
     margin-left: auto;
+    min-height: 600px;
 }
 
 .last_news{
@@ -100,15 +101,15 @@
     background-color: #2d3748;
 }
 
+
 .land_portfolio{
     background-color: #343D5B;
     display: flex;
     padding-top: 100px;
     max-height: 886px;
     min-height: 276px;
-    margin-bottom: 100px;
-    margin-top: 100px;
     flex-direction: column;
+    margin: 100px auto;
 
 }
 .title_land_port{
@@ -140,19 +141,21 @@
     height: 0.5px;
     width: 219px;
 }
+
 .photo_line{
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 80px;
     display: flex;
     flex-direction: row;
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
 }
 .port_photo{
     width: 270px;
     height: 270px;
     border: 0.5px solid white;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .more_bttn{
     display: flex;
@@ -160,6 +163,7 @@
     width: 337px;
     height: 66px;
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 #more_bttn{
     font-family: Montserrat;
@@ -169,6 +173,10 @@
     line-height: 22px;
     color: #2A324B;
     margin: auto;
+}
+.expand-left-right:hover{
+    transition: all .5s;
+    transform: scale(1.1);
 }
 .top_review{
     display: flex;
@@ -202,17 +210,19 @@
 }
 .reviews{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1200px;
     margin-top: 50px;
+
 }
 .rev{
     display: flex;
     flex-direction: column;
-    width: 346px;
+    max-width: 346px;
     height: 277px;
     border: 2px solid #C7CCDB;
+
 }
 .rev_user_inf{
     display: flex;
@@ -253,6 +263,7 @@
 .rev_u{
     display: flex;
     flex-direction: row;
+
 }
 .rev_text{
     margin-left: 22px;
@@ -268,3 +279,133 @@
 
 }
 
+.review-slider{
+    min-width: 0;
+    max-width: 1200px;
+    position: relative;
+    padding:  0 60px;
+    display: flex;
+    align-items: center;
+}
+.rev-item {
+    min-width: 0;
+}
+
+
+.rev-item.slick-center{
+    opacity: 1;
+    z-index: 30;
+    text-align: center;
+}
+.review-slider .slick-track{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slick-list{
+    overflow: hidden;
+}
+.review-slider .slick-arrow{
+    position: absolute;
+    z-index: 10;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0.1px solid #2A324B;
+}
+.review-slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url("../icons/arrow-l.svg") 0 0 / 100% no-repeat;
+}
+.review-slider .slick-arrow.slick-next{
+    right: 0;
+    background: url("../icons/arrow-r.svg") 0 0 / 100% no-repeat;
+}
+.review-slider .slick-arrow.slick-disabled{
+    opacity: 0.2;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    .title_land{
+        font-size: 26px;
+    }
+    .line_title{
+        width: 300px;
+    }
+    .content_main{
+        min-height: 540px;
+    }
+    .slider_item.slick-center img{
+        max-width: 700px;
+    }
+    .slider_item img{
+        max-width: 350px;
+        transition: 3s;
+        text-align: center;
+    }
+    .slider{
+        max-width: 800px;
+    }
+
+    .text_title_p{
+        margin-top: 30px;
+        font-size: 26px;
+    }
+    .photo_line{
+        margin-top: 50px;
+    }
+    .port_photo{
+        width: 180px;
+        height: 180px;
+    }
+    .more_bttn{
+        width: 310px
+    }
+    #more_bttn{
+        font-size: 26px;
+    }
+    .land_portfolio{
+        max-height: 750px;
+    }
+
+    .top_review{
+        margin-top: 75px
+    }
+    .text_title_r{
+        font-size: 26px;
+        margin-top: 55px;
+    }
+    .line_title_3{
+        width: 200px;
+    }
+    .rev{
+        max-width: 220px;
+        max-height: 225px;
+    }
+    .review-slider{
+        max-width: 800px;
+    }
+    .review-slider .slick-arrow{
+        width: 30px;
+        height: 30px;
+    }
+    .user_icon{
+        width: 40px;
+        height: 40px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .user_name{
+        font-size: 14px;
+        margin-top: -5px;
+        margin-left: -15px;
+        padding-left: -15px;
+    }
+    .rev_text{
+        font-size: 11px;
+        margin-top: 5px;
+        padding: 5px;
+
+    }
+}
