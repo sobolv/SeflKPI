@@ -60,8 +60,31 @@
 
 <div class="content">
     <div class="title">
-        <div class="title_text">Контакти</div>
+        <div class="title_text">Портфоліо</div>
         <hr class="title_line">
+    </div>
+    <div class="block">
+        <div class="all_photos">
+            <img class="photo" src="{{ URL::asset('images/IMG_6568.JPG')}}">
+            <img class="photo" src="{{ URL::asset('images/IMG_6754.PNG')}}">
+            <img class="photo" src="{{ URL::asset('images/IMG_5130.JPG')}}">
+            <img class="photo" src="{{ URL::asset('images/IMG_6753.PNG')}}">
+
+            <img class="photo" src="{{ URL::asset('images/IMG_6568.JPG')}}">
+            <img class="photo" src="{{ URL::asset('images/IMG_6754.PNG')}}">
+            <img class="photo" src="{{ URL::asset('images/IMG_5130.JPG')}}">
+            <img class="photo" src="{{ URL::asset('images/IMG_6753.PNG')}}">
+
+            <img class="photo" src="{{ URL::asset('images/IMG_6568.JPG')}}">
+            <img class="photo" src="{{ URL::asset('images/IMG_6754.PNG')}}">
+            <img class="photo" src="{{ URL::asset('images/IMG_5130.JPG')}}">
+            <img class="photo" src="{{ URL::asset('images/IMG_6753.PNG')}}">
+
+            <img class="photo" src="{{ URL::asset('images/IMG_6568.JPG')}}">
+            <img class="photo" src="{{ URL::asset('images/IMG_6754.PNG')}}">
+            <img class="photo" src="{{ URL::asset('images/IMG_5130.JPG')}}">
+            <img class="photo" src="{{ URL::asset('images/IMG_6753.PNG')}}">
+        </div>
     </div>
 </div>
 
