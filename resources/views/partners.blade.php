@@ -111,7 +111,7 @@
     </div>
     <div class="third_block">
         <div class="cont">
-            <div class="first_rec">СТАНЬТЕ НАШИМ ПАРТНЕРОМ</div>
+            <button class="first_rec">СТАНЬТЕ НАШИМ ПАРТНЕРОМ</button>
             <button class="second_rec">Зв’язатись з нами</button>
         </div>
     </div>
