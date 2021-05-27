@@ -266,6 +266,9 @@
         min-width: 159px;
         height: 150px;
     }
+    .first_block{
+        margin-top: 54px;
+    }
 }
 @media (max-width: 660px) {
     .name {
