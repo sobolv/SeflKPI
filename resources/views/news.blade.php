@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="{{ URL::asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/news.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/burger_menu.css') }}">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+{{--    <script src="{{ URL::asset('public/js/jquery.instagramFeed.min.js')}}"></script>--}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
 </head>
@@ -58,41 +60,50 @@
     </div>
 </div>
 <div class="container">
-<!--    --><?php
-//    /*
-//    * создаем новое подключение к API Instagram, о том, как получить $token, написано выше;
-//    */
-//    $token = 'IGQVJWd1lTR0s5NXF0SjBZAT0lTSGJMNzRyZAnlmMFYwbU1HRnRoSXpsbXhDekcyOTcwRUxRQ3ZAPVFZAsSDdWQkEtX2ZAlS1R0TjlOOUdHc3h6bWkxZAEZAEYXJfcEVBcGNvY0pGZAktuVGtlQnFrdGtGU2J5YgZDZD';
-//    /*
-//    * Тут указываем либо ID пользователя, либо "self" для вывода фото владельца токена
-//    * Как получить ID? Да в том же инструменте, в котором вы получали токен
-//    */
-//    $user_id = '436047751017879';
-//    $instagram_cnct = curl_init(); // инициализация cURL подключения
-//    curl_setopt( $instagram_cnct, CURLOPT_URL, "https://api.instagram.com/v1/users/" . $user_id . "/media/recent?access_token=" . $token ); // подключаемся
-//    curl_setopt( $instagram_cnct, CURLOPT_RETURNTRANSFER, 1 ); // просим вернуть результат
-//    curl_setopt( $instagram_cnct, CURLOPT_TIMEOUT, 15 );
-//    $media = json_decode( curl_exec( $instagram_cnct ) ); // получаем и декодируем данные из JSON
-//    curl_close( $instagram_cnct ); // закрываем соединение
-//
-//    /*
-//    * количество фотографий для вывода
-//    */
-//    $limit = 4;
-//    /*
-//    * размер изображений (высота и ширина одинаковые)
-//    */
-//    $size = 200;
-//    /*
-//    * функция array_slice() задает количество элементов, которые нам нужно получить из массива
-//    * если нам нужно вывести все фото, тогда: foreach($media->data as $data) {
-//    */
-//    foreach(array_slice($media->data, 0, $limit) as $data) {
-//    echo '<a href="' . $data->link . '" target="_blank">';
-//        echo '<img src="'. $data->images->low_resolution->url . '" height="'.$size.'" width="'.$size.'"/>';
-//        echo '</a>';
-//    }
-//    ?>
+    <div id="instafeed">
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+
+        </script>
+        <script src="{{ URL::asset('public/js/InstagramFeed.min.js')}}"></script>
+        <script>
+            (function(){
+                new InstagramFeed({
+                    'username': 'seflkpi',
+                    'container': "#instafeed",
+                    'display_profile': true,
+                    'display_biography': true,
+                    'display_gallery': true,
+                    'callback': null,
+                    'styling': true,
+                    'items': 8,
+                    'items_per_row': 4,
+                    'margin': 1
+                });
+            })();
+        </script>
+{{--        <div class="instagram_profile">--}}
+{{--            <img class="instagram_profile_image" src="..." alt="Instagram profile pic">--}}
+{{--            <p class="instagram_username">@Instagram (<a href="...">@instagram</a>)</p>--}}
+{{--            <p class="instagram_biography">....</p>--}}
+{{--        </div>--}}
+{{--        <div class="instagram_gallery">--}}
+{{--            <a href="..." rel="noopener" target="_blank">--}}
+{{--                <img src="..." alt="instagram instagram image 0" />--}}
+{{--            </a>--}}
+{{--            ...--}}
+{{--        </div>--}}
+{{--        <div class="instagram_igtv">--}}
+{{--            <a href="..." rel="noopener" target="_blank">--}}
+{{--                <img src="..." alt="instagram instagram image 0" />--}}
+{{--            </a>--}}
+{{--            ...--}}
+{{--        </div>--}}
+    </div>
+
+
 </div>
 <div class="footer">
     <div class="footer_cont">
@@ -168,4 +179,21 @@
         });
     });
 </script>
+{{--<script>--}}
+{{--    (function ($) {--}}
+{{--        $(window).on('load', function () {--}}
+{{--            $.instagramFeed({--}}
+{{--                'username': 'seflkpi', //Имя пользователя--}}
+{{--                'container': "#instafeed", //Контейнер для изображений--}}
+{{--                'display_profile': false, //Отображение профиля--}}
+{{--                'display_biography': false, //Отображение биографии--}}
+{{--                'display_gallery': true, //Отображение галереи--}}
+{{--                'styling': true, //Стандартные стили библиотеки--}}
+{{--                'items': 8, //Количество изображений в галереи--}}
+{{--                'items_per_row': 4, //Количество изображений в ряд--}}
+{{--                'margin': 0.5 //Отступ между изображениями--}}
+{{--            });--}}
+{{--        });--}}
+{{--    })(jQuery);--}}
+{{--</script>--}}
 </body>
