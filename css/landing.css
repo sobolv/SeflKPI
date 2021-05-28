@@ -220,8 +220,8 @@
     display: flex;
     flex-direction: column;
     max-width: 346px;
-    height: 277px;
     border: 2px solid #C7CCDB;
+
 
 }
 .rev_user_inf{
@@ -276,6 +276,7 @@
     line-height: 17px;
     letter-spacing: 0.05em;
     color: #2A324B;
+    margin-bottom: 22px;
 
 }
 
@@ -344,12 +345,10 @@
     .content_main{
         display: none;
     }
-    .top_review{
-        display: none;
-    }
     .land_portfolio{
         min-height: 276px;
         padding-top: 0;
+        margin-bottom: 0;
     }
     .text_title_p{
         font-size: 14px;
@@ -400,9 +399,6 @@
     .content_main{
         display: none;
     }
-    .top_review{
-        display: none;
-    }
     .land_portfolio{
         min-height: 472px;
         padding-top: 0;
@@ -445,4 +441,224 @@
         width: 270px;
         height: 270px;
     }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .top_review{
+        margin-top: 0;
+    }
+    .reviews{
+
+        margin-top: 10px;
+    }
+    .text_title_r{
+        font-size: 14px;
+    }
+    .line_title_3{
+        width: 68px;
+        height: 0.2px;
+    }
+    .rev{
+        max-width: 345px;
+        padding: 0;
+        border: 0.01px solid #C7CCDB;
+        margin-bottom: 5px;
+
+    }
+    .user_icon{
+        width: 34px;
+        height: 34px;
+        margin: 10px;
+    }
+    .user_name{
+        font-size: 12px;
+        margin: 0px;
+        text-align: left;
+    }
+    .rev_date{
+        font-size: 8px;
+        margin: 0;
+    }
+    .rev_user_inf{
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    .rev_text{
+        font-size: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-right: 0;
+
+    }
+    .review-slider .slick-track{
+        display: block;
+    }
+    .review-slider .slick-arrow{
+        width: 30px;
+        height: 30px;
+    }
+    .review-slider .slick-arrow.slick-next{
+        display: block;
+        bottom: -45px;
+        left: 290px;
+        transform: rotate(90deg);
+        margin-top: 10px;
+    }
+    .review-slider .slick-arrow.slick-prev{
+        display: block;
+        bottom: -45px;
+        left: 245px;
+        background: url("../icons/arrow-l.svg") 0 0 / 100% no-repeat;
+        transform: rotate(-270deg);
+    }
+
+}
+@media screen and (min-width: 769px) and (max-width: 989px){
+    .top_review{
+        min-width: 0;
+        max-width: 1200px;
+        margin: 100px auto 200px;
+    }
+
+    .text_title_r{
+        margin-top: 0px;
+        font-size: 24px;
+    }
+    .line_3_bl{
+        display:flex;
+        margin-top: -17px;
+    }
+    .line_title_3{
+        height: 0.3px;
+        width: 110px;
+    }
+    .reviews{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 768px;
+        margin-top: 15px;
+    }
+    .rev{
+        max-width: 202px;
+    }
+    .rev_user_inf{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+    .user_icon{
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 36px;
+        height: 36px;
+    }
+    .user_name{
+        margin-top: 5px;
+        text-align: left;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .rev_date{
+        font-size: 9px;
+        margin-left: 9px;
+    }
+    .rev_u{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .rev_text{
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+        margin-bottom: 22px;
+    }
+
+    .review-slider{
+        max-width: 768px;
+    }
+
+    .review-slider .slick-arrow{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+@media screen and (min-width: 990px) and (max-width: 1200px){
+    .top_review{
+        min-width: 0;
+        max-width: 1200px;
+        margin: 100px auto 200px;
+    }
+
+    .text_title_r{
+        margin-top: 0px;
+        font-size: 24px;
+    }
+    .line_3_bl{
+        display:flex;
+        margin-top: -17px;
+    }
+    .line_title_3{
+        height: 0.3px;
+        width: 110px;
+    }
+    .reviews{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        max-width: 990px;
+    }
+    .rev{
+        max-width: 260px;
+        margin: 15px;
+    }
+    .rev_user_inf{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+    .user_icon{
+        margin-left: 15px;
+        margin-top: 15px;
+        width: 36px;
+        height: 36px;
+    }
+    .user_name{
+        margin-top: 5px;
+        text-align: left;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .rev_date{
+        font-size: 9px;
+        margin-left: 9px;
+    }
+    .rev_u{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .rev_text{
+        margin-top: 10px;
+        margin-left: 15px;
+        font-size: 10px;
+        margin-bottom: 22px;
+    }
+
+    .review-slider{
+        max-width: 768px;
+    }
+
+    .review-slider .slick-arrow{
+        width: 30px;
+        height: 30px;
+    }
+
 }
