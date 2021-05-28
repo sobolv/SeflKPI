@@ -39,6 +39,39 @@
 .line{
     display: inline-block;
 }
+.all_news{
+    width: 100%;
+    display: block;
+    padding: 0 0px;
+    margin: 0 auto;
+    max-width: 994px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+}
+.news{
+    background: #F2F4F8;
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(239, 142, 67, 0.75);
+}
+.news_l_b{
+    width: 100%;
+    display: block;
+    padding: 0 0px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+.news_cont{
+    width: 100%;
+    display: block;
+    padding: 0 0px;
+    margin: 0 auto;
+    max-width: 845px;
+}
+.news_img{
+    margin-top: 60px;
+    width: 845px;
+}
 @media (max-width: 1100px) {
     .title_text{
         font-size: 25px;
