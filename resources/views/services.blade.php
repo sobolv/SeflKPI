@@ -103,7 +103,7 @@
 
        </div>
        <div class="point1">
-           <img id="img2" src={{asset('icons/Дизайн.svg')}}>
+           <img id="img3" src={{asset('icons/Дизайн.svg')}}>
            <div class="text_point">
                Дизайн
                <ul class="list">
