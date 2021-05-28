@@ -59,10 +59,19 @@
         {{--        <div><img class="head_menu line" src="{{ URL::asset('icons/menu.svg')}}" alt="logo"></div>--}}
     </div>
 </div>
-<div class="container">
+<div class="content">
     <div class="title">
         <div class="title_text">Новини</div>
         <hr class="title_line">
+    </div>
+    <div class="all_news">
+        <div class="news">
+            <div class="news_l_b">
+                <div class="news_cont">
+                    <div class="news_img"> <img class="n_img" src={{URL::asset('images/maxresdefault.jpg')}}></div>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="instafeed">
         <script
