@@ -1,0 +1,134 @@
+.enter_words{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title_s{
+    text-align: center;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    color: #2A324B;
+    margin-right: auto;
+    margin-left: auto;
+}
+.line_title_s{
+    width: 217px;
+    background: #2A324B;
+    height: 0.5px;
+    margin: 3px auto 35px;
+}
+.enter_text{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    width: 861px;
+    color: #343D5B;
+}
+.service{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: #343D5B;
+    padding-bottom: 100px;
+}
+.point1 img{
+    display: block;
+    width: 124px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+}
+.point1{
+   margin-top: 75px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#img2{
+    width: 143px;
+    height: 200px;
+}
+.text_point{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-align: left;
+    width: 500px;
+}
+.block_s{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+
+}
+.list{
+    margin-left: 70px;
+}
+.third_block{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 130px;
+}
+.cont_us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 150px;
+}
+.cont_s{
+    margin: 0 auto;
+    flex: 1;
+    text-align: center;
+}
+.first_rec_s{
+    /*position: relative;*/
+    width: 793px;
+    height: 330px;
+    background: #E1E5EE;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #2A324B;
+    /*z-index: 1;*/
+    border: none;
+}
+.second_rec_s{
+    /*position: absolute;*/
+    width: 488px;
+    height: 107px;
+    background: #F7C6A1;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    border: none;
+
+    margin-top: -54px;
+    margin-left: 405px;
+}

@@ -10,6 +10,7 @@
           crossorigin="anonymous">
     <link rel="stylesheet" href="{{ URL::asset('css/header.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/footer.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/services.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/burger_menu.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
@@ -56,6 +57,81 @@
         {{--        <div><img class="head_menu line" src="{{ URL::asset('icons/menu.svg')}}" alt="logo"></div>--}}
     </div>
 </div>
+
+<div class="enter_words">
+    <div class="title_s">
+        Послуги
+    </div>
+    <hr class="line_title_s">
+    <div class="enter_text">
+        Ми надаємо широкий спектр послуг у сферах інформаційних технологій,
+        автоматизації, дизайну, а також консультативну допомогу
+    </div>
+</div>
+<div class="service">
+    <div class="block_s">
+        <div class="point1">
+            <img src={{asset('icons/Консультация.svg')}}>
+            <div class="text_point">
+                Надання консультативних послуг у сфері комп’ютених технологій
+            </div>
+        </div>
+        <div class="point1">
+            <img id="img2" src={{asset('icons/Прототипуваннч.svg')}}>
+            <div class="text_point">
+                Прототипування рішень у сфері автоматизації виробництва
+            </div>
+        </div>
+    </div>
+    <div class="block_s">
+       <div class="point1">
+           <img src={{asset('icons/Проектування.svg')}}>
+           <div class="text_point">
+               Проектування та виготовлення індивідуальних програмно-аппаратних комплексів:
+               <ul class="list">
+                   <li>
+                       ІоТ
+                   </li>
+                   <li>
+                       Квест кімнати
+                   </li>
+                   <li>
+                       Веб та мобільні додатки
+                   </li>
+               </ul>
+           </div>
+
+       </div>
+       <div class="point1">
+           <img id="img2" src={{asset('icons/Прототипуваннч.svg')}}>
+           <div class="text_point">
+               Дизайн
+               <ul class="list">
+                   <li>
+                       Веб
+                   </li>
+                   <li>
+                       Поліграфія
+                   </li>
+                   <li>
+                       3Д друк
+                   </li>
+                   <li>
+                       ЧПУ виробництво
+                   </li>
+               </ul>
+           </div>
+       </div>
+   </div>
+
+</div>
+<div class="third_block">
+    <div class="cont_s">
+        <button class="first_rec_s">ЗАЛИШИЛИСЬ ПИТАННЯ</button>
+        <button class="second_rec_s">Зв’язатись з нами</button>
+    </div>
+</div>
+
 <div class="footer">
     <div class="footer_cont">
         <div class="foot_row1">
