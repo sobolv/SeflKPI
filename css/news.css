@@ -1,0 +1,4 @@
+.instagram__block {display: flex;flex-wrap: wrap;margin: -2px;}
+.instagram__block-item {width: 25%;padding: 2px 2px 1rem;box-sizing: border-box;}
+.instagram__block a {display: block;width: 100%;height: 300px;margin-bottom: 0.5rem;}
+.instagram__block a img {width: 100%;height:100%;object-fit: cover;}
