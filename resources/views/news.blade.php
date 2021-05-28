@@ -60,6 +60,10 @@
     </div>
 </div>
 <div class="container">
+    <div class="title">
+        <div class="title_text">Новини</div>
+        <hr class="title_line">
+    </div>
     <div id="instafeed">
         <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -84,23 +88,6 @@
                 });
             })();
         </script>
-{{--        <div class="instagram_profile">--}}
-{{--            <img class="instagram_profile_image" src="..." alt="Instagram profile pic">--}}
-{{--            <p class="instagram_username">@Instagram (<a href="...">@instagram</a>)</p>--}}
-{{--            <p class="instagram_biography">....</p>--}}
-{{--        </div>--}}
-{{--        <div class="instagram_gallery">--}}
-{{--            <a href="..." rel="noopener" target="_blank">--}}
-{{--                <img src="..." alt="instagram instagram image 0" />--}}
-{{--            </a>--}}
-{{--            ...--}}
-{{--        </div>--}}
-{{--        <div class="instagram_igtv">--}}
-{{--            <a href="..." rel="noopener" target="_blank">--}}
-{{--                <img src="..." alt="instagram instagram image 0" />--}}
-{{--            </a>--}}
-{{--            ...--}}
-{{--        </div>--}}
     </div>
 
 
