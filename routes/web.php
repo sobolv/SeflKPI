@@ -41,6 +41,10 @@ Route::get('/news', function () {
     return view('news');
 });
 
+Route::get('/news/1', function () {
+    return view('one_news');
+});
+
 Route::get('/services', function () {
     return view('services');
 });
