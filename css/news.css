@@ -184,6 +184,9 @@
     /*transform: scale(1.1);*/
 
 }
+.footer{
+    margin-top: 50px;
+}
 @media (max-width: 1100px) {
     .title_text {
         font-size: 25px;
@@ -318,7 +321,15 @@
         font-size: 14px;
         line-height: 17px;
     }
-
+    .title {
+        margin-bottom: 55px;
+    }
+    .news {
+        margin-bottom: 45px;
+    }
+    .footer{
+        margin-top: 40px;
+    }
 }
 @media (max-width: 770px) {
     .news_cont{
