@@ -69,10 +69,57 @@
             <div class="news_l_b">
                 <div class="news_cont">
                     <div class="news_img"> <img class="n_img" src={{URL::asset('images/maxresdefault.jpg')}}></div>
+                    <div class="news_title">Інтерв’ю з членом СКБ “SEFL KPI”</div>
+                    <div class="news_description">На YouTube каналі “КПІмедіа” вийшло інтерв’ю в якому член СКБ “SEFL” Владислав Голець розказує про особливості навчання в університеті.</div>
+                </div>
+                <hr class="news_line">
+                <div class="news_date">
+                    <div class="n_date">Дата: 16 Квітня 2021 </div>
+                    <div class="news_comments">
+                        <img class="com_icon line" src={{URL::asset('icons/003-conversation.svg')}}>
+                        <div class="com_count line">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="news_l_b">
+                <div class="news_cont">
+                    <div class="news_img"> <img class="n_img" src={{URL::asset('images/NVZB2.png')}}></div>
+                    <div class="news_title">Відкриття квест-кімнати “Назад у майбутнє”</div>
+                    <div class="news_description">Відбулося відкриття квест-кімнати створеної по мотивам х/ф “Назад у майбутнє”, що була створена спільно з мережею “KADROOM”.</div>
+                </div>
+                <hr class="news_line">
+                <div class="news_date">
+                    <div class="n_date">Дата: 16 Квітня 2021 </div>
+                    <div class="news_comments">
+                        <img class="com_icon line" src={{URL::asset('icons/003-conversation.svg')}}>
+                        <div class="com_count line">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="news_l_b">
+                <div class="news_cont">
+                    <div class="news_img"> <img class="n_img" src={{URL::asset('images/image1.png')}}></div>
+                    <div class="news_title">На залізничному вокзалі Киева встановлені пристрої під назвою “Маячок”</div>
+                    <div class="news_description">На входах та виходах Центрального залізничного вокзалу Киева встановлені пристрої під назвою “Маячок”. Це спільна розробка кафедри АПЕПС та ТОВ “Оптимум Інжиніринг”.</div>
+                </div>
+                <hr class="news_line">
+                <div class="news_date">
+                    <div class="n_date">Дата: 16 Квітня 2021 </div>
+                    <div class="news_comments">
+                        <img class="com_icon line" src={{URL::asset('icons/003-conversation.svg')}}>
+                        <div class="com_count line">2</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+{{--    <div class="but_cl">--}}
+{{--        <button class="more_news">Дивитись більше</button>--}}
+{{--    </div>--}}
     <div id="instafeed">
         <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
