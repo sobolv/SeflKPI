@@ -60,9 +60,53 @@
 <div class="content">
     <div class="title">
         <div class="title_text"><a>На залізничному вокзалі Киева встановлені пристрої під назвою “Маячок”</a></div>
-
     </div>
-
+    <div class="first_column">
+        <div class="fc_first_row">
+            <div class="news">
+                <img class="news_img" src="{{ URL::asset('images/image1.png') }}">
+                <div class="news_line_cont">
+                    <div class="news_text_cont">
+                        <div class="news_text">Диспенсер під назвою «Маячок» є спільною розробкою кафедри автоматизації проєктування енергетичних процесів та систем КПІ та компанії ТОВ «Оптимум Інжиніринг».
+                            <br><br>Пристрій уже встановили на входах/виходах до Центрального залізничного вокзалу Києва. Це безконтактні автоматичні диспенсери, які вимірюють температуру пасажирів і водночас дезінфікують руки антисептичним розчином. Якщо температура підвищена, вмикається звуковий та світловий сигнал.
+                            <br><br>Розробкою вже користуються КМДА, патрульна поліція Києва, Міністерство освіти, Міністерство оборони, Національна гвардія та столичний Центральний вокзал.
+                        </div>
+                    </div>
+                    <hr class="news_line">
+                    <div class="news_date">
+                        <div class="n_date">Дата: 16 Квітня 2021 </div>
+                        <div class="news_comments">
+                            <img class="com_icon line" src="{{URL::asset('icons/003-conversation.svg')}}">
+                            <div class="com_count line">2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fc_second_row">
+            <div class="last_news_title">Останні новини</div>
+            <div class="last_news">
+                <div class="l_news">
+                    <div class="l_news_cont">
+                        <img class="last_news_img line" src="{{URL::asset('images/maxresdefault.jpg')}}">
+                        <button class="last_news_text line">Інтерв’ю з членом СКБ “SEFL KPI”</button>
+                    </div>
+                </div>
+                <div class="l_news">
+                    <div class="l_news_cont">
+                        <img class="last_news_img line" src="{{URL::asset('images/NVZB2.png')}}">
+                        <button class="last_news_text line">Відкриття квест-кімнати “Назад у майбутнє”</button>
+                    </div>
+                </div>
+                <div class="l_news">
+                    <div class="l_news_cont">
+                        <img class="last_news_img line" src="{{URL::asset('images/image1.png')}}">
+                        <button class="last_news_text line">Встановлені пристрої під назвою “Маячок”</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="footer">
     <div class="footer_cont">
