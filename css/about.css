@@ -40,7 +40,7 @@
     background-color: #E1E5EE;
     max-width: 1200px;
     padding: 100px;
-    margin: 200px auto 75px;
+    margin: 150px auto 75px;
 }
 .line_title_a2{
     width: 275px;
@@ -439,16 +439,16 @@
     width: 600px;
     height: 500px;
     background-color: white;
-    border: 2px solid #2E4052;
     margin-left: auto;
     margin-right: auto;
+    top: -500px;
     position: relative;
 }
 .rev_block{
     display: flex;
     flex-direction: column;
     max-width: 600px;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -492,7 +492,7 @@
     font-family: Raleway;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 23px;
     letter-spacing: 0.05em;
     padding-bottom: 10px;
@@ -554,4 +554,7 @@ textarea {
     font-size: 16px;
     color: #343D5B;
     margin-left: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }

@@ -288,7 +288,7 @@
                     </div>
                     <div class="buttons">
                         <button type="submit" name="enter" class="publish">Опублікувати</button>
-                        <button type="submit" name="exit" class="exit">Скасувати</button>
+                        <div class="exit" onclick="show('none')">Скасувати</div>
                     </div>
 
                 </div>
@@ -300,6 +300,7 @@
         <script>
             function show(state)
             {
+
                 document.getElementById('coment').style.display = state;
                 document.getElementById('gray').style.display = state;
             }
