@@ -117,9 +117,9 @@
             </div>
         </div>
     </div>
-{{--    <div class="but_cl">--}}
-{{--        <button class="more_news">Дивитись більше</button>--}}
-{{--    </div>--}}
+    <div class="but_cl">
+        <button class="more_news">Дивитись більше</button>
+    </div>
     <div id="instafeed">
         <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
