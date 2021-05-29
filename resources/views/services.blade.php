@@ -127,7 +127,7 @@
 </div>
 <div class="third_block">
     <div class="cont_s">
-        <button class="first_rec_s">ЗАЛИШИЛИСЬ ПИТАННЯ</button>
+        <button class="first_rec_s">ЗАЛИШИЛИСЬ ПИТАННЯ?</button>
         <button class="second_rec_s">Зв’язатись з нами</button>
     </div>
 </div>
