@@ -80,7 +80,7 @@
     <div class="points">
         <div class="point1">
             <div class="icon_p">
-
+                <img src="{{ URL::asset('icons/швидкість.svg')}}">
             </div>
             <div class="title_p1">
                 Швидкість≠Якість
@@ -92,7 +92,7 @@
         </div>
         <div class="point1">
             <div class="icon_p">
-
+                <img src="{{ URL::asset('icons/Адаптивність.svg')}}">
             </div>
             <div class="title_p1">
                 Адаптивність
@@ -103,7 +103,7 @@
         </div>
         <div class="point1">
             <div class="icon_p">
-
+                <img src="{{ URL::asset('icons/Надійність.svg')}}">
             </div>
             <div class="title_p1">
                 Надійність
@@ -115,9 +115,9 @@
         </div>
         <div class="point1">
             <div class="icon_p">
-
+                <img src="{{ URL::asset('icons/Вдосконалення.svg')}}">
             </div>
-            <div class="title_p1">
+            <div class="title_p1" id="point4">
                 Бажання вдосконалюватись
             </div>
             <div class="text_p2" >
@@ -223,7 +223,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
@@ -371,8 +370,7 @@
             </div>
         </div>
         </div>
-
-<div class="mem_photo">
+    <div class="mem_photo">
     <div class="member">
         <div id="al-c">
             <div class="container">
@@ -431,7 +429,7 @@
         </div>
     </div>
 </div>
-<div class="mem_photo">
+    <div class="mem_photo">
     <div class="member">
         <div id="al-c">
             <div class="container">

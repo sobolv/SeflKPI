@@ -60,10 +60,13 @@
     max-width: 220px;
     align-items: center;
 }
-.icon_p{
-    width: 160px;
+.icon_p img{
+    width: 140px;
     height: 147px;
-    background-color: #343D5B;
+    padding: 10px;
+}
+#point4{
+    margin-top: 12px;
 }
 .title_p1{
     margin-top: 20px;
@@ -90,7 +93,7 @@
 
 }
 .text_p2{
-    margin-top: 17px;
+    margin-top: 25px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -287,10 +290,7 @@
     display: table;
     width: 301px;
     height: 289px;
-
 }
-
-
 
 .container {
     padding-right:5px;
@@ -309,8 +309,6 @@
     text-align: center;
     padding: 0;
 }
-
-
 
 .effects li {
     position: relative;
@@ -411,7 +409,10 @@
     justify-content: center;
     align-items: center;
 }
-
+.enter_bttn:hover{
+    transition: all .5s;
+    transform: scale(1.1);
+}
 #close_img {
     display: block;
     width: 25px;
@@ -441,8 +442,12 @@
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    top: -500px;
-    position: relative;
+    margin-top: 160px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
 }
 .rev_block{
     display: flex;
@@ -536,6 +541,7 @@ textarea {
     font-size: 16px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .buttons{
     display: flex;
@@ -557,4 +563,113 @@ textarea {
     align-items: center;
     justify-content: center;
     display: flex;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px){
+    .enter_words_a{
+        margin-top: 70px;
+    }
+    .title_a{
+        font-size: 26px;
+    }
+    .line_title_a{
+        margin: 3px auto 20px;
+        width: 180px;
+    }
+    .enter_text_a{
+
+        font-size: 20px;
+        width: 600px;
+    }
+    .why{
+        max-width: 900px;
+        padding-top: 80px;
+        padding-left: 60px;
+        padding-right: 60px;
+        margin: 100px auto 75px;
+    }
+    .text_p1 {
+        margin-top: 33px;
+        font-size: 14px;
+    }
+    .icon_p img {
+        width: 130px;
+        height: 127px;
+        padding: 10px;
+    }
+    #point4{
+        margin-top: 10px;
+    }
+    .title_p1 {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .text_p2{
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .point1 {
+        max-width: 200px;
+        align-items: center;
+    }
+    .points {
+    max-width: 900px;
+    }
+    #al-c {
+        width: 250px;
+        height: 229px;
+    }
+    .effects li {
+        width: 250px;
+        height: 229px;
+
+    }
+    .join{
+        margin-top: 45px;
+        font-size: 18px;
+        width: 245px;
+        height: 52px;
+        margin-bottom: 75px;
+    }
+    .user_icon {
+        width: 53px;
+        height: 53px;
+    }
+    .user_name {
+        text-align: left;
+    }
+    .rev_date {
+        text-align: left;
+        margin-left: 15px;
+    }
+    .review-slider .slick-arrow {
+        width: 45px;
+        height: 45px;
+    }
+    .review-slider .slick-arrow.slick-prev {
+        margin-left: 10px;
+    }
+    .review-slider .slick-arrow {
+        margin-right: 10px;
+    }
+    .review-slider{
+        max-width: 990px;
+    }
+    .rev {
+        max-width: 280px;
+    }
+    .top_review{
+        margin: 80px auto 60px;
+    }
+    .reviews{
+        margin-top: 30px;
+    }
+    .enter_bttn{
+        margin-top: 45px;
+        font-size: 18px;
+        width: 245px;
+        height: 52px;
+        margin-bottom: 55px;
+    }
 }
