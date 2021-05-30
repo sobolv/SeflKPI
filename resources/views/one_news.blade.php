@@ -59,10 +59,109 @@
 </div>
 <div class="content">
     <div class="title">
-        <div class="title_text"><a>На залізничному вокзалі Киева встановлені пристрої під назвою “Маячок”</a></div>
-
+{{--        <div class="title_text"><a>На залізничному вокзалі Киева встановлені пристрої під назвою “Маячок”</a></div>--}}
     </div>
-
+    <div class="first_column">
+        <div class="fc_first_row">
+            <div class="news">
+                <div class="title_text">На залізничному вокзалі Киева встановлені пристрої під назвою “Маячок”</div>
+                <img class="news_img" src="{{ URL::asset('images/image1.png') }}">
+                <div class="news_line_cont">
+                    <div class="news_text_cont">
+                        <div class="news_text">Диспенсер під назвою «Маячок» є спільною розробкою кафедри автоматизації проєктування енергетичних процесів та систем КПІ та компанії ТОВ «Оптимум Інжиніринг».
+                            <br><br>Пристрій уже встановили на входах/виходах до Центрального залізничного вокзалу Києва. Це безконтактні автоматичні диспенсери, які вимірюють температуру пасажирів і водночас дезінфікують руки антисептичним розчином. Якщо температура підвищена, вмикається звуковий та світловий сигнал.
+                            <br><br>Розробкою вже користуються КМДА, патрульна поліція Києва, Міністерство освіти, Міністерство оборони, Національна гвардія та столичний Центральний вокзал.
+                        </div>
+                    </div>
+                    <hr class="news_line">
+                    <div class="news_date">
+                        <div class="n_date">Дата: 16 Квітня 2021 </div>
+                        <div class="news_comments">
+                            <img class="com_icon line" src="{{URL::asset('icons/003-conversation.svg')}}">
+                            <div class="com_count line">2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fc_second_row">
+            <div class="last_news_title">Останні новини</div>
+            <div class="last_news">
+                <div class="l_news">
+                    <div class="l_news_cont">
+                        <img class="last_news_img line" src="{{URL::asset('images/maxresdefault.jpg')}}">
+                        <button class="last_news_text line">Інтерв’ю з членом СКБ “SEFL KPI”</button>
+                    </div>
+                </div>
+                <div class="l_news">
+                    <div class="l_news_cont">
+                        <img class="last_news_img line" src="{{URL::asset('images/NVZB2.png')}}">
+                        <button class="last_news_text line">Відкриття квест-кімнати “Назад у майбутнє”</button>
+                    </div>
+                </div>
+                <div class="l_news">
+                    <div class="l_news_cont">
+                        <img class="last_news_img line" src="{{URL::asset('images/image1.png')}}">
+                        <button class="last_news_text line">Встановлені пристрої під назвою “Маячок”</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="second_column">
+        <div class="sc_first_row">
+            <div class="com_block">
+                <div class="title_block">
+                    <div class="com_title">Коментарі</div>
+                    <div class="com">
+                        <div class="com_cont">
+                            <img class="com_img line" src="{{ URL::asset('icons/007-profile-user.svg')}}">
+                            <div class="com_text line">
+                                <div class="first_line">
+                                    <div class="name line">Анастасія</div>
+                                    <div class="date line">04.02.2021 у 16:17</div>
+                                </div>
+                                <div class="second_line">Заказывала впервые и была в шоке от мгновенной отправки и хорошего качества товара.🤎Заказывала впервые и была в шоке от мгновенной отправки и хорошего качества товара.🤎🤎</div>
+                                <div class="third_line">
+                                    <img class="like line" src="{{URL::asset('icons/like.svg')}}">
+                                    <div class="like_count line count">0</div>
+                                    <img class="dislike line" src="{{URL::asset('icons/like.svg')}}">
+                                    <div class="dislike_count line count">0</div>
+                                    <button class="answer_but line">Відповісти</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="com">
+                        <div class="com_cont">
+                            <img class="com_img line" src="{{ URL::asset('icons/007-profile-user.svg')}}">
+                            <div class="com_text line">
+                                <div class="first_line">
+                                    <div class="name line">Анастасія</div>
+                                    <div class="date line">04.02.2021 у 16:17</div>
+                                </div>
+                                <div class="second_line">Заказывала впервые и была в шоке от мгновенной отправки и хорошего качества товара.🤎Заказывала впервые и была в шоке от мгновенной отправки и хорошего качества товара.🤎🤎</div>
+                                <div class="third_line">
+                                    <img class="like line" src="{{URL::asset('icons/like.svg')}}">
+                                    <div class="like_count line count">0</div>
+                                    <img class="dislike line" src="{{URL::asset('icons/like.svg')}}">
+                                    <div class="dislike_count line count">0</div>
+                                    <button class="answer_but line">Відповісти</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sc_second_row">
+            <div class="scsr_title">Додати коментар</div>
+            <input type="text" name="nickname" placeholder="Ім'я" class="field1">
+            <input type="text" name="email" placeholder="Email" class="field1">
+            <textarea class="new_com_inf">Коментар</textarea>
+            <button class="add_com_but">Додати</button>
+        </div>
+    </div>
 </div>
 <div class="footer">
     <div class="footer_cont">

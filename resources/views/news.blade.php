@@ -120,34 +120,19 @@
     <div class="but_cl">
         <button class="more_news">Дивитись більше</button>
     </div>
-    <div id="instafeed">
-        <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous">
-
-        </script>
-        <script src="{{ URL::asset('public/js/InstagramFeed.min.js')}}"></script>
-        <script>
-            (function(){
-                new InstagramFeed({
-                    'username': 'seflkpi',
-                    'container': "#instafeed",
-                    'display_profile': true,
-                    'display_biography': true,
-                    'display_gallery': true,
-                    'callback': null,
-                    'styling': true,
-                    'items': 8,
-                    'items_per_row': 4,
-                    'margin': 1
-                });
-            })();
-        </script>
-    </div>
-
-
+    <div class="title_text tttt">Наш інстаграм</div>
 </div>
+<!-- Place <div> tag where you want the feed to appear -->
+<div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+<!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+<script type="text/javascript">
+    /* curator-feed-default-feed-layout */
+    (function(){
+        var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+        i.src = "https://cdn.curator.io/published/26519028-af47-416e-95a4-6b75371f53c2.js";
+        e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+    })();
+</script>
 <div class="footer">
     <div class="footer_cont">
         <div class="foot_row1">
