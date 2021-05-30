@@ -834,9 +834,6 @@ textarea {
 }
 
 @media screen and (min-width: 600px) and (max-width: 767px){
-    .review-slider2{
-        display: none;
-    }
     .enter_words_a{
         margin-top: 60px;
     }
