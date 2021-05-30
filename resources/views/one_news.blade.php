@@ -84,35 +84,38 @@
                 </div>
             </div>
         </div>
-        <div class="fc_second_row">
-            <div class="last_news_title">Останні новини</div>
-            <div class="last_news">
-                <div class="l_news">
-                    <div class="l_news_cont">
-                        <img class="last_news_img line" src="{{URL::asset('images/maxresdefault.jpg')}}">
-                        <button class="last_news_text line">Інтерв’ю з членом СКБ “SEFL KPI”</button>
-                    </div>
-                </div>
-                <div class="l_news">
-                    <div class="l_news_cont">
-                        <img class="last_news_img line" src="{{URL::asset('images/NVZB2.png')}}">
-                        <button class="last_news_text line">Відкриття квест-кімнати “Назад у майбутнє”</button>
-                    </div>
-                </div>
-                <div class="l_news">
-                    <div class="l_news_cont">
-                        <img class="last_news_img line" src="{{URL::asset('images/image1.png')}}">
-                        <button class="last_news_text line">Встановлені пристрої під назвою “Маячок”</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+{{--        <div class="fc_second_row">--}}
+{{--            <div class="last_news_title">Останні новини</div>--}}
+{{--            <div class="last_news">--}}
+{{--                <div class="l_news">--}}
+{{--                    <div class="l_news_cont">--}}
+{{--                        <img class="last_news_img line" src="{{URL::asset('images/maxresdefault.jpg')}}">--}}
+{{--                        <button class="last_news_text line">Інтерв’ю з членом СКБ “SEFL KPI”</button>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="l_news">--}}
+{{--                    <div class="l_news_cont">--}}
+{{--                        <img class="last_news_img line" src="{{URL::asset('images/NVZB2.png')}}">--}}
+{{--                        <button class="last_news_text line">Відкриття квест-кімнати “Назад у майбутнє”</button>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="l_news">--}}
+{{--                    <div class="l_news_cont">--}}
+{{--                        <img class="last_news_img line" src="{{URL::asset('images/image1.png')}}">--}}
+{{--                        <button class="last_news_text line">Встановлені пристрої під назвою “Маячок”</button>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
     </div>
     <div class="second_column">
         <div class="sc_first_row">
             <div class="com_block">
                 <div class="title_block">
-                    <div class="com_title">Коментарі</div>
+                    <div class="pzdts">
+                        <div class="com_title">Коментарі</div>
+                        <button class="add_com_form">Додати коментар</button>
+                    </div>
                     <div class="com">
                         <div class="com_cont">
                             <img class="com_img line" src="{{ URL::asset('icons/007-profile-user.svg')}}">
@@ -154,6 +157,7 @@
                 </div>
             </div>
         </div>
+
         <div class="sc_second_row">
             <div class="scsr_title">Додати коментар</div>
             <input type="text" name="nickname" placeholder="Ім'я" class="field1">
