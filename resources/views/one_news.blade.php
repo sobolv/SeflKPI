@@ -155,10 +155,10 @@
             </div>
         </div>
         <div class="sc_second_row">
-            <div class="scsr_title"></div>
+            <div class="scsr_title">Додати коментар</div>
             <input type="text" name="nickname" placeholder="Ім'я" class="field1">
             <input type="text" name="email" placeholder="Email" class="field1">
-            <textarea id="message">Комментар</textarea>
+            <textarea class="new_com_inf">Коментар</textarea>
             <button class="add_com_but">Додати</button>
         </div>
     </div>

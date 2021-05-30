@@ -41,6 +41,7 @@
 }
 .fc_first_row{
     flex: 2.5;
+    max-width: 770px;
 }
 .fc_second_row{
     flex: 1;
@@ -51,6 +52,7 @@
     padding: 0 0px;
     margin: 0 auto;
     max-width: 770px;
+    margin-right: 0;
 }
 .news_img{
     width: 770px;
@@ -133,6 +135,8 @@
     color: #2A324B;
     text-align: left;
     margin-bottom: 20px;
+    padding-left: 36.5px;
+    padding-top: 11px;
 }
 .l_news{
     width: 100%;
@@ -181,17 +185,24 @@
     justify-content: space-between;
 }
 .sc_first_row{
-    flex: 2;
+    flex: 2.3;
 }
 .sc_second_row{
     flex: 1;
+    text-align: left;
 }
 .com_block{
     width: 793px;
     height: 527px;
-    background: #F9FBFE;
+    background: #F2F4F8;
     box-shadow: 0px 4px 4px #F3AD76;
 }
+.second_column{
+    margin-top: 120px;
+}
+/*.field1{*/
+/*    width: 338px;*/
+/*}*/
 .title_block{
     width: 100%;
     display: block;
@@ -292,7 +303,7 @@
 }
 .answer_but{
     border: none;
-    background: #FFFFFF;
+    background: #F2F4F8;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -303,11 +314,161 @@
     color: #2A324B;
     margin-left: 30px;
 }
+.scsr_title{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    color: #2A324B;
+    margin-top: 74px;
+    margin-bottom: 53px;
+    width: 274px;
+    margin-right: 0;
+}
+.field1{
+    background: #FFFFFF;
+    border: 2px solid #C7CCDB;
+    width: 338px;
+    height: 34px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+    padding-left: 5px;
+    color: #797979;
+    margin-bottom: 15px;
+}
+.new_com_inf{
+    background: #FFFFFF;
+    border: 2px solid #C7CCDB;
+    width: 338px;
+    height: 130px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    color: #797979;
+    padding-left: 5px;
+    padding-top: 7px;
+    margin-bottom: 18px;
+}
+.add_com_but{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    width: 118px;
+    height: 30px;
+    background: #F3AA72;
+    border: none;
+}
+.footer{
+    margin-top: 200px;
+}
+@media (max-width: 1250px) {
+    .content{
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 1230px) {
+    .news{
+        width: 100%;
+        display: block;
+        padding: 0 0px;
+        margin: 0 auto;
+        max-width: 710px;
+        margin-right: 0;
+    }
+    .news_img{
+        width: 710px;
+        margin-bottom: 60px;
+    }
+    .news_line_cont{
+        max-width: 680px;
+    }
+    .news_text_cont{
+        max-width: 640px;
+    }
+    .news_date{
+        max-width: 640px;
+    }
+    .fc_first_row{
+        max-width: 710px;
+    }
+    .last_news_title{
+        padding-left: 70px;
+    }
+    .com_block{
+        width: 710px;
+        height: 474px;
+        background: #F2F4F8;
+        box-shadow: 0px 4px 4px #F3AD76;
+    }
+
+    /*.field1{*/
+    /*    width: 338px;*/
+    /*}*/
+    .title_block{
+        max-width: 670px;
+    }
+    .com_title{
+        font-size: 26px;
+    }
+    .com{
+        margin-bottom: 33px;
+    }
+    .com_cont{
+        max-width: 600px;
+    }
+    .com_text{
+        text-align: left;
+        margin-left: 20px;
+    }
+    .title_block{
+        margin-bottom: 60px;
+    }
+    .com_img{
+        width: 63px;
+        height: 63px;
+    }
+    .name{
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .second_line{
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .third_line{
+        margin-top: 14px;
+    }
+    .last_news_img {
+        width: 110px;
+        margin-left: 15px;
+    }
+    .last_news_text{
+        font-size: 13px;
+        margin-right: 15px;
+    }
+    .l_news{
+        width: 300px;
+    }
+}
 @media (max-width: 1215px) {
     .title_text{
         font-size: 28px;
-        margin-left: 20px;
-        margin-right: 20px;
     }
 }
 @media (max-width: 1150px) {
