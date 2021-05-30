@@ -84,29 +84,39 @@
                 </div>
             </div>
         </div>
-{{--        <div class="fc_second_row">--}}
-{{--            <div class="last_news_title">Останні новини</div>--}}
-{{--            <div class="last_news">--}}
-{{--                <div class="l_news">--}}
-{{--                    <div class="l_news_cont">--}}
-{{--                        <img class="last_news_img line" src="{{URL::asset('images/maxresdefault.jpg')}}">--}}
-{{--                        <button class="last_news_text line">Інтерв’ю з членом СКБ “SEFL KPI”</button>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="l_news">--}}
-{{--                    <div class="l_news_cont">--}}
-{{--                        <img class="last_news_img line" src="{{URL::asset('images/NVZB2.png')}}">--}}
-{{--                        <button class="last_news_text line">Відкриття квест-кімнати “Назад у майбутнє”</button>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="l_news">--}}
-{{--                    <div class="l_news_cont">--}}
-{{--                        <img class="last_news_img line" src="{{URL::asset('images/image1.png')}}">--}}
-{{--                        <button class="last_news_text line">Встановлені пристрої під назвою “Маячок”</button>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+        <div class="fc_second_row">
+            <div class="last_news_title lt1">Останні новини</div>
+{{--            <div class="lt2">Останні новини</div>--}}
+            <div class="last_news">
+                <div class="l_news">
+                    <div class="l_news_cont">
+                        <img class="last_news_img line_1" src="{{URL::asset('images/maxresdefault.jpg')}}">
+                        <div class="qqq">
+                            <button class="last_news_text line_1">Інтерв’ю з членом СКБ “SEFL KPI”</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="l_news">
+                    <div class="l_news_cont">
+                        <img class="last_news_img line_1" src="{{URL::asset('images/NVZB2.png')}}">
+                        <div class="qqq">
+                            <button class="last_news_text line_1">Відкриття квест-кімнати “Назад у майбутнє”</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="l_news">
+                    <div class="l_news_cont">
+                        <img class="last_news_img line_1" src="{{URL::asset('images/image1.png')}}">
+                        <div class="qqq">
+                            <button class="last_news_text line_1">Встановлені пристрої під назвою “Маячок”</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="second_column">
         <div class="sc_first_row">
