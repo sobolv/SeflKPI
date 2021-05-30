@@ -82,47 +82,57 @@
             <div class="icon_p">
                 <img src="{{ URL::asset('icons/швидкість.svg')}}">
             </div>
-            <div class="title_p1">
-                Швидкість≠Якість
-            </div>
-            <div class="text_p1">
-                З нами швидкість виконання
-                Ваших проектів не впливає на їхню якість
+            <div>
+                <div class="title_p1">
+                    Швидкість≠Якість
+                </div>
+                <div class="text_p1">
+                    З нами швидкість виконання
+                    Ваших проектів не впливає на їхню якість
+                </div>
             </div>
         </div>
-        <div class="point1">
+        <div class="point1" id="revers">
             <div class="icon_p">
                 <img src="{{ URL::asset('icons/Адаптивність.svg')}}">
             </div>
-            <div class="title_p1">
-                Адаптивність
+            <div>
+                <div class="title_p1">
+                    Адаптивність
+                </div>
+                <div class="text_p1">
+                    Ми знайдемо особистий підхід до кожного клієнта
+                </div>
             </div>
-            <div class="text_p1">
-                Ми знайдемо особистий підхід до кожного клієнта
-            </div>
+
         </div>
         <div class="point1">
             <div class="icon_p">
                 <img src="{{ URL::asset('icons/Надійність.svg')}}">
             </div>
-            <div class="title_p1">
-                Надійність
-            </div>
-            <div class="text_p1">
-                З нами Вам не потрібно турбуватись,
-                що робота буде зроблена невчасно чи неякісно
+            <div>
+                <div class="title_p1">
+                    Надійність
+                </div>
+                <div class="text_p1">
+                    З нами Вам не потрібно турбуватись,
+                    що робота буде зроблена невчасно чи неякісно
+                </div>
             </div>
         </div>
-        <div class="point1">
+        <div class="point1" id="revers">
             <div class="icon_p">
                 <img src="{{ URL::asset('icons/Вдосконалення.svg')}}">
             </div>
-            <div class="title_p1" id="point4">
-                Бажання вдосконалюватись
+            <div>
+                <div class="title_p1" id="point4">
+                    Бажання вдосконалюватись
+                </div>
+                <div class="text_p2" >
+                    Ми завжди відкриті для нових ідей та звершень
+                </div>
             </div>
-            <div class="text_p2" >
-                Ми завжди відкриті для нових ідей та звершень
-            </div>
+
         </div>
     </div>
 </div>
@@ -227,26 +237,35 @@
         <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
             $(document).ready(function(){
-                $width_screen = window.matchMedia('(max-width: 768px)');
-                if($width_screen.matches){
-                    $('.review-slider').slick({
+                    var slider = $('.review-slider').slick({
                         arrows:true,
                         waitForAnimate: true,
                         slidesToShow: 3,
                         infinite: false,
-                        vertical:true,
-                    })
-                }
-                else {
-                    $('.review-slider').slick({
-                        arrows:true,
-                        waitForAnimate: true,
-                        slidesToShow: 3,
-                        infinite: false,
-                        vertical:false,
+                        useTransform: true,
+                        useCSS: true,
+                        responsive: [
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesToShow: 3,
+                                    slidesToScroll: 3,
+                                    infinite: false,
+                                }
+                            },
+                            {
+                                breakpoint: 599,
+                                settings: {
+                                    vertical: true,
+                                    slidesToShow: 3,
+                                    arrows: true
+                                }
+                            }
+                        ]
+                    });
 
-                    })
-                }
+
+
             });
         </script>
         <script>
@@ -281,7 +300,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="text_com">
                         <div class="text_f">Введіть повідомлення*</div>
                         <textarea id="message">Текст</textarea>
                     </div>
@@ -488,6 +507,187 @@
         </div>
     </div>
 </div>
+    <div class="mem_photo2">
+        <div class="member">
+            <div id="al-c">
+                <div class="container">
+                    <ul class="effects">
+                        <li>
+                            <img src={{asset('images/Обманка.PNG')}}>
+                            <div>
+                                <div id="al-c">
+                                    <div class="container">
+                                        <p>Ім'я</p>
+                                        <p>Посада</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="member">
+            <div id="al-c">
+                <div class="container">
+                    <ul class="effects">
+                        <li>
+                            <img src={{asset('images/Обманка.PNG')}}>
+                            <div>
+                                <div id="al-c">
+                                    <div class="container">
+                                        <p>Ім'я</p>
+                                        <p>Посада</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mem_photo2">
+        <div class="member">
+            <div id="al-c">
+                <div class="container">
+                    <ul class="effects">
+                        <li>
+                            <img src={{asset('images/Обманка.PNG')}}>
+                            <div>
+                                <div id="al-c">
+                                    <div class="container">
+                                        <p>Ім'я</p>
+                                        <p>Посада</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="member">
+            <div id="al-c">
+                <div class="container">
+                    <ul class="effects">
+                        <li>
+                            <img src={{asset('images/Обманка.PNG')}}>
+                            <div>
+                                <div id="al-c">
+                                    <div class="container">
+                                        <p>Ім'я</p>
+                                        <p>Посада</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mem_photo2">
+        <div class="member">
+            <div id="al-c">
+                <div class="container">
+                    <ul class="effects">
+                        <li>
+                            <img src={{asset('images/Обманка.PNG')}}>
+                            <div>
+                                <div id="al-c">
+                                    <div class="container">
+                                        <p>Ім'я</p>
+                                        <p>Посада</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="member">
+            <div id="al-c">
+                <div class="container">
+                    <ul class="effects">
+                        <li>
+                            <img src={{asset('images/Обманка.PNG')}}>
+                            <div>
+                                <div id="al-c">
+                                    <div class="container">
+                                        <p>Ім'я</p>
+                                        <p>Посада</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mem_photo2">
+        <div class="member">
+            <div id="al-c">
+                <div class="container">
+                    <ul class="effects">
+                        <li>
+                            <img src={{asset('images/Обманка.PNG')}}>
+                            <div>
+                                <div id="al-c">
+                                    <div class="container">
+                                        <p>Ім'я</p>
+                                        <p>Посада</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="member">
+            <div id="al-c">
+                <div class="container">
+                    <ul class="effects">
+                        <li>
+                            <img src={{asset('images/Обманка.PNG')}}>
+                            <div>
+                                <div id="al-c">
+                                    <div class="container">
+                                        <p>Ім'я</p>
+                                        <p>Посада</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mem_photo2">
+        <div id="lastone" class="member">
+            <div id="al-c">
+                <div class="container">
+                    <ul class="effects">
+                        <li>
+                            <img src={{asset('images/Обманка.PNG')}}>
+                            <div>
+                                <div id="al-c">
+                                    <div class="container">
+                                        <p>Ім'я</p>
+                                        <p>Посада</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="join">
         Приєднатись до нас
     </div>

@@ -241,26 +241,37 @@
         <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
             $(document).ready(function(){
-                $width_screen = window.matchMedia('(max-width: 768px)');
-                if($width_screen.matches){
                     $('.review-slider').slick({
                         arrows:true,
                         waitForAnimate: true,
                         slidesToShow: 3,
                         infinite: false,
-                        vertical:true,
+                        responsive: [
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesToShow: 3,
+                                    infinite: false,
+                                }
+                            },
+                            {
+                                breakpoint: 768,
+                                settings: {
+                                    slidesToShow: 2
+                                }
+                            },
+                            {
+                                breakpoint: 600,
+                                settings: {
+                                    vertical: true,
+                                    slidesToShow: 3
+                                }
+                            }
+                            // You can unslick at a given breakpoint now by adding:
+                            // settings: "unslick"
+                            // instead of a settings object
+                        ]
                     })
-                }
-                else {
-                    $('.review-slider').slick({
-                        arrows:true,
-                        waitForAnimate: true,
-                        slidesToShow: 3,
-                        infinite: false,
-                        vertical:false,
-
-                    })
-                }
             });
         </script>
         <script>

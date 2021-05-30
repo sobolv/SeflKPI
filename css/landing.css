@@ -1,5 +1,7 @@
 /*стилі для лендінга*/
-
+.body{
+    min-width: 375px;
+}
 .content_main{
     margin-top: 62px;
     display: flex;
@@ -443,12 +445,13 @@
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 600px) {
     .top_review{
         margin-top: 0;
+        max-width: 375px;
+        margin-bottom: 85px;
     }
     .reviews{
-
         margin-top: 10px;
     }
     .text_title_r{
@@ -459,57 +462,150 @@
         height: 0.2px;
     }
     .rev{
-        max-width: 345px;
-        padding: 0;
-        border: 0.01px solid #C7CCDB;
-        margin-bottom: 5px;
+        border: 0.1px solid #C7CCDB;
+        margin-bottom: 2px;
+        width: 250px;
 
     }
     .user_icon{
-        width: 34px;
-        height: 34px;
-        margin: 10px;
+        width: 35px;
+        height: 35px;
+        margin-top: 14px;
+        margin-left: 14px;
     }
     .user_name{
         font-size: 12px;
-        margin: 0px;
+        margin-left: 20px;
+        margin-top: 0;
         text-align: left;
     }
     .rev_date{
-        font-size: 8px;
-        margin: 0;
+        font-size: 10px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 2px;
     }
     .rev_user_inf{
         margin-top: 15px;
         margin-left: 10px;
     }
     .rev_text{
-        font-size: 10px;
-        margin-left: 10px;
-        margin-top: 10px;
-        margin-right: 0;
+        font-family: Montserrat;
+        font-size: 12px;
+        margin: 14px;
 
     }
     .review-slider .slick-track{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     .review-slider .slick-arrow{
         width: 30px;
         height: 30px;
     }
     .review-slider .slick-arrow.slick-next{
-        display: block;
-        bottom: -45px;
-        left: 290px;
         transform: rotate(90deg);
-        margin-top: 10px;
+        bottom:0;
+        margin-right: 60px;
+        margin-top: 40px;
+        margin-bottom: -40px;
     }
     .review-slider .slick-arrow.slick-prev{
-        display: block;
-        bottom: -45px;
-        left: 245px;
-        background: url("../icons/arrow-l.svg") 0 0 / 100% no-repeat;
-        transform: rotate(-270deg);
+        transform: rotate(90deg);
+        margin-left: 245px;
+        bottom:0;
+        margin-bottom: -40px;
+    }
+
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .top_review{
+        justify-content: center;
+        align-items: center;
+        min-width: 0;
+        max-width: 601px;
+        margin-bottom: 100px;
+    }
+
+    .text_title_r{
+        margin-top: 0px;
+        font-size: 18px;
+    }
+    .line_3_bl{
+        display:flex;
+        margin-top: -17px;
+    }
+    .line_title_3{
+        height: 0.3px;
+        width: 110px;
+    }
+    .reviews{
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 601px;
+        margin-top: 15px;
+    }
+
+    .review-slider .slick-track{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rev{
+        max-width: 205px;
+        margin-top: 3px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    .rev_user_inf{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+    .user_icon{
+        width: 36px;
+        height: 36px;
+        margin-left: 13px;
+        margin-top: 13px;
+    }
+    .user_name{
+        font-size: 14px;
+        text-align: left;
+        margin-top: -5px;
+        margin-left: 10px;
+
+    }
+    .rev_date{
+        text-align: left;
+        margin-left: 12px;
+        font-size: 10px;
+    }
+    .rev_u{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .rev_text{
+        font-size: 12px;
+        margin-left: 13px;
+        margin-top: 13px;
+    }
+
+    .review-slider{
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .review-slider .slick-arrow{
+        width: 30px;
+        height: 30px;
     }
 
 }
@@ -660,5 +756,6 @@
         width: 30px;
         height: 30px;
     }
+
 
 }
