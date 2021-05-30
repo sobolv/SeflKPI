@@ -9,7 +9,7 @@
     min-width: 0;
     margin-right: auto;
     margin-left: auto;
-    min-height: 600px;
+    min-height: 650px;
 }
 
 .last_news{
@@ -37,6 +37,7 @@
     margin-top: 20px;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .news-slider .slick-dots li{
     list-style: none;
@@ -128,8 +129,170 @@
     transition: all .5s;
 }
 
-
-
+@media screen and (min-width: 375px) and (max-width: 600px){
+    .content_main{
+        max-height: 300px;
+        min-height: 200px;
+    }
+    .title_land {
+        font-size: 14px;
+        margin-top: -30px;
+    }
+    .last_news {
+        margin-bottom: -25px;
+    }
+    .line_title {
+        width: 144px;
+        background: #2A324B;
+        height: 0.2px;
+        margin: -8px auto 55px;
+    }
+    .news-slider .slick-list{
+        max-width: 333px;
+    }
+    .slider_item img{
+        height: 148px;
+    }
+    .slider_item.slick-center img{
+        transition: all .5s;
+        width: 333px;
+        height: 148px;
+    }
+    .news-slider .slick-dots{
+        margin-top: -3px;
+        top: 0;
+    }
+    .news-slider .slick-dots button{
+        width: 5px;
+        height: 5px;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 768px){
+    .content_main{
+        max-height: 250px;
+        min-height: 200px;
+    }
+    .title_land {
+        font-size: 18px;
+        margin-top: -20px;
+    }
+    .last_news {
+        margin-bottom: -25px;
+    }
+    .line_title {
+        width: 190px;
+        background: #2A324B;
+        height: 0.4px;
+        margin: -5px auto 55px;
+    }
+    .news-slider .slick-list{
+        max-width: 500px;
+    }
+    .slider_item img{
+        height: 148px;
+    }
+    .slider_item.slick-center img{
+        transition: all .5s;
+        width: 400px;
+        height: 180px;
+    }
+    .news-slider .slick-dots{
+        margin-top: -3px;
+        top: 0;
+    }
+    .news-slider .slick-dots button{
+        width: 5px;
+        height: 5px;
+    }
+    .land_portfolio{
+        margin-top: -20px;
+        position: relative;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 989px){
+    .content_main{
+        max-height: 300px;
+        min-height: 200px;
+    }
+    .title_land {
+        font-size: 24px;
+        margin-top: -20px;
+    }
+    .last_news {
+        margin-bottom: -25px;
+    }
+    .line_title {
+        width: 252px;
+        background: #2A324B;
+        height: 0.4px;
+        margin: -5px auto 55px;
+    }
+    .news-slider .slick-list{
+        max-width: 600px;
+    }
+    .slider_item img{
+        height: 190px;
+    }
+    .slider_item.slick-center img{
+        transition: all .5s;
+        width: 520px;
+        height: 231px;
+    }
+    .news-slider .slick-dots{
+        margin-top: -3px;
+        top: 0;
+    }
+    .news-slider .slick-dots button{
+        width: 5px;
+        height: 5px;
+    }
+    .land_portfolio{
+        margin-top: -20px;
+        position: relative;
+    }
+}
+@media screen and (min-width: 989px) and (max-width: 1200px){
+    .content_main{
+        max-height: 320px;
+        min-height: 200px;
+    }
+    .title_land {
+        font-size: 26px;
+        margin-top: -20px;
+    }
+    .last_news {
+        margin-bottom: -25px;
+    }
+    .line_title {
+        width: 272px;
+        background: #2A324B;
+        height: 0.4px;
+        margin: -5px auto 55px;
+    }
+    .news-slider .slick-list{
+        max-width: 800px;
+    }
+    .slider_item img{
+        height: 250px;
+    }
+    .slider_item.slick-center img{
+        transition: all .5s;
+        width: 600px;
+        height: 300px;
+    }
+    .news-slider .slick-dots{
+        margin-top: -3px;
+        top: 0;
+    }
+    .news-slider .slick-dots button{
+        width: 5px;
+        height: 5px;
+    }
+    .land_portfolio{
+        margin-top: -20px;
+        position: relative;
+    }
+}
 .land_portfolio{
     background-color: #343D5B;
     display: flex;
@@ -138,7 +301,7 @@
     min-height: 276px;
     flex-direction: column;
     margin: 100px auto;
-
+    position: relative;
 }
 .title_land_port{
     display: flex;
@@ -417,6 +580,9 @@
     }
     .fourth{
         display: none;
+    }
+    .land_portfolio{
+        margin-top: -5px;
     }
 
 }
