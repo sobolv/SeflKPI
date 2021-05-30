@@ -59,11 +59,12 @@
 </div>
 <div class="content">
     <div class="title">
-        <div class="title_text"><a>На залізничному вокзалі Киева встановлені пристрої під назвою “Маячок”</a></div>
+{{--        <div class="title_text"><a>На залізничному вокзалі Киева встановлені пристрої під назвою “Маячок”</a></div>--}}
     </div>
     <div class="first_column">
         <div class="fc_first_row">
             <div class="news">
+                <div class="title_text">На залізничному вокзалі Киева встановлені пристрої під назвою “Маячок”</div>
                 <img class="news_img" src="{{ URL::asset('images/image1.png') }}">
                 <div class="news_line_cont">
                     <div class="news_text_cont">
@@ -105,6 +106,60 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="second_column">
+        <div class="sc_first_row">
+            <div class="com_block">
+                <div class="title_block">
+                    <div class="com_title">Коментарі</div>
+                    <div class="com">
+                        <div class="com_cont">
+                            <img class="com_img line" src="{{ URL::asset('icons/007-profile-user.svg')}}">
+                            <div class="com_text line">
+                                <div class="first_line">
+                                    <div class="name line">Анастасія</div>
+                                    <div class="date line">04.02.2021 у 16:17</div>
+                                </div>
+                                <div class="second_line">Заказывала впервые и была в шоке от мгновенной отправки и хорошего качества товара.🤎Заказывала впервые и была в шоке от мгновенной отправки и хорошего качества товара.🤎🤎</div>
+                                <div class="third_line">
+                                    <img class="like line" src="{{URL::asset('icons/like.svg')}}">
+                                    <div class="like_count line count">0</div>
+                                    <img class="dislike line" src="{{URL::asset('icons/like.svg')}}">
+                                    <div class="dislike_count line count">0</div>
+                                    <button class="answer_but line">Відповісти</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="com">
+                        <div class="com_cont">
+                            <img class="com_img line" src="{{ URL::asset('icons/007-profile-user.svg')}}">
+                            <div class="com_text line">
+                                <div class="first_line">
+                                    <div class="name line">Анастасія</div>
+                                    <div class="date line">04.02.2021 у 16:17</div>
+                                </div>
+                                <div class="second_line">Заказывала впервые и была в шоке от мгновенной отправки и хорошего качества товара.🤎Заказывала впервые и была в шоке от мгновенной отправки и хорошего качества товара.🤎🤎</div>
+                                <div class="third_line">
+                                    <img class="like line" src="{{URL::asset('icons/like.svg')}}">
+                                    <div class="like_count line count">0</div>
+                                    <img class="dislike line" src="{{URL::asset('icons/like.svg')}}">
+                                    <div class="dislike_count line count">0</div>
+                                    <button class="answer_but line">Відповісти</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sc_second_row">
+            <div class="scsr_title"></div>
+            <input type="text" name="nickname" placeholder="Ім'я" class="field1">
+            <input type="text" name="email" placeholder="Email" class="field1">
+            <textarea id="message">Комментар</textarea>
+            <button class="add_com_but">Додати</button>
         </div>
     </div>
 </div>
