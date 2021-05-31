@@ -613,9 +613,9 @@
             </div>
         </div>
     </div>
-    <div class="join">
+    <a href="https://t.me/apepsSuggestions_bot"><button class="join">
         Приєднатись до нас
-    </div>
+        </button></a>
 </div>
 
 <div class="footer">

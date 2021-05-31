@@ -6,6 +6,13 @@
 .body{
     min-width: 320px;
 }
+a{
+    text-decoration: none;
+}
+.join{
+    border: none;
+    text-decoration: none;
+}
 .title_a{
     text-align: center;
     font-family: Raleway;

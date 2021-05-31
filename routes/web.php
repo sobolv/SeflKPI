@@ -47,5 +47,5 @@ Route::get('/services', function () {
     return view('services');
 });
 
-Route::get('/about', [\App\Http\Controllers\AboutController::class, 'load']);
+Route::get('/about', [\App\Http\Controllers\AboutController::class, 'load'])->name("about");
 Route::post('/about', [\App\Http\Controllers\AboutController::class, 'add']);

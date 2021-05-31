@@ -18,10 +18,12 @@ class CreateReviewsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('text');
-            $table->bigInteger('like');
-            $table->bigInteger('dislike');
+//            $table->bigInteger('like');
+//            $table->bigInteger('dislike');
             $table->date('date');
             $table->time('time');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
         });
     }
 
