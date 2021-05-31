@@ -262,14 +262,16 @@
                             {
                                 breakpoint: 768,
                                 settings: {
-                                    slidesToShow: 2
+                                    slidesToShow: 2,
+                                    infinite: false,
                                 }
                             },
                             {
                                 breakpoint: 600,
                                 settings: {
                                     vertical: true,
-                                    slidesToShow: 3
+                                    slidesToShow: 3,
+                                    infinite: false,
                                 }
                             }
                             // You can unslick at a given breakpoint now by adding:

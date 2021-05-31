@@ -1,6 +1,6 @@
 /*стилі для лендінга*/
 .body{
-    min-width: 375px;
+    min-width: 320px;
 }
 .content_main{
     margin-top: 62px;
@@ -129,7 +129,7 @@
     transition: all .5s;
 }
 
-@media screen and (min-width: 375px) and (max-width: 600px){
+@media screen and (min-width: 320px) and (max-width: 600px){
     .content_main{
         max-height: 300px;
         min-height: 200px;
@@ -531,7 +531,7 @@
 }
 
 
-@media screen and (max-width: 767px) and (min-width: 375px){
+@media screen and (max-width: 767px) and (min-width: 320px){
 
     .land_portfolio{
         min-height: 276px;
@@ -574,7 +574,7 @@
         display: none;
     }
 }
-@media screen and (max-width: 600px) and (min-width: 375px){
+@media screen and (max-width: 600px) and (min-width: 320px){
     #third{
         display: none;
     }
@@ -584,6 +584,16 @@
     .land_portfolio{
         margin-top: -5px;
     }
+    .photo_line img {
+        border: 0.5px solid white;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .port_photo {
+        max-height: 145px;
+        max-width: 145px;
+    }
+
 
 }
 @media screen and (min-width: 768px) and (max-width: 1185px){
@@ -631,10 +641,10 @@
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
     .top_review{
         margin-top: 0;
-        max-width: 375px;
+        max-width: 320px;
         margin-bottom: 85px;
     }
     .reviews{
@@ -665,6 +675,10 @@
         margin-top: 0;
         text-align: left;
     }
+    .review-slider{
+        justify-content: center;
+        padding: 0;
+    }
     .rev_date{
         font-size: 10px;
         text-align: left;
@@ -682,7 +696,8 @@
 
     }
     .review-slider .slick-track{
-        display: flex;
+        display: block;
+        max-width: 320px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -691,16 +706,17 @@
         width: 30px;
         height: 30px;
     }
-    .review-slider .slick-arrow.slick-next{
+    .review-slider .slick-arrow.slick-next {
         transform: rotate(90deg);
-        bottom:0;
-        margin-right: 60px;
+        bottom: 0;
+        margin-left: 220px;
         margin-top: 40px;
         margin-bottom: -40px;
+        left: 0;
     }
     .review-slider .slick-arrow.slick-prev{
         transform: rotate(90deg);
-        margin-left: 245px;
+        margin-left: 180px;
         bottom:0;
         margin-bottom: -40px;
     }
