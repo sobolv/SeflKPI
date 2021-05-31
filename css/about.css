@@ -4,7 +4,7 @@
     margin-right: auto;
 }
 .body{
-    min-width: 375px;
+    min-width: 320px;
 }
 .title_a{
     text-align: center;
@@ -1056,7 +1056,7 @@ textarea {
     }
     .enter_text_a{
         font-size: 12px;
-        width: 350px;
+        width: 310px;
         letter-spacing: 0.05em;
         line-height: 14px;
     }
@@ -1173,7 +1173,7 @@ textarea {
     }
     .review-slider .slick-arrow.slick-prev {
         transform: rotate(90deg);
-        margin-left: 325px;
+        margin-left: 270px;
         top:0;
     }
     .review-slider .slick-arrow.slick-next {
@@ -1193,7 +1193,7 @@ textarea {
     }
     #coment{
         margin-top: 10px;
-        width: 340px;
+        width: 320px;
 
     }
     .title_rev {
@@ -1206,13 +1206,13 @@ textarea {
         padding-right: 20px;
     }
     .line_title_rev {
-        width: 300px;
+        width: 280px;
     }
     .fields_r {
         flex-direction: column;
     }
     textarea {
-        width: 300px;
+        width: 280px;
         height: 150px;
     }
     .rev{
@@ -1241,20 +1241,20 @@ textarea {
         display: none;
     }
     #al-c {
-        width: 150px;
-        height: 150px;
+        width: 145px;
+        height: 145px;
     }
     .mem_photo2{
         margin-top: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        padding-right: 34px;
-        padding-left: 34px;
+        justify-content: center;
+        padding-right: 10px;
+        padding-left: 10px;
     }
     .effects li {
-        width: 150px;
-        height: 150px;
+        width: 145px;
+        height: 145px;
     }
     #lastone{
         margin-left: auto;
