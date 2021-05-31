@@ -124,7 +124,53 @@
                 <div class="title_block">
                     <div class="pzdts">
                         <div class="com_title">Коментарі</div>
-                        <button class="add_com_form">Додати коментар</button>
+                        <button onclick="show('block')" class="add_com_form">Додати коментар</button>
+                        <div onclick="show('none')" id="gray"></div>
+                        <div id="coment" >
+                            <form action={{ URL::asset('/news/1')}} method="post">
+                                @csrf
+                                <div class="rev_block">
+                                    <div class="title_rev">
+                                        Написати коментар
+                                    </div>
+                                    <hr class="line_title_rev">
+                                    <div class="fields_r">
+                                        <div class="f1">
+                                            <div class="text_f">Введіть ім'я*</div>
+                                            <div >
+                                                <input type="text" name="nickname" placeholder="Гість" class="field1">
+                                            </div>
+                                        </div>
+                                        <div class="f1">
+                                            <div class="text_f">Введіть email*</div>
+                                            <div>
+                                                <input type="text" name="email" placeholder="example@example" class="field1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text_com">
+                                        <div class="text_f">Введіть повідомлення*</div>
+                                        <textarea id="message">Текст</textarea>
+                                    </div>
+                                    <div class="buttons">
+                                        <button type="submit" name="enter" class="publish">Опублікувати</button>
+                                        <div class="exit" onclick="show('none')">Скасувати</div>
+                                    </div>
+
+                                </div>
+
+
+                            </form>
+
+                        </div>
+                        <script>
+                            function show(state)
+                            {
+
+                                document.getElementById('coment').style.display = state;
+                                document.getElementById('gray').style.display = state;
+                            }
+                        </script>
                     </div>
                     <div class="com">
                         <div class="com_cont">
@@ -140,7 +186,53 @@
                                     <div class="like_count line count">0</div>
                                     <img class="dislike line" src="{{URL::asset('icons/like.svg')}}">
                                     <div class="dislike_count line count">0</div>
-                                    <button class="answer_but line">Відповісти</button>
+                                    <button onclick="show('block')" class="answer_but line">Відповісти</button>
+                                    <div onclick="show('none')" id="gray"></div>
+                                    <div id="coment" >
+                                        <form action={{ URL::asset('/news/1')}} method="post">
+                                            @csrf
+                                            <div class="rev_block">
+                                                <div class="title_rev">
+                                                    Написати відповідь
+                                                </div>
+                                                <hr class="line_title_rev">
+                                                <div class="fields_r">
+                                                    <div class="f1">
+                                                        <div class="text_f">Введіть ім'я*</div>
+                                                        <div >
+                                                            <input type="text" name="nickname" placeholder="Гість" class="field1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="f1">
+                                                        <div class="text_f">Введіть email*</div>
+                                                        <div>
+                                                            <input type="text" name="email" placeholder="example@example" class="field1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text_com">
+                                                    <div class="text_f">Введіть повідомлення*</div>
+                                                    <textarea id="message">Текст</textarea>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button type="submit" name="enter" class="publish">Опублікувати</button>
+                                                    <div class="exit" onclick="show('none')">Скасувати</div>
+                                                </div>
+
+                                            </div>
+
+
+                                        </form>
+
+                                    </div>
+                                    <script>
+                                        function show(state)
+                                        {
+
+                                            document.getElementById('coment').style.display = state;
+                                            document.getElementById('gray').style.display = state;
+                                        }
+                                    </script>
                                 </div>
                             </div>
                         </div>
@@ -159,7 +251,53 @@
                                     <div class="like_count line count">0</div>
                                     <img class="dislike line" src="{{URL::asset('icons/like.svg')}}">
                                     <div class="dislike_count line count">0</div>
-                                    <button class="answer_but line">Відповісти</button>
+                                    <button onclick="show('block')" class="answer_but line">Відповісти</button>
+                                    <div onclick="show('none')" id="gray"></div>
+                                    <div id="coment" >
+                                        <form action={{ URL::asset('/news/1')}} method="post">
+                                            @csrf
+                                            <div class="rev_block">
+                                                <div class="title_rev">
+                                                    Написати відповідь
+                                                </div>
+                                                <hr class="line_title_rev">
+                                                <div class="fields_r">
+                                                    <div class="f1">
+                                                        <div class="text_f">Введіть ім'я*</div>
+                                                        <div >
+                                                            <input type="text" name="nickname" placeholder="Гість" class="field1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="f1">
+                                                        <div class="text_f">Введіть email*</div>
+                                                        <div>
+                                                            <input type="text" name="email" placeholder="example@example" class="field1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text_com">
+                                                    <div class="text_f">Введіть повідомлення*</div>
+                                                    <textarea id="message">Текст</textarea>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button type="submit" name="enter" class="publish">Опублікувати</button>
+                                                    <div class="exit" onclick="show('none')">Скасувати</div>
+                                                </div>
+
+                                            </div>
+
+
+                                        </form>
+
+                                    </div>
+                                    <script>
+                                        function show(state)
+                                        {
+
+                                            document.getElementById('coment').style.display = state;
+                                            document.getElementById('gray').style.display = state;
+                                        }
+                                    </script>
                                 </div>
                             </div>
                         </div>
