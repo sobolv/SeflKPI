@@ -124,7 +124,7 @@
             <div class="icon_p">
                 <img src="{{ URL::asset('icons/Вдосконалення.svg')}}">
             </div>
-            <div>
+            <div class="pad">
                 <div class="title_p1" id="point4">
                     Бажання вдосконалюватись
                 </div>
