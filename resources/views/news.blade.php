@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ URL::asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/news.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/burger_menu.css') }}">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+{{--    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>--}}
 {{--    <script src="{{ URL::asset('public/js/jquery.instagramFeed.min.js')}}"></script>--}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@400;500&display=swap" rel="stylesheet">

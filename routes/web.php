@@ -33,9 +33,7 @@ Route::get('/partners', function () {
     return view('partners');
 });
 
-Route::get('/partners', function () {
-    return view('partners');
-});
+Route::get('/partners', [\App\Http\Controllers\PartnersController::class, 'load']);
 
 Route::get('/news', function () {
     return view('news');
@@ -49,6 +47,5 @@ Route::get('/services', function () {
     return view('services');
 });
 
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/about', [\App\Http\Controllers\AboutController::class, 'load']);
+Route::post('/about', [\App\Http\Controllers\AboutController::class, 'add']);

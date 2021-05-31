@@ -143,96 +143,21 @@
     <hr class="line_title_a">
     <div class="reviews">
         <div class="review-slider">
-            <div class="rev-item">
-                <div class="rev">
-                    <div class="rev_u">
-                        <img src={{asset('icons/007-profile-user.svg')}} class="user_icon">
-
-                        <div class="rev_user_inf">
-                            <div class="user_name">Анастасія</div>
-                            <div class="rev_date"> 04.02.2021 у 16:17</div>
+            @foreach($reviews as $review)
+                <div class="rev-item">
+                    <div class="rev">
+                        <div class="rev_u">
+                            <img src={{asset('icons/007-profile-user.svg')}} class="user_icon">
+                            <div class="rev_user_inf">
+                                <div class="user_name">{{$review->name}}</div>
+                                <div class="rev_date"> {{$review->date}} у {{$review->time}}</div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="rev_text">
-                        Заказывала впервые и была в шоке от мгновенной
-                        отправки и хорошего качества товара. Заказывала
-                        впервые и была в шоке от мгновенной отправки и хорошего качества товара.
+                        <div class="rev_text">{{$review->text}}</div>
                     </div>
                 </div>
-            </div>
-            <div class="rev-item">
-                <div class="rev">
-                    <div class="rev_u">
-                        <img src={{asset('icons/007-profile-user.svg')}} class="user_icon">
-
-                        <div class="rev_user_inf">
-                            <div class="user_name">Анастасія</div>
-                            <div class="rev_date"> 04.02.2021 у 16:17</div>
-                        </div>
-                    </div>
-
-                    <div class="rev_text">
-                        Заказывала впервые и была в шоке от мгновенной
-                        отправки и хорошего качества товара. Заказывала
-                        впервые и была в шоке от мгновенной отправки и хорошего качества товара.
-                    </div>
-                </div>
-            </div>
-            <div class="rev-item">
-                <div class="rev">
-                    <div class="rev_u">
-                        <img src={{asset('icons/007-profile-user.svg')}} class="user_icon">
-
-                        <div class="rev_user_inf">
-                            <div class="user_name">Анастасія</div>
-                            <div class="rev_date"> 04.02.2021 у 16:17</div>
-                        </div>
-                    </div>
-
-                    <div class="rev_text">
-                        Заказывала впервые и была в шоке от мгновенной
-                        отправки и хорошего качества товара. Заказывала
-                        впервые и была в шоке от мгновенной отправки и хорошего качества товара.
-                    </div>
-                </div>
-            </div>
-            <div class="rev-item">
-                <div class="rev">
-                    <div class="rev_u">
-                        <img src={{asset('icons/007-profile-user.svg')}} class="user_icon">
-
-                        <div class="rev_user_inf">
-                            <div class="user_name">Анастасія</div>
-                            <div class="rev_date"> 04.02.2021 у 16:17</div>
-                        </div>
-                    </div>
-
-                    <div class="rev_text">
-                        Заказывала впервые и была в шоке от мгновенной
-                        отправки и хорошего качества товара. Заказывала
-                        впервые и была в шоке от мгновенной отправки и хорошего качества товара.
-                    </div>
-                </div>
-            </div>
-            <div class="rev-item">
-                <div class="rev">
-                    <div class="rev_u">
-                        <img src={{asset('icons/007-profile-user.svg')}} class="user_icon">
-
-                        <div class="rev_user_inf">
-                            <div class="user_name">Анастасія</div>
-                            <div class="rev_date"> 04.02.2021 у 16:17</div>
-                        </div>
-                    </div>
-
-                    <div class="rev_text">
-                        Заказывала впервые и была в шоке от мгновенной
-                        отправки и хорошего качества товара. Заказывала
-                        впервые и была в шоке от мгновенной отправки и хорошего качества товара.
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
         <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
@@ -302,7 +227,7 @@
                     </div>
                     <div class="text_com">
                         <div class="text_f">Введіть повідомлення*</div>
-                        <textarea id="message">Текст</textarea>
+                        <textarea id="message" name="rev_text">Текст</textarea>
                     </div>
                     <div class="buttons">
                         <button type="submit" name="enter" class="publish">Опублікувати</button>
