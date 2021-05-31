@@ -380,6 +380,9 @@
 .news_comments{
     margin-top: -5px;
 }
+.tttt{
+    margin-bottom: 50px;
+}
 @media (max-width: 1280px) {
     .content{
         padding-left: 30px;
@@ -834,6 +837,9 @@
     .answer_but{
         font-size: 14px;
         line-height: 17px;
+    }
+    .tttt{
+        margin-bottom: 30px;
     }
 }
 @media (max-width: 750px) {
