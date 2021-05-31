@@ -330,7 +330,7 @@
         padding-bottom: 60px;
     }
     .block_s{
-        max-width: 375px;
+        max-width: 320px;
         margin: auto;
         flex-direction: column;
 
@@ -373,7 +373,7 @@
         width: 170px;
         height: 53px;
         font-size: 14px;
-        margin-left: 200px;
+        margin-left: 140px;
     }
     .third_block{
         margin-left: -30px;
