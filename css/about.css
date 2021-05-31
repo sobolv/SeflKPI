@@ -1135,6 +1135,7 @@ textarea {
     .review-slider{
         margin-top: -20px;
         max-width: 375px;
+        padding: 0;
     }
     .review-slider .slick-track{
         display: flex;
@@ -1173,13 +1174,13 @@ textarea {
     }
     .review-slider .slick-arrow.slick-prev {
         transform: rotate(90deg);
-        margin-left: 270px;
+        margin-left: 258px;
         top:0;
     }
     .review-slider .slick-arrow.slick-next {
         transform: rotate(90deg);
         top:0;
-        margin-right: 20px;
+        margin-right: -38px;
         margin-top: 40px;
     }
     .enter_bttn{
@@ -1218,6 +1219,7 @@ textarea {
     .rev{
         border: 0.1px solid #C7CCDB;
         margin-bottom: 2px;
+        max-width: 250px;
     }
     .exit {
         margin-top: -8px;
