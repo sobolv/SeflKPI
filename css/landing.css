@@ -363,6 +363,7 @@
     line-height: 22px;
     color: #2A324B;
     margin: auto;
+    text-decoration: none;
 }
 .expand-left-right:hover{
     transition: all .5s;

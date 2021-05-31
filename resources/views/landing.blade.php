@@ -94,8 +94,10 @@
                     adaptiveHeight: false,
                     autoplaySpeed:3100,
                     speed:500,
-                    infinite: true
-
+                    infinite: true,
+                    pauseOnHover: true,
+                    pauseOnFocus: true,
+                    pauseOnDotsHover: true
                 })
 
             });
@@ -132,7 +134,8 @@
         </div>
     </div>
     <div class="more_bttn expand-left-right">
-        <div id="more_bttn">Дивитись більше</div>
+        <a href="{{ URL::asset('/portfolio')}}" id="more_bttn"> <div >Дивитись більше</div> </a>
+
     </div>
 </div>
 
