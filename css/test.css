@@ -245,3 +245,12 @@ h1 {
     height: 100%;
     overflow: hidden;
 }
+.fake_portf {
+    margin-top: 35px;
+}
+.first_photo{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}

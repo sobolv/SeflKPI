@@ -75,6 +75,7 @@
                     </div>
                 @endforeach
             </div>
+            <img src="{{URL::asset('images/first.png')}}" class="first_photo none">
 
             <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -258,7 +259,12 @@
 <script>
     $(document).ready(function() {
         $(document).delegate('.open', 'click', function(event){
-            $('.content_main').addClass('none');
+
+            if (window.matchMedia("(min-width: 500px)").matches){
+                $('.news-slider').addClass('none');
+                $('.first_photo').removeClass('none');
+                $('.photo_line').addClass('fake_portf');
+            }
             if (window.matchMedia("(max-width: 500px)").matches){
                 $('.header').addClass('stop');
                 $('.content').addClass('none');
@@ -267,32 +273,32 @@
             event.stopPropagation();
         })
         $(document).delegate('body', 'click', function(event) {
+            $('.first_photo').addClass('none');
             $('.open').removeClass('oppenned');
             $('.header').removeClass('stop');
             $('.content').removeClass('none');
-            $('.content_main').removeClass('none');
-            if (window.matchMedia("(min-width: 500px)").matches){
+            $('.news-slider').removeClass('none');
+            $('.photo_line').removeClass('fake_portf');
 
-            }
         })
         $(document).delegate('.cls', 'click', function(event){
+            $('.first_photo').addClass('none');
             $('.open').removeClass('oppenned');
             $('.header').removeClass('stop');
             $('.content').removeClass('none');
-            $('.content_main').removeClass('none');
-            if (window.matchMedia("(min-width: 500px)").matches){
+            $('.news-slider').removeClass('none');
+            $('.photo_line').removeClass('fake_portf');
 
-            }
             event.stopPropagation();
         });
         $(document).delegate('.span_cl', 'click', function(event){
+            $('.first_photo').addClass('none');
             $('.open').removeClass('oppenned');
             $('.header').removeClass('stop');
             $('.content').removeClass('none');
-            $('.content_main').removeClass('none')
-            if (window.matchMedia("(min-width: 500px)").matches){
+            $('.news-slider').removeClass('none');
+            $('.photo_line').removeClass('fake_portf');
 
-            }
             event.stopPropagation();
         });
     });
