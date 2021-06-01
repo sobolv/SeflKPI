@@ -412,7 +412,7 @@
     flex-direction: column;
     max-width: 346px;
     border: 2px solid #C7CCDB;
-    min-height: 300px;
+    height: 277px;
     overflow: hidden;
 
 }
@@ -764,6 +764,7 @@
         margin-top: 3px;
         margin-left: 3px;
         margin-right: 3px;
+        height: 176px;
     }
     .rev_user_inf{
         margin-top: 10px;
@@ -868,6 +869,7 @@
     .rev_u{
         display: flex;
         flex-direction: row;
+        height: 200px;
 
     }
     .rev_text{
