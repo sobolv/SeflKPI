@@ -35,7 +35,6 @@
     margin-left: auto;
     max-width: 1200px;
     overflow: hidden;
-    min-height: 450px;
 }
 .news-slider .slick-dots{
     display: flex;
@@ -503,6 +502,7 @@
 }
 .slick-list{
     overflow: hidden;
+    min-height: 250px;
 }
 .review-slider .slick-arrow{
     position: absolute;
