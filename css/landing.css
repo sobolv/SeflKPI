@@ -502,7 +502,6 @@
 }
 .slick-list{
     overflow: hidden;
-    min-height: 250px;
 }
 .review-slider .slick-arrow{
     position: absolute;
@@ -712,6 +711,9 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    .review-slider .slick-list{
+        min-height: 750px;
     }
     .review-slider .slick-arrow{
         width: 30px;

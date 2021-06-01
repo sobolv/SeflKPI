@@ -253,7 +253,6 @@ a{
 }
 .slick-list{
     overflow: hidden;
-    min-height: 250px;
 }
 .review-slider .slick-arrow{
     position: absolute;
@@ -1299,5 +1298,8 @@ textarea {
         font-size: 12px;
         margin-top: 45px;
         margin-bottom: 70px;
+    }
+    .slick-list{
+        min-height: 750px;
     }
 }
