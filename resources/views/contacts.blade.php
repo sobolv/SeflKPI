@@ -221,8 +221,10 @@
     $(document).ready(function() {
         $(document).delegate('.open', 'click', function(event){
             $(".header").addClass("stop");
+            $(".second_col_2").addClass("none");
             if (window.matchMedia("(min-width: 500px)").matches){
                 $(".header").removeClass("stop");
+                $(".second_col_2").removeClass("none");
                 $("body").addClass("stop");
             }
             $(this).addClass('oppenned');
@@ -231,6 +233,7 @@
         $(document).delegate('body', 'click', function(event) {
             $('.open').removeClass('oppenned');
             $(".header").removeClass("stop");
+            $(".second_col_2").removeClass("none");
             if (window.matchMedia("(min-width: 500px)").matches){
                 $("body").removeClass("stop");
             }
@@ -238,6 +241,7 @@
         $(document).delegate('.cls', 'click', function(event){
             $('.open').removeClass('oppenned');
             $(".header").removeClass("stop");
+            $(".second_col_2").removeClass("none");
             if (window.matchMedia("(min-width: 500px)").matches){
                 $("body").removeClass("stop");
             }
@@ -246,6 +250,7 @@
         $(document).delegate('.span_cl', 'click', function(event){
             $('.open').removeClass('oppenned');
             $(".header").removeClass("stop");
+            $(".second_col_2").removeClass("none");
             if (window.matchMedia("(min-width: 500px)").matches){
                 $("body").removeClass("stop");
             }

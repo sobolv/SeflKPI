@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ URL::asset('css/header.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/one_news.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('css/burger_menu.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/test.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
 </head>
@@ -233,8 +233,8 @@
     $(document).ready(function() {
         $(document).delegate('.open', 'click', function(event){
             $(".header").addClass("stop");
-            if (window.matchMedia("(min-width: 500px)").matches){
-                $(".header").removeClass("stop");
+            if (window.matchMedia("(max-width: 500px)").matches){
+                // $(".header").removeClass("stop");
                 $("body").addClass("stop");
             }
             $(this).addClass('oppenned');

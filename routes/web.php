@@ -23,6 +23,8 @@ Route::get('/contacts', function () {
     return view('contacts');
 });
 
+Route::get('/test', [\App\Http\Controllers\LandingController::class, 'load_t']);
+
 Route::get('/partners', [\App\Http\Controllers\PartnersController::class, 'load']);
 
 Route::get('/news', [\App\Http\Controllers\NewsController::class, 'load_all']);

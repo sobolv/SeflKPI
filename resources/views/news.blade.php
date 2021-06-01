@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="{{ URL::asset('css/news.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/burger_menu.css') }}">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-{{--    <script src="{{ URL::asset('public/js/jquery.instagramFeed.min.js')}}"></script>--}}
-{{--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>--}}
+    {{--    <script src="{{ URL::asset('public/js/jquery.instagramFeed.min.js')}}"></script>--}}
+    {{--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>--}}
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -66,23 +66,23 @@
     </div>
     <div class="all_news" id="myList">
         @foreach($all_news as $news)
-        <div class="del" style="display: none !important;">{{$count = \App\Models\Comment::where('post_id', $news->id)->get()->count()}}</div>
-           <div class="news">
-                    <a href="{{ URL::asset('')}}news/{{$news->id}}"><div class="news_l_b">
-                    <div class="news_cont">
-                        <div class="news_img"> <img class="n_img" src={{URL::asset('')}}{{$news->image}}></div>
-                        <div class="news_title">{{$news->title}}</div>
-                        <div class="news_description">{{$news->description}}</div>
-                    </div>
-                    <hr class="news_line">
-                    <div class="news_date">
-                        <div class="n_date">Дата: {{$news->date}}</div>
-                        <div class="news_comments">
-                            <img class="com_icon line" src={{URL::asset('icons/003-conversation.svg')}}>
-                            <div class="com_count line">{{$count}}</div>
+            <div class="del" style="display: none !important;">{{$count = \App\Models\Comment::where('post_id', $news->id)->get()->count()}}</div>
+            <div class="news">
+                <a href="{{ URL::asset('')}}news/{{$news->id}}"><div class="news_l_b">
+                        <div class="news_cont">
+                            <div class="news_img"> <img class="n_img" src={{URL::asset('')}}{{$news->image}}></div>
+                            <div class="news_title">{{$news->title}}</div>
+                            <div class="news_description">{{$news->description}}</div>
                         </div>
-                    </div>
-                </div></a>
+                        <hr class="news_line">
+                        <div class="news_date">
+                            <div class="n_date">Дата: {{$news->date}}</div>
+                            <div class="news_comments">
+                                <img class="com_icon line" src={{URL::asset('icons/003-conversation.svg')}}>
+                                <div class="com_count line">{{$count}}</div>
+                            </div>
+                        </div>
+                    </div></a>
             </div>
         @endforeach
     </div>
@@ -94,14 +94,17 @@
 <!-- Place <div> tag where you want the feed to appear -->
 <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
 <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
-<script type="text/javascript">
-    /* curator-feed-default-feed-layout */
-    (function(){
-        var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
-        i.src = "https://cdn.curator.io/published/26519028-af47-416e-95a4-6b75371f53c2.js";
-        e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-    })();
-</script>
+<div class="insta_block">
+    <script type="text/javascript">
+        /* curator-feed-default-feed-layout */
+        (function(){
+            var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+            i.src = "https://cdn.curator.io/published/26519028-af47-416e-95a4-6b75371f53c2.js";
+            e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+        })();
+    </script>
+</div>
+
 <script>
     $(document).ready(function () {
         size_li = $('.news').length;
@@ -156,9 +159,9 @@
 <script>
     $(document).ready(function() {
         $(document).delegate('.open', 'click', function(event){
-            $(".header").addClass("stop");
-            if (window.matchMedia("(min-width: 500px)").matches){
-                $(".header").removeClass("stop");
+            if (window.matchMedia("(max-width: 500px)").matches){
+                $(".header").addClass("stop");
+                // $(".header").removeClass("stop");
                 $("body").addClass("stop");
             }
             $(this).addClass('oppenned');
@@ -167,43 +170,29 @@
         $(document).delegate('body', 'click', function(event) {
             $('.open').removeClass('oppenned');
             $(".header").removeClass("stop");
+            $("body").removeClass("stop");
             if (window.matchMedia("(min-width: 500px)").matches){
-                $("body").removeClass("stop");
+
             }
         })
         $(document).delegate('.cls', 'click', function(event){
             $('.open').removeClass('oppenned');
             $(".header").removeClass("stop");
+            $("body").removeClass("stop");
             if (window.matchMedia("(min-width: 500px)").matches){
-                $("body").removeClass("stop");
+
             }
             event.stopPropagation();
         });
         $(document).delegate('.span_cl', 'click', function(event){
             $('.open').removeClass('oppenned');
             $(".header").removeClass("stop");
+            $("body").removeClass("stop");
             if (window.matchMedia("(min-width: 500px)").matches){
-                $("body").removeClass("stop");
+
             }
             event.stopPropagation();
         });
     });
 </script>
-{{--<script>--}}
-{{--    (function ($) {--}}
-{{--        $(window).on('load', function () {--}}
-{{--            $.instagramFeed({--}}
-{{--                'username': 'seflkpi', //Имя пользователя--}}
-{{--                'container': "#instafeed", //Контейнер для изображений--}}
-{{--                'display_profile': false, //Отображение профиля--}}
-{{--                'display_biography': false, //Отображение биографии--}}
-{{--                'display_gallery': true, //Отображение галереи--}}
-{{--                'styling': true, //Стандартные стили библиотеки--}}
-{{--                'items': 8, //Количество изображений в галереи--}}
-{{--                'items_per_row': 4, //Количество изображений в ряд--}}
-{{--                'margin': 0.5 //Отступ между изображениями--}}
-{{--            });--}}
-{{--        });--}}
-{{--    })(jQuery);--}}
-{{--</script>--}}
 </body>

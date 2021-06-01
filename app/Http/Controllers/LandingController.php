@@ -12,4 +12,10 @@ class LandingController extends Controller
         $reviews = \App\Models\Review::orderBy('id', 'DESC')->get();
         return view('landing', compact('all_news', 'portfolios', 'reviews'));
     }
+    public static function load_t(){
+        $all_news = \App\Models\Post::orderBy('date', 'DESC')->get();
+        $portfolios = \App\Models\Portfolio::orderBy('id', 'DESC')->get();
+        $reviews = \App\Models\Review::orderBy('id', 'DESC')->get();
+        return view('test', compact('all_news', 'portfolios', 'reviews'));
+    }
 }

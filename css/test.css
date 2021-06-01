@@ -144,6 +144,7 @@ h1 {
     background-color: #1E2334;
 }
 .sub-menu{
+    /*z-index: 1;*/
     padding-top: 120px;
 }
 .oppenned span:nth-child(3) {
@@ -239,4 +240,8 @@ h1 {
 }
 .none{
     display: none !important;
+}
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }
