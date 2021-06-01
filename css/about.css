@@ -211,7 +211,7 @@ a{
 .rev_u{
     display: flex;
     flex-direction: row;
-    height: 277px;
+    height:auto;
 }
 .rev_text{
     margin-left: 22px;
@@ -663,6 +663,7 @@ textarea {
     }
     .user_name {
         text-align: left;
+        margin-left: 15px;
     }
     .rev_date {
         text-align: left;
@@ -779,6 +780,7 @@ textarea {
         font-size: 14px;
         text-align: left;
         margin-top: 3px;
+        margin-left: 15px;
     }
     .rev_date {
         text-align: left;
@@ -813,6 +815,9 @@ textarea {
     .reviews{
         margin-top: 20px;
     }
+    .rev_u{
+        height: auto;
+    }
     .enter_bttn{
         margin-top: 45px;
         font-size: 18px;
@@ -845,6 +850,11 @@ textarea {
 }
 
 @media screen and (min-width: 600px) and (max-width: 767px){
+    .rev_u {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+    }
     .enter_words_a{
         margin-top: 60px;
     }
@@ -1192,6 +1202,7 @@ textarea {
         margin-left: 225px;
         top:0;
     }
+
     .review-slider .slick-arrow.slick-next {
         transform: rotate(90deg);
         top:0;
@@ -1231,10 +1242,14 @@ textarea {
         width: 280px;
         height: 150px;
     }
+    .rev_u{
+        height: auto;
+    }
     .rev{
         border: 0.1px solid #C7CCDB;
         margin-bottom: 2px;
         max-width: 250px;
+        height: auto;
     }
     .exit {
         margin-top: -8px;

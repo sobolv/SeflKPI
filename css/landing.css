@@ -443,7 +443,7 @@
     letter-spacing: 0.05em;
     margin-top: 10px;
     color: #2A324B;
-    margin-left: 18px;
+    margin-left: -48px;
 }
 .rev_date{
     font-family: Montserrat;
@@ -670,6 +670,7 @@
         border: 0.1px solid #C7CCDB;
         margin-bottom: 2px;
         width: 250px;
+        height: auto;
 
     }
     .user_icon{
@@ -849,6 +850,8 @@
     }
     .rev{
         max-width: 202px;
+        height: 150px;
+        overflow: hidden;
     }
     .rev_user_inf{
         margin-top: 10px;
@@ -876,7 +879,7 @@
     .rev_u{
         display: flex;
         flex-direction: row;
-        height: 200px;
+        height: 60px;
 
     }
     .rev_text{
@@ -925,6 +928,7 @@
     .rev{
         max-width: 260px;
         margin: 15px;
+        height: 200px;
     }
     .rev_user_inf{
         margin-top: 15px;
