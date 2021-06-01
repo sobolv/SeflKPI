@@ -813,6 +813,9 @@ textarea {
     .reviews{
         margin-top: 20px;
     }
+    .rev_u{
+        height: auto;
+    }
     .enter_bttn{
         margin-top: 45px;
         font-size: 18px;

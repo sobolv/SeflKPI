@@ -850,6 +850,8 @@
     }
     .rev{
         max-width: 202px;
+        height: 150px;
+        overflow: hidden;
     }
     .rev_user_inf{
         margin-top: 10px;
@@ -877,7 +879,7 @@
     .rev_u{
         display: flex;
         flex-direction: row;
-        height: 200px;
+        height: 60px;
 
     }
     .rev_text{
