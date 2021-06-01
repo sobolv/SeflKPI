@@ -39,4 +39,3 @@ Route::get('/about', [\App\Http\Controllers\AboutController::class, 'load'])->na
 
 Route::post('/about', [\App\Http\Controllers\AboutController::class, 'add']);
 
-Route::get('/test', [\App\Http\Controllers\NewsController::class, 'load_all_t']);
