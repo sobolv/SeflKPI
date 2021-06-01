@@ -1203,11 +1203,15 @@ textarea {
         top:0;
     }
 
+    .slick-list{
+        min-height: 328px;
+        padding-top: 25px;
+    }
     .review-slider .slick-arrow.slick-next {
         transform: rotate(90deg);
         top:0;
         margin-right: -35px;
-        margin-top: 40px;
+        margin-top: 34px;
     }
     .enter_bttn{
         width: 160px;

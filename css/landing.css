@@ -713,7 +713,7 @@
         flex-direction: column;
     }
     .review-slider .slick-list{
-        min-height: 750px;
+        min-height: 328px;
     }
     .review-slider .slick-arrow{
         width: 30px;
