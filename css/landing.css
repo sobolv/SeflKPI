@@ -929,6 +929,7 @@
     .rev{
         max-width: 260px;
         margin: 15px;
+        height: 200px;
     }
     .rev_user_inf{
         margin-top: 15px;
