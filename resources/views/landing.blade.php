@@ -258,6 +258,7 @@
 <script>
     $(document).ready(function() {
         $(document).delegate('.open', 'click', function(event){
+            $('.content_main').addClass('none');
             if (window.matchMedia("(max-width: 500px)").matches){
                 $('.header').addClass('stop');
                 $('.content').addClass('none');
@@ -268,7 +269,8 @@
         $(document).delegate('body', 'click', function(event) {
             $('.open').removeClass('oppenned');
             $('.header').removeClass('stop');
-            $('.content').removeClass('none')
+            $('.content').removeClass('none');
+            $('.content_main').removeClass('none');
             if (window.matchMedia("(min-width: 500px)").matches){
 
             }
@@ -276,7 +278,8 @@
         $(document).delegate('.cls', 'click', function(event){
             $('.open').removeClass('oppenned');
             $('.header').removeClass('stop');
-            $('.content').removeClass('none')
+            $('.content').removeClass('none');
+            $('.content_main').removeClass('none');
             if (window.matchMedia("(min-width: 500px)").matches){
 
             }
@@ -285,7 +288,8 @@
         $(document).delegate('.span_cl', 'click', function(event){
             $('.open').removeClass('oppenned');
             $('.header').removeClass('stop');
-            $('.content').removeClass('none')
+            $('.content').removeClass('none');
+            $('.content_main').removeClass('none')
             if (window.matchMedia("(min-width: 500px)").matches){
 
             }
