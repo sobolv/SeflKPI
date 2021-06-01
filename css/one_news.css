@@ -34,6 +34,9 @@
 .line{
     display: inline-block;
 }
+.answer_but{
+    margin-left: 0;
+}
 .news{
     width: 100%;
     display: block;
@@ -181,9 +184,10 @@
 }
 .com_block{
     width: 793px;
-    height: 527px;
+    /*min-height: 300px;*/
     background: #F2F4F8;
     box-shadow: 0px 4px 4px #F3AD76;
+    padding-bottom: 30px;
 }
 .second_column{
     margin-top: 120px;
@@ -196,7 +200,10 @@
     display: block;
     padding: 0 0px;
     margin: 0 auto;
-    max-width: 713px;
+    max-width: 700px;
+}
+.last_news_title{
+    margin-left: 10px;
 }
 .com_title{
     font-family: Raleway;
@@ -213,6 +220,9 @@
 .com{
     margin-bottom: 33px;
 }
+.pzdts{
+    margin-bottom: 7px;
+}
 .com_cont{
     width: 100%;
     display: block;
@@ -221,7 +231,8 @@
     max-width: 673px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
+    padding-bottom: 20px;
 }
 .com_text{
     text-align: left;
@@ -385,6 +396,12 @@
 .tttt{
     margin-bottom: 50px;
 }
+.com_title{
+    padding-top: 55px;
+}
+.com{
+    margin-bottom: 10px;
+}
 @media (max-width: 1280px) {
     .content{
         padding-left: 30px;
@@ -397,11 +414,14 @@
         padding-left: 30px;
     }
     .last_news_title{
-        padding-top: 60px;
         padding-left: 0;
     }
 
 }
+.scsr_title {
+    margin-top: 55px;
+}
+
 /*@media (max-width: 1250px) {*/
 /*    .content{*/
 /*        padding-left: 30px;*/
@@ -427,6 +447,10 @@
 
 }
 @media (max-width: 1229px) {
+    .last_news_title {
+        padding-top: 60px;
+        padding-left: 0;
+    }
     .fc_seconf_row{
         padding-right: 30px;
     }
@@ -467,7 +491,7 @@
     }
     .com_block{
         width: 710px;
-        height: 474px;
+        /*height: 474px;*/
         background: #F2F4F8;
         box-shadow: 0px 4px 4px #F3AD76;
     }
@@ -476,13 +500,13 @@
     /*    width: 338px;*/
     /*}*/
     .title_block{
-        max-width: 670px;
+        max-width: 650px;
     }
     /*.com_title{*/
     /*    font-size: 26px;*/
     /*}*/
     .com{
-        margin-bottom: 33px;
+        margin-bottom: 0px;
     }
     .com_cont{
         max-width: 600px;
@@ -1470,4 +1494,16 @@ textarea {
         margin-left: -55px;
         margin-bottom: -15px;
     }
+}
+.answer_but{
+    margin-left: 0;
+}
+.com_2{
+    padding-left: 40px;
+}
+.com_3{
+    padding-left: 80px;
+}
+.com_4{
+    padding-left: 120px;
 }

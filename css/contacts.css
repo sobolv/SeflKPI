@@ -986,5 +986,7 @@
         margin-left: 23px;
     }
 }
-
+.del{
+    display: none !important;
+}
 
