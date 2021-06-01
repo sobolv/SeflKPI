@@ -6,6 +6,8 @@
 .body{
     min-width: 320px;
 }
+.pad{
+}
 a{
     text-decoration: none;
 }
@@ -188,11 +190,11 @@ a{
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.05em;
     margin-top: 10px;
     color: #2A324B;
-    margin-left: 18px;
+    margin-left: 30px;
 }
 .rev_date{
     font-family: Montserrat;
@@ -958,6 +960,7 @@ textarea {
         max-width: 205px;
         margin-top: 3px;
         margin-left: 3px;
+        min-height: 150px;
     }
     .review-slider .slick-track{
         display: flex;
@@ -1073,14 +1076,17 @@ textarea {
         padding: 45px 10px 40px;
     }
     .points {
-        max-width: 600px;
+        max-width: 300px;
         flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     .point1{
         flex-direction: row;
         justify-content: center;
-        margin-right: auto;
-        margin-left: auto;
+        margin-right: 10px;
+        margin-left: 10px;
     }
     .icon_p img {
         width: 70px;
@@ -1149,7 +1155,7 @@ textarea {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
+        min-width: 220px;
     }
     .review-slider .slick-arrow{
         width: 30px;
@@ -1181,13 +1187,13 @@ textarea {
     }
     .review-slider .slick-arrow.slick-prev {
         transform: rotate(90deg);
-        margin-left: 258px;
+        margin-left: 225px;
         top:0;
     }
     .review-slider .slick-arrow.slick-next {
         transform: rotate(90deg);
         top:0;
-        margin-right: -38px;
+        margin-right: -35px;
         margin-top: 40px;
     }
     .enter_bttn{

@@ -417,7 +417,8 @@
     flex-direction: column;
     max-width: 346px;
     border: 2px solid #C7CCDB;
-
+    min-height: 300px;
+    overflow: hidden;
 
 }
 .rev_user_inf{
