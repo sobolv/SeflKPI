@@ -19,7 +19,7 @@ class NewsController extends Controller
     }
     public function load($id){
         $news = \App\Models\Post::find($id);
-        $all_news = \App\Models\Post::all();
+        $all_news = \App\Models\Post::orderBy('date', 'DESC')->get();
         $comments = Comment::all()->where('post_id', '=', $id);
         return view('one_news', compact('news', 'all_news', 'comments'));
     }
