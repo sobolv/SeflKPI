@@ -443,7 +443,7 @@
     letter-spacing: 0.05em;
     margin-top: 10px;
     color: #2A324B;
-    margin-left: 18px;
+    margin-left: -48px;
 }
 .rev_date{
     font-family: Montserrat;
@@ -671,6 +671,7 @@
         border: 0.1px solid #C7CCDB;
         margin-bottom: 2px;
         width: 250px;
+        height: auto;
 
     }
     .user_icon{
