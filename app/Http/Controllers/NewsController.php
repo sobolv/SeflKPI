@@ -28,7 +28,7 @@ class NewsController extends Controller
         $email = $_POST['email'];
         $text = $_POST['rev_text'];
         $post_id = $id;
-        $date = date("d.m.y");
+        $date = date("j.m.Y");
         $time = date("H:i");
         $validator = Validator::make(Request::all(), [
             'nickname' => ['required', 'string', 'max:255'],
