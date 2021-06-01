@@ -128,7 +128,7 @@
 <div class="third_block">
     <div class="cont_s">
         <button class="first_rec_s">ЗАЛИШИЛИСЬ ПИТАННЯ?</button>
-        <button class="second_rec_s">Зв’язатись з нами</button>
+        <a href="https://t.me/apepsSuggestions_bot"><button class="second_rec_s">Зв’язатись з нами</button></a>
     </div>
 </div>
 

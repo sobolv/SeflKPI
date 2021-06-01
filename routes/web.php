@@ -13,39 +13,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('landing');
-});
+Route::get('/', [\App\Http\Controllers\LandingController::class, 'load']);
 
-Route::get('/landing', function () {
-    return view('landing');
-});
+Route::get('/landing', [\App\Http\Controllers\LandingController::class, 'load']);
 
-Route::get('/portfolio', function () {
-    return view('portfolio');
-});
+Route::get('/portfolio', [\App\Http\Controllers\PortfolioController::class, 'load']);
 
 Route::get('/contacts', function () {
     return view('contacts');
 });
 
-Route::get('/partners', function () {
-    return view('partners');
-});
-
 Route::get('/partners', [\App\Http\Controllers\PartnersController::class, 'load']);
 
-Route::get('/news', function () {
-    return view('news');
-});
+Route::get('/news', [\App\Http\Controllers\NewsController::class, 'load_all']);
 
-Route::get('/news/1', function () {
-    return view('one_news');
-});
+Route::get('/news/{id}', [\App\Http\Controllers\NewsController::class, 'load'])->name("one_news");
+
+Route::post('/news/{id}', [\App\Http\Controllers\NewsController::class, 'add_com']);
 
 Route::get('/services', function () {
     return view('services');
 });
 
 Route::get('/about', [\App\Http\Controllers\AboutController::class, 'load'])->name("about");
+
 Route::post('/about', [\App\Http\Controllers\AboutController::class, 'add']);
+

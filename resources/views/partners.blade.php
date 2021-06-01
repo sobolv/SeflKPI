@@ -183,6 +183,14 @@
             }
             event.stopPropagation();
         });
+        $(document).delegate('.span_cl', 'click', function(event){
+            $('.open').removeClass('oppenned');
+            $(".header").removeClass("stop");
+            if (window.matchMedia("(min-width: 500px)").matches){
+                $("body").removeClass("stop");
+            }
+            event.stopPropagation();
+        });
     });
 </script>
 </body>

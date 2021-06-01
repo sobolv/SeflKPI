@@ -63,22 +63,23 @@
     </div>
     <div class="first_column">
         <div class="fc_first_row">
+            <div class="del" style="display: none !important;">{{$count = \App\Models\Comment::where('post_id', $news->id)->get()->count()}}</div>
             <div class="news">
-                <div class="title_text">На залізничному вокзалі Киева встановлені пристрої під назвою “Маячок”</div>
-                <img class="news_img" src="{{ URL::asset('images/image1.png') }}">
+                <div class="title_text">{{$news->title}}</div>
+                <img class="news_img" src="{{ URL::asset('')}}{{$news->image}}">
                 <div class="news_line_cont">
                     <div class="news_text_cont">
-                        <div class="news_text">Диспенсер під назвою «Маячок» є спільною розробкою кафедри автоматизації проєктування енергетичних процесів та систем КПІ та компанії ТОВ «Оптимум Інжиніринг».
-                            <br><br>Пристрій уже встановили на входах/виходах до Центрального залізничного вокзалу Києва. Це безконтактні автоматичні диспенсери, які вимірюють температуру пасажирів і водночас дезінфікують руки антисептичним розчином. Якщо температура підвищена, вмикається звуковий та світловий сигнал.
-                            <br><br>Розробкою вже користуються КМДА, патрульна поліція Києва, Міністерство освіти, Міністерство оборони, Національна гвардія та столичний Центральний вокзал.
+                        <div class="news_text">{{$news->text_1}}
+                            <br><br>{{$news->text_2}}
+                            <br><br>{{$news->text_3}}
                         </div>
                     </div>
                     <hr class="news_line">
                     <div class="news_date">
-                        <div class="n_date">Дата: 16 Квітня 2021 </div>
+                        <div class="n_date">Дата: {{$news->date}} </div>
                         <div class="news_comments">
                             <img class="com_icon line" src="{{URL::asset('icons/003-conversation.svg')}}">
-                            <div class="com_count line">2</div>
+                            <div class="com_count line">{{$count}}</div>
                         </div>
                     </div>
                 </div>
@@ -88,33 +89,20 @@
             <div class="last_news_title lt1">Останні новини</div>
 {{--            <div class="lt2">Останні новини</div>--}}
             <div class="last_news">
-                <div class="l_news">
-                    <div class="l_news_cont">
-                        <img class="last_news_img line_1" src="{{URL::asset('images/maxresdefault.jpg')}}">
-                        <div class="qqq">
-                            <button class="last_news_text line_1">Інтерв’ю з членом СКБ “SEFL KPI”</button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="l_news">
-                    <div class="l_news_cont">
-                        <img class="last_news_img line_1" src="{{URL::asset('images/NVZB2.png')}}">
-                        <div class="qqq">
-                            <button class="last_news_text line_1">Відкриття квест-кімнати “Назад у майбутнє”</button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="l_news">
-                    <div class="l_news_cont">
-                        <img class="last_news_img line_1" src="{{URL::asset('images/image1.png')}}">
-                        <div class="qqq">
-                            <button class="last_news_text line_1">Встановлені пристрої під назвою “Маячок”</button>
-                        </div>
-
-                    </div>
-                </div>
+                <div class="del" style="display: none !important;">{{$i = 0}}</div>
+                @foreach($all_news as $news1)
+                    @if($i < 3)
+                        <a href="{{ URL::asset('')}}news/{{$news1->id}}"><div class="l_news">
+                            <div class="l_news_cont">
+                                <img class="last_news_img line_1" src="{{URL::asset('')}}{{$news1->image}}">
+                                <div class="qqq">
+                                    <button class="last_news_text line_1">{{$news1->title}}”</button>
+                                </div>
+                            </div>
+                            </div></a>
+                        <div class="del" style="display: none !important;">{{$i++}}</div>
+                    @endif
+                @endforeach
             </div>
         </div>
     </div>
@@ -127,7 +115,7 @@
                         <button onclick="show('block')" class="add_com_form">Додати коментар</button>
                         <div onclick="show('none')" id="gray"></div>
                         <div id="coment" >
-                            <form action={{ URL::asset('/news/1')}} method="post">
+                            <form action={{ URL::asset('')}}news/{{$news->id}} method="post">
                                 @csrf
                                 <div class="rev_block">
                                     <div class="title_rev">
@@ -150,7 +138,7 @@
                                     </div>
                                     <div class="text_com">
                                         <div class="text_f">Введіть повідомлення*</div>
-                                        <textarea id="message">Текст</textarea>
+                                        <textarea name="rev_text" id="message">Текст</textarea>
                                     </div>
                                     <div class="buttons">
                                         <button type="submit" name="enter" class="publish">Опублікувати</button>
@@ -172,146 +160,34 @@
                             }
                         </script>
                     </div>
+                    @foreach($comments as $comment)
                     <div class="com">
                         <div class="com_cont">
                             <img class="com_img line" src="{{ URL::asset('icons/007-profile-user.svg')}}">
                             <div class="com_text line">
                                 <div class="first_line">
-                                    <div class="name line">Анастасія</div>
-                                    <div class="date line">04.02.2021 у 16:17</div>
+                                    <div class="name line">{{$comment->name}}</div>
+                                    <div class="date line">{{$comment->date}} у {{$comment->time}}</div>
                                 </div>
-                                <div class="second_line">Заказывала впервые и была в шоке от мгновенной отправки и хорошего качества товара.🤎Заказывала впервые и была в шоке от мгновенной отправки и хорошего качества товара.🤎🤎</div>
-                                <div class="third_line">
-                                    <img class="like line" src="{{URL::asset('icons/like.svg')}}">
-                                    <div class="like_count line count">0</div>
-                                    <img class="dislike line" src="{{URL::asset('icons/like.svg')}}">
-                                    <div class="dislike_count line count">0</div>
-                                    <button onclick="show('block')" class="answer_but line">Відповісти</button>
-                                    <div onclick="show('none')" id="gray"></div>
-                                    <div id="coment" >
-                                        <form action={{ URL::asset('/news/1')}} method="post">
-                                            @csrf
-                                            <div class="rev_block">
-                                                <div class="title_rev">
-                                                    Написати відповідь
-                                                </div>
-                                                <hr class="line_title_rev">
-                                                <div class="fields_r">
-                                                    <div class="f1">
-                                                        <div class="text_f">Введіть ім'я*</div>
-                                                        <div >
-                                                            <input type="text" name="nickname" placeholder="Гість" class="field1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="f1">
-                                                        <div class="text_f">Введіть email*</div>
-                                                        <div>
-                                                            <input type="text" name="email" placeholder="example@example" class="field1">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text_com">
-                                                    <div class="text_f">Введіть повідомлення*</div>
-                                                    <textarea id="message">Текст</textarea>
-                                                </div>
-                                                <div class="buttons">
-                                                    <button type="submit" name="enter" class="publish">Опублікувати</button>
-                                                    <div class="exit" onclick="show('none')">Скасувати</div>
-                                                </div>
-
-                                            </div>
-
-
-                                        </form>
-
-                                    </div>
-                                    <script>
-                                        function show(state)
-                                        {
-
-                                            document.getElementById('coment').style.display = state;
-                                            document.getElementById('gray').style.display = state;
-                                        }
-                                    </script>
-                                </div>
+                                <div class="second_line">{{$comment->text}}</div>
                             </div>
                         </div>
                     </div>
-                    <div class="com">
-                        <div class="com_cont">
-                            <img class="com_img line" src="{{ URL::asset('icons/007-profile-user.svg')}}">
-                            <div class="com_text line">
-                                <div class="first_line">
-                                    <div class="name line">Анастасія</div>
-                                    <div class="date line">04.02.2021 у 16:17</div>
-                                </div>
-                                <div class="second_line">Заказывала впервые и была в шоке от мгновенной отправки и хорошего качества товара.🤎Заказывала впервые и была в шоке от мгновенной отправки и хорошего качества товара.🤎🤎</div>
-                                <div class="third_line">
-                                    <img class="like line" src="{{URL::asset('icons/like.svg')}}">
-                                    <div class="like_count line count">0</div>
-                                    <img class="dislike line" src="{{URL::asset('icons/like.svg')}}">
-                                    <div class="dislike_count line count">0</div>
-                                    <button onclick="show('block')" class="answer_but line">Відповісти</button>
-                                    <div onclick="show('none')" id="gray"></div>
-                                    <div id="coment" >
-                                        <form action={{ URL::asset('/news/1')}} method="post">
-                                            @csrf
-                                            <div class="rev_block">
-                                                <div class="title_rev">
-                                                    Написати відповідь
-                                                </div>
-                                                <hr class="line_title_rev">
-                                                <div class="fields_r">
-                                                    <div class="f1">
-                                                        <div class="text_f">Введіть ім'я*</div>
-                                                        <div >
-                                                            <input type="text" name="nickname" placeholder="Гість" class="field1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="f1">
-                                                        <div class="text_f">Введіть email*</div>
-                                                        <div>
-                                                            <input type="text" name="email" placeholder="example@example" class="field1">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text_com">
-                                                    <div class="text_f">Введіть повідомлення*</div>
-                                                    <textarea id="message">Текст</textarea>
-                                                </div>
-                                                <div class="buttons">
-                                                    <button type="submit" name="enter" class="publish">Опублікувати</button>
-                                                    <div class="exit" onclick="show('none')">Скасувати</div>
-                                                </div>
-
-                                            </div>
-
-
-                                        </form>
-
-                                    </div>
-                                    <script>
-                                        function show(state)
-                                        {
-
-                                            document.getElementById('coment').style.display = state;
-                                            document.getElementById('gray').style.display = state;
-                                        }
-                                    </script>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
 
         <div class="sc_second_row">
-            <div class="scsr_title">Додати коментар</div>
-            <input type="text" name="nickname" placeholder="Ім'я" class="field1">
-            <input type="text" name="email" placeholder="Email" class="field1">
-            <textarea class="new_com_inf">Коментар</textarea>
-            <button class="add_com_but">Додати</button>
+            <form action={{ URL::asset('')}}news/{{$news->id}} method="post">
+                @csrf
+                <div class="scsr_title">Додати коментар</div>
+                <input type="text" name="nickname" placeholder="Ім'я" class="field1">
+                <input type="text" name="email" placeholder="Email" class="field1">
+                <textarea class="new_com_inf" name="rev_text">Коментар</textarea>
+{{--                <button class="add_com_but">Додати</button>--}}
+                <button type="submit" name="enter" class="add_com_but publish">Додати</button>
+            </form>
         </div>
     </div>
 </div>

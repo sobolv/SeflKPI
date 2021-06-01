@@ -27,6 +27,9 @@
     margin-top: 85px;
     margin-bottom: 70px;
 }
+.news{
+    display: none;
+}
 .title_text{
     font-family: Raleway;
     font-style: normal;
@@ -44,6 +47,12 @@
     width: 217px;
     justify-content: center;
     margin-top: 5px;
+}
+.close{
+    display: none !important;
+}
+.add_margin{
+    margin-top: 30px;
 }
 .line{
     display: inline-block;
@@ -196,6 +205,9 @@
 }
 .ttt{
     color: #FFFFFF;
+}
+.move{
+    margin-right: -20px;
 }
 @media (max-width: 1220px) {
     .tttt{

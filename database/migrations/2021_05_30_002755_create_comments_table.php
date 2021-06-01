@@ -19,11 +19,10 @@ class CreateCommentsTable extends Migration
             $table->string('email');
             $table->bigInteger('post_id');
             $table->string('text');
-            $table->bigInteger('like');
-            $table->bigInteger('dislike');
             $table->date('date');
             $table->time('time');
-            $table->bigInteger('parent_id');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
         });
     }
 

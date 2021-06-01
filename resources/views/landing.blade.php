@@ -67,16 +67,11 @@
     </div>
     <div class="new_l">
         <div class="news-slider">
+            @foreach($all_news as $news)
             <div class="slider_item">
-                <img src={{asset('images/Новина1.PNG')}}>
+                <a href="{{ URL::asset('')}}news/{{$news->id}}"><img src="{{URL::asset('')}}{{$news->banner_img}}"></a>
             </div>
-            <div class="slider_item">
-                <img src={{asset('images/Новина2.PNG')}}>
-            </div>
-            <div class="slider_item">
-                <img src={{asset('images/Новина3.PNG')}}>
-            </div>
-
+            @endforeach
         </div>
 
         <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -120,18 +115,25 @@
 
     </div>
     <div class="photo_line">
-        <div >
-            <img src={{asset('images/IMG_6568.JPG')}} class="port_photo">
-        </div>
-        <div>
-            <img src={{asset('images/IMG_6754.PNG')}} class="port_photo">
-        </div>
-        <div id="third">
-            <img src={{asset('images/IMG_5130.JPG')}} class="port_photo" >
-        </div>
-        <div class="fourth">
-            <img src={{asset('images/IMG_6753.PNG')}} class="port_photo" >
-        </div>
+        <div class="del_cl">{{$i = 0}}</div>
+        @foreach($portfolios as $portfolio)
+            @if($i == 0 || $i == 1)
+                <div >
+                    <img src={{URL::asset('')}}{{$portfolio->image}} class="port_photo">
+                </div>
+                <div class="del_cl">{{$i++}}</div>
+            @elseif($i == 2)
+                <div id="third">
+                    <img src={{URL::asset('')}}{{$portfolio->image}} class="port_photo">
+                </div>
+                <div class="del_cl">{{$i++}}</div>
+            @elseif($i == 3)
+                <div class="fourth">
+                    <img src={{URL::asset('')}}{{$portfolio->image}} class="port_photo">
+                </div>
+                <div class="del_cl">{{$i++}}</div>
+            @endif
+        @endforeach
     </div>
     <div class="more_bttn expand-left-right">
         <a href="{{ URL::asset('/portfolio')}}" id="more_bttn"> <div >Дивитись більше</div> </a>
@@ -151,97 +153,21 @@
     </div>
     <div class="reviews">
         <div class="review-slider">
-            <div class="rev-item">
-                <div class="rev">
-                    <div class="rev_u">
-                        <img src={{asset('icons/007-profile-user.svg')}} class="user_icon">
-
-                        <div class="rev_user_inf">
-                            <div class="user_name">Анастасія</div>
-                            <div class="rev_date"> 04.02.2021 у 16:17</div>
+            @foreach($reviews as $review)
+                <div class="rev-item">
+                    <div class="rev">
+                        <div class="rev_u">
+                            <img src={{asset('icons/007-profile-user.svg')}} class="user_icon">
+                            <div class="rev_user_inf">
+                                <div class="user_name">{{$review->name}}</div>
+                                <div class="rev_date"> {{$review->date}} у {{$review->time}}</div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="rev_text">
-                        Заказывала впервые и была в шоке от мгновенной
-                        отправки и хорошего качества товара. Заказывала
-                        впервые и была в шоке от мгновенной отправки и хорошего качества товара.
+                        <div class="rev_text">{{$review->text}}</div>
                     </div>
                 </div>
-            </div>
-            <div class="rev-item">
-                <div class="rev">
-                    <div class="rev_u">
-                        <img src={{asset('icons/007-profile-user.svg')}} class="user_icon">
-
-                        <div class="rev_user_inf">
-                            <div class="user_name">Анастасія</div>
-                            <div class="rev_date"> 04.02.2021 у 16:17</div>
-                        </div>
-                    </div>
-
-                    <div class="rev_text">
-                        Заказывала впервые и была в шоке от мгновенной
-                        отправки и хорошего качества товара. Заказывала
-                        впервые и была в шоке от мгновенной отправки и хорошего качества товара.
-                    </div>
-                </div>
-            </div>
-            <div class="rev-item">
-                <div class="rev">
-                    <div class="rev_u">
-                        <img src={{asset('icons/007-profile-user.svg')}} class="user_icon">
-
-                        <div class="rev_user_inf">
-                            <div class="user_name">Анастасія</div>
-                            <div class="rev_date"> 04.02.2021 у 16:17</div>
-                        </div>
-                    </div>
-
-                    <div class="rev_text">
-                        Заказывала впервые и была в шоке от мгновенной
-                        отправки и хорошего качества товара. Заказывала
-                        впервые и была в шоке от мгновенной отправки и хорошего качества товара.
-                    </div>
-                </div>
-            </div>
-            <div class="rev-item">
-                <div class="rev">
-                    <div class="rev_u">
-                        <img src={{asset('icons/007-profile-user.svg')}} class="user_icon">
-
-                        <div class="rev_user_inf">
-                            <div class="user_name">Анастасія</div>
-                            <div class="rev_date"> 04.02.2021 у 16:17</div>
-                        </div>
-                    </div>
-
-                    <div class="rev_text">
-                        Заказывала впервые и была в шоке от мгновенной
-                        отправки и хорошего качества товара. Заказывала
-                        впервые и была в шоке от мгновенной отправки и хорошего качества товара.
-                    </div>
-                </div>
-            </div>
-            <div class="rev-item">
-                <div class="rev">
-                    <div class="rev_u">
-                        <img src={{asset('icons/007-profile-user.svg')}} class="user_icon">
-
-                        <div class="rev_user_inf">
-                            <div class="user_name">Анастасія</div>
-                            <div class="rev_date"> 04.02.2021 у 16:17</div>
-                        </div>
-                    </div>
-
-                    <div class="rev_text">
-                        Заказывала впервые и была в шоке от мгновенной
-                        отправки и хорошего качества товара. Заказывала
-                        впервые и была в шоке от мгновенной отправки и хорошего качества товара.
-                    </div>
-                </div>
-            </div>
-
+            @endforeach
         </div>
         <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
@@ -333,6 +259,7 @@
             if (window.matchMedia("(min-width: 500px)").matches){
                 $(".header").removeClass("stop");
                 $("body").addClass("stop");
+                $(".slider_item.slick-center").addClass("index");
             }
             $(this).addClass('oppenned');
             event.stopPropagation();
@@ -343,8 +270,18 @@
             if (window.matchMedia("(min-width: 500px)").matches){
                 $("body").removeClass("stop");
             }
+            $(".slider_item.slick-center").removeClass("index");
         })
         $(document).delegate('.cls', 'click', function(event){
+            $('.open').removeClass('oppenned');
+            $(".header").removeClass("stop");
+            if (window.matchMedia("(min-width: 500px)").matches){
+                $("body").removeClass("stop");
+            }
+            $(".slider_item.slick-center").removeClass("index");
+            event.stopPropagation();
+        });
+        $(document).delegate('.span_cl', 'click', function(event){
             $('.open').removeClass('oppenned');
             $(".header").removeClass("stop");
             if (window.matchMedia("(min-width: 500px)").matches){

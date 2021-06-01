@@ -65,11 +65,9 @@
     </div>
     <div class="block">
         <div class="all_photos">
-            <img class="photo" src="{{ URL::asset('images/IMG_6568.JPG')}}">
-            <img class="photo" src="{{ URL::asset('images/IMG_6754.PNG')}}">
-            <img class="photo" src="{{ URL::asset('images/IMG_5130.JPG')}}">
-            <img class="photo" src="{{ URL::asset('images/IMG_6753.PNG')}}">
-
+            @foreach($portfolios as $portfolio)
+            <img class="photo" src="{{ URL::asset('')}}{{$portfolio->image}}">
+            @endforeach
         </div>
     </div>
 </div>

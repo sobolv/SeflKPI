@@ -4,19 +4,30 @@ namespace App\Http\Controllers;
 
 use Illuminate\Database\Eloquent\Model;
 use Request;
+use App\Models\Comment;
 use Illuminate\Support\Facades\Validator;
-use \App\Models\Review;
 
-class AboutController extends Controller
+class NewsController extends Controller
 {
-    public function load(){
-        $reviews = \App\Models\Review::orderBy('id', 'DESC')->get();
-        return view('about', compact('reviews'));
+    public function load_all(){
+        $all_news = \App\Models\Post::orderBy('date', 'DESC')->get();
+        return view('news', compact('all_news'));
     }
-    public function add(){
+    public function load_all_t(){
+        $all_news = \App\Models\Post::orderBy('date', 'DESC')->get();
+        return view('test', compact('all_news'));
+    }
+    public function load($id){
+        $news = \App\Models\Post::find($id);
+        $all_news = \App\Models\Post::all();
+        $comments = Comment::all()->where('post_id', '=', $id);
+        return view('one_news', compact('news', 'all_news', 'comments'));
+    }
+    public function add_com($id){
         $name = $_POST['nickname'];
         $email = $_POST['email'];
         $text = $_POST['rev_text'];
+        $post_id = $id;
         $date = date("d.m.y");
         $time = date("H:i");
         $validator = Validator::make(Request::all(), [
@@ -30,13 +41,14 @@ class AboutController extends Controller
                 ->withErrors($validator)
                 ->withInput();
         }
-        $review = new Review;
+        $review = new Comment;
         $review->name = $name;
         $review->email = $email;
         $review->text = $text;
+        $review->post_id = $post_id;
         $review->date = $date;
         $review->time = $time;
         $review->save();
-        return redirect()->route('about');
+        return redirect()->back();
     }
 }
