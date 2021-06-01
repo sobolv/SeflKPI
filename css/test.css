@@ -153,7 +153,7 @@ h1 {
 .oppenned li {
     margin-right: 168px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .open:hover {
         opacity: 1;
     }
@@ -245,12 +245,18 @@ h1 {
     height: 100%;
     overflow: hidden;
 }
-.fake_portf {
-    margin-top: 35px;
-}
+
 .first_photo{
     display: block;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+@media (max-width: 768px) {
+    .first_photo{
+        width: 508px;
+    }
+    .fake_portf {
+        margin-top: 138px;
+    }
 }

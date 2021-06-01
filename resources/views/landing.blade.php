@@ -260,12 +260,12 @@
     $(document).ready(function() {
         $(document).delegate('.open', 'click', function(event){
 
-            if (window.matchMedia("(min-width: 500px)").matches){
+            if (window.matchMedia("(min-width: 600px)").matches){
                 $('.news-slider').addClass('none');
                 $('.first_photo').removeClass('none');
-                $('.photo_line').addClass('fake_portf');
+                $('.land_portfolio').addClass('fake_portf');
             }
-            if (window.matchMedia("(max-width: 500px)").matches){
+            if (window.matchMedia("(max-width: 600px)").matches){
                 $('.header').addClass('stop');
                 $('.content').addClass('none');
             }
@@ -278,7 +278,7 @@
             $('.header').removeClass('stop');
             $('.content').removeClass('none');
             $('.news-slider').removeClass('none');
-            $('.photo_line').removeClass('fake_portf');
+            $('.land_portfolio').removeClass('fake_portf');
 
         })
         $(document).delegate('.cls', 'click', function(event){
@@ -287,7 +287,7 @@
             $('.header').removeClass('stop');
             $('.content').removeClass('none');
             $('.news-slider').removeClass('none');
-            $('.photo_line').removeClass('fake_portf');
+            $('.land_portfolio').removeClass('fake_portf');
 
             event.stopPropagation();
         });
@@ -297,7 +297,7 @@
             $('.header').removeClass('stop');
             $('.content').removeClass('none');
             $('.news-slider').removeClass('none');
-            $('.photo_line').removeClass('fake_portf');
+            $('.land_portfolio').removeClass('fake_portf');
 
             event.stopPropagation();
         });
