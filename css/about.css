@@ -169,7 +169,7 @@ a{
     flex-direction: column;
     max-width: 346px;
     border: 2px solid #C7CCDB;
-
+    height: 220px;
 
 }
 .rev_user_inf{
@@ -253,6 +253,7 @@ a{
 }
 .slick-list{
     overflow: hidden;
+    min-height: 450px;
 }
 .review-slider .slick-arrow{
     position: absolute;
@@ -1199,7 +1200,7 @@ textarea {
     }
     .review-slider .slick-arrow.slick-prev {
         transform: rotate(90deg);
-        margin-left: 225px;
+        margin-left: 255px;
         top:0;
     }
 
