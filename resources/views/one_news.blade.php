@@ -112,7 +112,7 @@
                 <div class="title_block">
                     <div class="pzdts">
                         <div class="com_title">Коментарі</div>
-                        <button onclick="show('block')" class="add_com_form">Додати коментар</button>
+
                         <div onclick="show('none')" id="gray"></div>
                         <div id="coment" >
                             <form action={{ URL::asset('')}}news/{{$news->id}} method="post">

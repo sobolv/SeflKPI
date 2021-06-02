@@ -543,6 +543,8 @@
     }
     .l_news{
         width: 300px;
+        min-height: 250px;
+        max-height: 250px;
     }
     .title_text{
         text-align: center;
@@ -798,6 +800,8 @@
     .l_news{
         max-width: 200px;
         min-width: 200px;
+        max-height: 215px;
+        min-height: 215px;
     }
 }
 @media (max-width: 780px) {
@@ -922,6 +926,8 @@
     .l_news{
         max-width: 187px;
         min-width: 187px;
+        max-height: 195px;
+        min-height: 195px;
     }
 }
 @media (max-width: 670px) {
@@ -981,6 +987,8 @@
     .l_news{
         max-width: 152px;
         min-width: 152px;
+        max-height: 205px;
+        min-height: 205px;
     }
 }
 @media (max-width: 550px) {
